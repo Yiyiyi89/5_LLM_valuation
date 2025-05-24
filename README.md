@@ -10,14 +10,26 @@ _________________________________________________________________
 The main purpose is to provide a useful data folder structure for version control across time and between local laptop and high performance cluster (HPC). This folder structure follows [Guide written by Matthew Gentzkow and Jesse M. Shapiro](https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf) and contains useful `config.do` and `config.py` that set up path and packages in stata and python. 
 
 
-Section `1. file Tree` presents the file structure. Then in section `2 raw data` , `3 code`will briefly summarize the contents in the folder.  `4. Results` will compare replicated results with original paper's.
 
 
 
-## <font size=5>1. file tree</font>
+## <font size=5>file tree</font>
 
 ```python
-
+├── analysis
+│   ├── code: code that transfer data from 📁 processed 
+│   └── data
+│       ├── input:
+│       └── output
+├── build
+│   ├── code
+│   └── data
+│       ├── processed
+│       ├── raw
+│       └── temp
+├── README.md
+├── README.py
+└── resource
 
 
 ```
@@ -32,31 +44,9 @@ Business-line-level and firm-level data come from the [Insurance Statutory Finan
 ## <font size=5>3. code</font>
 
 ### <font size=5>step_1_clean_and_build_data.py  </font>
-I highly recommend to use data from 2000 because of data quality as [corp_missing_value_by_year.xlsx](./Build/data/temp/corp_1_missing_value_by_year.csv) shows. And I find any firm-level ratio suffer the similar problem. The alternative way is to build ratio by ourselves.
-input:
+
 ```python
-├── .git
-├── analysis
-│   ├── code
-│   │   └── config.do
-│   └── data
-│       ├── input
-│       └── output
-│           └── config.do
-├── build
-│   ├── code
-│   │   ├── config.do
-│   │   ├── config.py
-│   │   ├── data_merge_template.py
-│   │   ├── toolkit.py
-│   │   └── variables_record.py
-│   └── data
-│       ├── processed
-│       ├── raw
-│       └── temp
-├── README.md
-├── README.py
-└── resource
+
 
 ```
 
