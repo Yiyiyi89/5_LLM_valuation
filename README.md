@@ -1,6 +1,6 @@
 # <center><font size=6>Empirical Research Template</font></center>
 <p align=right> <font size=2>Yiyi Wang<br>20241011</font></p>
-_________________________________________________________________
+___________________________________________________________________________________________________________________________
 
 
 
@@ -10,26 +10,26 @@ _________________________________________________________________
 The main purpose is to provide a useful data folder structure for version control across time and between local laptop and high performance cluster (HPC). This folder structure follows [Guide written by Matthew Gentzkow and Jesse M. Shapiro](https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf) and contains useful `config.do` and `config.py` that set up path and packages in stata and python. 
 
 
-
+- Decouple code and data, build and analysis
 
 
 ## <font size=5>file tree</font>
 
 ```python
 ├── analysis
-│   ├── code: code that transfer data from 📁 processed 
+│   ├── code: 
 │   └── data
-│       ├── input:
-│       └── output
+│       ├── input:  	panel for descriptive and regressions, usually only .do file here
+│       └── output: 	tables and figures
 ├── build
-│   ├── code
+│   ├── code  
 │   └── data
-│       ├── processed
-│       ├── raw
-│       └── temp
+│       ├── processed	database that usually without any constrain
+│       ├── raw:    	only raw data 
+│       └── temp:   	temp bin, place merge keys and other stuff
 ├── README.md
-├── README.py
-└── resource
+├── README.py			code to generate this file tree (I will )
+└── resource			related paper or other material
 
 
 ```
