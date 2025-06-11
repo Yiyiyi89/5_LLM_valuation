@@ -63,9 +63,9 @@ end
 global BUILD_ROOT               "${PARENT}${SEP}build"
     global BUILD_CODE           "${BUILD_ROOT}${SEP}code"
     global BUILD_DATA           "${BUILD_ROOT}${SEP}data"
-        global BUILD_DATA_RAW           "${BUILD_DATA}${SEP}raw"
-        global BUILD_DATA_TEMP          "${BUILD_DATA}${SEP}temp"
-        global BUILD_DATA_PROCESSED     "${BUILD_DATA}${SEP}processed"
+        global DATA_RAW                "${BUILD_DATA}${SEP}raw"
+        global DATA_TEMP               "${BUILD_DATA}${SEP}temp"
+        global DATA_PROCESSED          "${BUILD_DATA}${SEP}processed"
 
 * ✨ Analysis Area
 global ANALYSIS_ROOT            "${PARENT}${SEP}analysis"
@@ -89,9 +89,9 @@ display "--------------------------------------------"
 display "📁 BUILD_ROOT:            $BUILD_ROOT"
 display "  📁 BUILD_CODE:          $BUILD_CODE"
 display "  📁 BUILD_DATA:          $BUILD_DATA"
-display "    📁 RAW:               $BUILD_DATA_RAW"
-display "    📁 TEMP:              $BUILD_DATA_TEMP"
-display "    📁 PROCESSED:         $BUILD_DATA_PROCESSED"
+display "    📁 RAW:               $DATA_RAW"
+display "    📁 TEMP:              $DATA_TEMP"
+display "    📁 PROCESSED:         $DATA_PROCESSED"
 display "--------------------------------------------"
 
 * ✨ Analysis Area

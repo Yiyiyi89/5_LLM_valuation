@@ -12,14 +12,11 @@ PARENT_PATH = CODE_PATH.parent
 BUILD_ROOT = PARENT_PATH / "build"
 BUILD_CODE = BUILD_ROOT / "code"
 BUILD_DATA = BUILD_ROOT / "data"
-BUILD_DATA_RAW = BUILD_DATA / "raw"
-MACRO_DATA_PATH = BUILD_DATA_RAW / "Macro"
-REVELIO_DATA_PATH = BUILD_DATA_RAW / "Revelio"
-PITCHBOOK_DATA_PATH = BUILD_DATA_RAW / "Pitchbook"
-AA_DATA_PATH = BUILD_DATA_RAW / "Audit Analytics"
-AT_DATA_PATH = BUILD_DATA_RAW / "Accounting Today"
-BUILD_DATA_TEMP = BUILD_DATA / "temp"
-BUILD_DATA_PROCESSED = BUILD_DATA / "processed"
+
+DATA_RAW = BUILD_DATA / "raw"
+# AA_DATA_PATH = DATA_RAW / "Audit Analytics"
+DATA_TEMP = BUILD_DATA / "temp"
+DATA_PROCESSED = BUILD_DATA / "processed"
 
 # ————————————————————————————— #
 #     Analysis Area
@@ -27,6 +24,7 @@ BUILD_DATA_PROCESSED = BUILD_DATA / "processed"
 ANALYSIS_ROOT = PARENT_PATH / "analysis"
 ANALYSIS_CODE = ANALYSIS_ROOT / "code"
 ANALYSIS_DATA = ANALYSIS_ROOT / "data"
+
 ANALYSIS_INPUT = ANALYSIS_DATA / "input"
 ANALYSIS_OUTPUT = ANALYSIS_DATA / "output"
 
@@ -43,14 +41,9 @@ if __name__ == "__main__":
     print("|BUILD_ROOT:              ", BUILD_ROOT)
     print("|  BUILD_CODE:            ", BUILD_CODE)
     print("|  BUILD_DATA:            ", BUILD_DATA)
-    print("|    RAW:                 ", BUILD_DATA_RAW)
-    print("|      - Macro:           ", MACRO_DATA_PATH)
-    print("|      - Revelio:         ", REVELIO_DATA_PATH)
-    print("|      - Pitchbook:       ", PITCHBOOK_DATA_PATH)
-    print("|      - Audit Analytics: ", AA_DATA_PATH)
-    print("|      - Accounting Today:", AT_DATA_PATH)
-    print("|    TEMP:                ", BUILD_DATA_TEMP)
-    print("|    PROCESSED:           ", BUILD_DATA_PROCESSED)
+    print("|    RAW:                 ", DATA_RAW)
+    print("|    TEMP:                ", DATA_TEMP)
+    print("|    PROCESSED:           ", DATA_PROCESSED)
     print("|" + "-" * 78)
 
     print("|ANALYSIS_ROOT:           ", ANALYSIS_ROOT)
