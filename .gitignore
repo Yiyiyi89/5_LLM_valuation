@@ -1,0 +1,58 @@
+# Ignore data files
+*.csv
+*.xlsx
+*.xls
+*.json
+*.pkl
+*.h5
+*.parquet
+*.feather
+*.db
+*.sqlite
+*.sqlite3
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.log
+*.bak
+*.swp
+*~
+
+# Ignore build files
+build/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Ignore environment files
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Ignore IDE files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Keep empty directories
+!*/
+!.gitkeep
+
+# Keep code files
+!*.py
+!*.ipynb
+!*.md
+!*.txt
+!*.sh
+!*.bat
+!*.yaml
+!*.yml
+!*.json
+!*.config 
