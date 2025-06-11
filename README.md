@@ -14,7 +14,7 @@ The template structure follows the [Guide by Matthew Gentzkow and Jesse M. Shapi
 
 ## <font size=5>Directory Structure</font>
 
-```python
+```text
 ├── analysis            # Analysis phase
 │   ├── code            # Analysis code
 │   └── data
