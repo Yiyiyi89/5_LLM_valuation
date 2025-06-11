@@ -313,51 +313,51 @@ class NgramsOverlap(BaseIndexAlgorithm):
         )
 
 
-def ngrams_overlap(df_queries, df_candidates, query_column, candidate_column, n=4):
-    """
-    Compute the n-gram overlap between query and candidate text columns and return the indices of overlaps.
+# def ngrams_overlap(df_queries, df_candidates, query_column, candidate_column, n=4):
+#     """
+#     Compute the n-gram overlap between query and candidate text columns and return the indices of overlaps.
 
-    Parameters:
-    - df_queries (pd.DataFrame): DataFrame containing the queries.
-    - df_candidates (pd.DataFrame): DataFrame containing the candidates.
-    - query_column (str): Column containing query text.
-    - candidate_column (str): Column containing candidate text.
-    - n (int): N-gram size.
+#     Parameters:
+#     - df_queries (pd.DataFrame): DataFrame containing the queries.
+#     - df_candidates (pd.DataFrame): DataFrame containing the candidates.
+#     - query_column (str): Column containing query text.
+#     - candidate_column (str): Column containing candidate text.
+#     - n (int): N-gram size.
 
-    Returns:
-    - pd.MultiIndex: MultiIndex where each pair (query_index, candidate_index) has n-gram overlap, using the original indices.
-    """
+#     Returns:
+#     - pd.MultiIndex: MultiIndex where each pair (query_index, candidate_index) has n-gram overlap, using the original indices.
+#     """
 
-    # Initialize the vectorizer for n-grams
-    vectorizer = CountVectorizer(
-        analyzer="char", ngram_range=(n, n), binary=True, dtype=np.uint8
-    )
+#     # Initialize the vectorizer for n-grams
+#     vectorizer = CountVectorizer(
+#         analyzer="char", ngram_range=(n, n), binary=True, dtype=np.uint8
+#     )
 
-    # Transform query and candidate text columns into n-gram matrices
-    X_queries = vectorizer.fit_transform(df_queries[query_column])
-    X_candidates = vectorizer.transform(df_candidates[candidate_column])
+#     # Transform query and candidate text columns into n-gram matrices
+#     X_queries = vectorizer.fit_transform(df_queries[query_column])
+#     X_candidates = vectorizer.transform(df_candidates[candidate_column])
 
-    # Compute overlap matrix as the dot product of query and candidate matrices
-    overlap_matrix = X_queries.dot(X_candidates.T)
+#     # Compute overlap matrix as the dot product of query and candidate matrices
+#     overlap_matrix = X_queries.dot(X_candidates.T)
 
-    # Find non-zero indices in the overlap matrix
-    query_indices, candidate_indices = np.nonzero(overlap_matrix)
+#     # Find non-zero indices in the overlap matrix
+#     query_indices, candidate_indices = np.nonzero(overlap_matrix)
 
-    # Map back to original indices
-    query_index_original = df_queries.index[query_indices]
-    candidate_index_original = df_candidates.index[candidate_indices]
+#     # Map back to original indices
+#     query_index_original = df_queries.index[query_indices]
+#     candidate_index_original = df_candidates.index[candidate_indices]
 
-    # Return MultiIndex using original indices
-    return pd.MultiIndex.from_arrays(
-        [query_index_original, candidate_index_original],
-        names=["query_index", "candidate_index"],
-    )
+#     # Return MultiIndex using original indices
+#     return pd.MultiIndex.from_arrays(
+#         [query_index_original, candidate_index_original],
+#         names=["query_index", "candidate_index"],
+#     )
 
 
-# """Example usage"""
-# df_queries = pd.DataFrame({'text': ['apple banana', 'orange grape']})
-# df_candidates = pd.DataFrame({'text': ['banana apple', 'grape orange', 'pineapple']})
-# ngram_overlap = ngrams_overlap(df_queries, df_candidates, 'text', 'text', n=3)
+# # """Example usage"""
+# # df_queries = pd.DataFrame({'text': ['apple banana', 'orange grape']})
+# # df_candidates = pd.DataFrame({'text': ['banana apple', 'grape orange', 'pineapple']})
+# # ngram_overlap = ngrams_overlap(df_queries, df_candidates, 'text', 'text', n=3)
 
 
 def determine_entity(df, column, string_list):
