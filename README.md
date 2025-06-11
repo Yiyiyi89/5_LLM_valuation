@@ -101,36 +101,3 @@ The template structure follows the [Guide by Matthew Gentzkow and Jesse M. Shapi
 
 
 ```
-
-
-
-
-## <font size=5>2. raw data</font>
-
-Business-line-level and firm-level data come from the [Insurance Statutory Financials](https://www.capitaliq.spglobal.com/web/client?auth=inherit#office/screener?perspective=287). Macro factors comes from [USA | Economic & Demographic Data](https://www.capitaliq.spglobal.com/web/client?auth=inherit#country/economicDemographic?keycountry=US). All data can be found in Capital IQ Pro. Detailed variable definition can be found in [Variable definitions.xlsx](./Build/data/raw/Variable%20definitions.xlsx).
-
-## <font size=5>3. code</font>
-
-### <font size=5>step_1_clean_and_build_data.py  </font>
-
-```python
-
-
-```
-
-
-
-output:
-```python
-├── Build
-│   └── data
-│       └── temp
-│           ├── {business_line}_database.csv
-│           ├── {business_line}_summary.csv
-├── Build
-│   └── data
-│       ├── output
-│       │   ├── table_4_stat_summary.csv
-```
-
-`
