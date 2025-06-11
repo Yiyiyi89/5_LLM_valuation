@@ -1,85 +1,85 @@
 # <center><font size=6>Empirical Research Template</font></center>
-<p align=right> <font size=2>易翊翼<br>20241011</font></p>
+<p align=right> <font size=2>Yi Yi<br>20241011</font></p>
 ___________________________________________________________________________________________________________________________
 
-## <font size=5>项目说明</font>
+## <font size=5>Project Description</font>
 
-这是一个用于实证研究的项目模板，主要目的是提供一个标准化的项目结构，以便于：
-1. 版本控制
-2. 本地电脑和高性能计算集群(HPC)之间的代码同步
-3. 代码和数据的解耦
-4. 构建(build)和分析(analysis)的分离
+This is an empirical research project template designed to provide a standardized project structure for:
+1. Version control
+2. Code synchronization between local machine and HPC
+3. Decoupling of code and data
+4. Separation of build and analysis phases
 
-该模板结构遵循 [Matthew Gentzkow 和 Jesse M. Shapiro 的指南](https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf)，并包含了实用的 `config.do` 和 `config.py` 文件，用于设置 Stata 和 Python 的路径和包。
+The template structure follows the [Guide by Matthew Gentzkow and Jesse M. Shapiro](https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf) and includes useful `config.do` and `config.py` files for setting up paths and packages in Stata and Python.
 
-## <font size=5>目录结构</font>
+## <font size=5>Directory Structure</font>
 
 ```python
-├── analysis          # 分析阶段
-│   ├── code         # 分析代码
+├── analysis          # Analysis phase
+│   ├── code         # Analysis code
 │   └── data
-│       ├── input    # 用于描述性统计和回归的面板数据，通常只包含.do文件
-│       └── output   # 生成的表格和图形
-├── build            # 数据构建阶段
-│   ├── code        # 数据处理代码
+│       ├── input    # Panel data for descriptive stats and regressions
+│       └── output   # Generated tables and figures
+├── build            # Data construction phase
+│   ├── code        # Data processing code
 │   └── data
-│       ├── processed # 处理后的数据库，通常没有约束
-│       ├── raw      # 原始数据
-│       └── temp     # 临时文件，存放合并键值和其他中间文件
-├── README.md        # 项目说明文档
-├── README.py        # 生成目录树的代码
-└── resource         # 相关论文和其他材料
+│       ├── processed # Processed databases
+│       ├── raw      # Raw data
+│       └── temp     # Temporary files, merge keys, etc.
+├── README.md        # Project documentation
+├── README.py        # Directory tree generator
+└── resource         # Related papers and materials
 ```
 
-## <font size=5>使用说明</font>
+## <font size=5>Usage Guide</font>
 
-### 1. 数据管理
-- `build/data/raw`: 存放原始数据，建议只读
-- `build/data/processed`: 存放处理后的数据
-- `build/data/temp`: 存放中间文件，如合并键值等
-- `analysis/data/input`: 存放用于分析的数据
-- `analysis/data/output`: 存放分析结果，包括表格和图形
+### 1. Data Management
+- `build/data/raw`: Store raw data (read-only)
+- `build/data/processed`: Store processed data
+- `build/data/temp`: Store intermediate files
+- `analysis/data/input`: Store analysis-ready data
+- `analysis/data/output`: Store analysis results
 
-### 2. 代码组织
-- `build/code`: 包含数据清洗和构建的代码
-- `analysis/code`: 包含分析代码
-- 每个代码文件都应该有清晰的注释和文档
+### 2. Code Organization
+- `build/code`: Data cleaning and construction code
+- `analysis/code`: Analysis code
+- Each code file should have clear documentation
 
-### 3. 版本控制
-- 使用 `.gitignore` 忽略大型数据文件
-- 使用 `.gitkeep` 保持空目录结构
-- 定期提交代码更改
+### 3. Version Control
+- Use `.gitignore` for large data files
+- Use `.gitkeep` to maintain empty directories
+- Regular code commits
 
-### 4. 配置管理
-- 使用 `config.py` 管理 Python 路径和包
-- 使用 `config.do` 管理 Stata 路径和包
+### 4. Configuration
+- Use `config.py` for Python paths and packages
+- Use `config.do` for Stata paths and packages
 
-## <font size=5>注意事项</font>
+## <font size=5>Best Practices</font>
 
-1. 数据安全
-   - 不要将敏感数据提交到版本控制系统
-   - 使用 `.gitignore` 排除大型数据文件
+1. Data Security
+   - Don't commit sensitive data
+   - Use `.gitignore` for large files
 
-2. 代码规范
-   - 保持代码整洁和文档完整
-   - 使用有意义的变量名和函数名
-   - 添加适当的注释
+2. Code Standards
+   - Keep code clean and documented
+   - Use meaningful names
+   - Add appropriate comments
 
-3. 性能优化
-   - 对于大型数据集，考虑使用分块处理
-   - 使用适当的数据结构和算法
+3. Performance
+   - Use chunking for large datasets
+   - Choose appropriate data structures
 
-4. 协作建议
-   - 定期同步代码
-   - 保持沟通和文档更新
-   - 遵循项目的代码规范
+4. Collaboration
+   - Regular code sync
+   - Keep documentation updated
+   - Follow project standards
 
-## <font size=5>维护说明</font>
+## <font size=5>Maintenance</font>
 
-- 定期更新依赖包
-- 保持文档的及时更新
-- 定期清理临时文件
-- 备份重要数据
+- Regular dependency updates
+- Documentation maintenance
+- Temporary file cleanup
+- Data backup
 
 ## <font size=5>file tree</font>
 
