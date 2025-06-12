@@ -9,7 +9,7 @@ sp500.schema
 # rename columns for mapping
 
 FIELD_MAP = {
-    "ticker": "ticker",
+    "ticker": "tic",
     "capital_expenditure": "capxy",
     "depreciation_and_amortization": "dpq",  # Depreciation & Amortization – Total
     "net_income": "niq",  # Net Income (Loss)
@@ -28,11 +28,24 @@ sp500 = sp500.rename(REVERSED_FIELD_MAP)
 
 
 #
-sp500 = sp500.with_columns(
-    (pl.col("revenue") - pl.col("cost_of_goods")).alias("gross_profit"),
-    (pl.col("operating_net_cash_flow") - pl.col("capital_expenditure")).alias(
-        "free_cash_flow"
-    ),
+sp500 = (
+    sp500.with_columns(
+        (pl.col("revenue") - pl.col("cost_of_goods")).alias("gross_profit"),
+        (pl.col("operating_net_cash_flow") - pl.col("capital_expenditure")).alias(
+            "free_cash_flow"
+        ),
+        pl.col("datadate").str.strptime(pl.Date, "%Y-%m-%d").dt.year().alias("year"),
+        pl.col("datadate")
+        .str.strptime(pl.Date, "%Y-%m-%d")
+        .dt.quarter()
+        .alias("quarter"),
+    )
+    .drop_nulls(subset=["total_assets", "total_liabilities"])
+    .with_columns(
+        (pl.col("total_assets") - pl.col("total_liabilities")).alias(
+            "shareholders_equity"
+        ),
+    )
 )
 
 output_path = (

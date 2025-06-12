@@ -1,12 +1,13 @@
-from src.graph.state import AgentState, show_agent_reasoning
-from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.messages import HumanMessage
 from pydantic import BaseModel
 import json
 from typing_extensions import Literal
-from src.tools.api import get_financial_metrics, get_market_cap, search_line_items
-from src.utils.llm import call_llm
-from src.utils.progress import progress
+import polars as pl
+from config import DATA_TEMP
+
+sp500 = pl.read_parquet(
+    DATA_TEMP / "sp500_fundamental_quarterly_quantitative_metrics.parquet.gzip"
+)
+sp500.schema
 
 
 class WarrenBuffettSignal(BaseModel):
@@ -15,159 +16,107 @@ class WarrenBuffettSignal(BaseModel):
     reasoning: str
 
 
-def warren_buffett_agent(state: AgentState):
-    """Analyzes stocks using Buffett's principles and LLM reasoning."""
-    data = state["data"]
-    end_date = data["end_date"]
-    tickers = data["tickers"]
+def analyze_stock(ticker: str, year: int, quarter: int) -> dict:
+    """
+    Analyze a stock using Warren Buffett's principles.
 
-    # Collect all analysis for LLM reasoning
-    analysis_data = {}
-    buffett_analysis = {}
+    Args:
+        ticker (str): Stock ticker symbol
+        year (int): Year of analysis
+        quarter (int): Quarter of analysis (1-4)
 
-    for ticker in tickers:
-        progress.update_status(
-            "warren_buffett_agent", ticker, "Fetching financial metrics"
-        )
-        # Fetch required data - request more periods for better trend analysis
-        metrics = get_financial_metrics(ticker, end_date, period="ttm", limit=10)
+    Returns:
+        dict: Analysis results including signal, confidence, and reasoning
+    """
+    # Convert year and quarter to end date
+    end_date = f"{year}-{quarter*3:02d}-30"  # Using last day of quarter
 
-        progress.update_status(
-            "warren_buffett_agent", ticker, "Gathering financial line items"
-        )
-        financial_line_items = search_line_items(
-            ticker,
-            [
-                "capital_expenditure",
-                "depreciation_and_amortization",
-                "net_income",
-                "outstanding_shares",
-                "total_assets",
-                "total_liabilities",
-                "shareholders_equity",
-                "dividends_and_other_cash_distributions",
-                "issuance_or_purchase_of_equity_shares",
-                "gross_profit",
-                "revenue",
-                "free_cash_flow",
-            ],
-            end_date,
-            period="ttm",
-            limit=10,
-        )
+    # Fetch required data
+    metrics = get_financial_metrics(ticker, end_date, period="ttm", limit=10)
 
-        progress.update_status("warren_buffett_agent", ticker, "Getting market cap")
-        # Get current market cap
-        market_cap = get_market_cap(ticker, end_date)
-
-        progress.update_status("warren_buffett_agent", ticker, "Analyzing fundamentals")
-        # Analyze fundamentals
-        fundamental_analysis = analyze_fundamentals(metrics)
-
-        progress.update_status("warren_buffett_agent", ticker, "Analyzing consistency")
-        consistency_analysis = analyze_consistency(financial_line_items)
-
-        progress.update_status(
-            "warren_buffett_agent", ticker, "Analyzing competitive moat"
-        )
-        moat_analysis = analyze_moat(metrics)
-
-        progress.update_status(
-            "warren_buffett_agent", ticker, "Analyzing pricing power"
-        )
-        pricing_power_analysis = analyze_pricing_power(financial_line_items, metrics)
-
-        progress.update_status(
-            "warren_buffett_agent", ticker, "Analyzing book value growth"
-        )
-        book_value_analysis = analyze_book_value_growth(financial_line_items)
-
-        progress.update_status(
-            "warren_buffett_agent", ticker, "Analyzing management quality"
-        )
-        mgmt_analysis = analyze_management_quality(financial_line_items)
-
-        progress.update_status(
-            "warren_buffett_agent", ticker, "Calculating intrinsic value"
-        )
-        intrinsic_value_analysis = calculate_intrinsic_value(financial_line_items)
-
-        # Calculate total score without circle of competence (LLM will handle that)
-        total_score = (
-            fundamental_analysis["score"]
-            + consistency_analysis["score"]
-            + moat_analysis["score"]
-            + mgmt_analysis["score"]
-            + pricing_power_analysis["score"]
-            + book_value_analysis["score"]
-        )
-
-        # Update max possible score calculation
-        max_possible_score = (
-            10  # fundamental_analysis (ROE, debt, margins, current ratio)
-            + moat_analysis["max_score"]
-            + mgmt_analysis["max_score"]
-            + 5  # pricing_power (0-5)
-            + 5  # book_value_growth (0-5)
-        )
-
-        # Add margin of safety analysis if we have both intrinsic value and current price
-        margin_of_safety = None
-        intrinsic_value = intrinsic_value_analysis["intrinsic_value"]
-        if intrinsic_value and market_cap:
-            margin_of_safety = (intrinsic_value - market_cap) / market_cap
-
-        # Combine all analysis results for LLM evaluation
-        analysis_data[ticker] = {
-            "ticker": ticker,
-            "score": total_score,
-            "max_score": max_possible_score,
-            "fundamental_analysis": fundamental_analysis,
-            "consistency_analysis": consistency_analysis,
-            "moat_analysis": moat_analysis,
-            "pricing_power_analysis": pricing_power_analysis,
-            "book_value_analysis": book_value_analysis,
-            "management_analysis": mgmt_analysis,
-            "intrinsic_value_analysis": intrinsic_value_analysis,
-            "market_cap": market_cap,
-            "margin_of_safety": margin_of_safety,
-        }
-
-        progress.update_status(
-            "warren_buffett_agent", ticker, "Generating Warren Buffett analysis"
-        )
-        buffett_output = generate_buffett_output(
-            ticker=ticker,
-            analysis_data=analysis_data,
-            state=state,
-        )
-
-        # Store analysis in consistent format with other agents
-        buffett_analysis[ticker] = {
-            "signal": buffett_output.signal,
-            "confidence": buffett_output.confidence,
-            "reasoning": buffett_output.reasoning,
-        }
-
-        progress.update_status(
-            "warren_buffett_agent", ticker, "Done", analysis=buffett_output.reasoning
-        )
-
-    # Create the message
-    message = HumanMessage(
-        content=json.dumps(buffett_analysis), name="warren_buffett_agent"
+    financial_line_items = search_line_items(
+        ticker,
+        [
+            "capital_expenditure",
+            "depreciation_and_amortization",
+            "net_income",
+            "outstanding_shares",
+            "total_assets",
+            "total_liabilities",
+            "shareholders_equity",
+            "dividends_and_other_cash_distributions",
+            "issuance_or_purchase_of_equity_shares",
+            "gross_profit",
+            "revenue",
+            "free_cash_flow",
+        ],
+        end_date,
+        period="ttm",
+        limit=10,
     )
 
-    # Show reasoning if requested
-    if state["metadata"]["show_reasoning"]:
-        show_agent_reasoning(buffett_analysis, "Warren Buffett Agent")
+    # Get current market cap
+    market_cap = get_market_cap(ticker, end_date)
 
-    # Add the signal to the analyst_signals list
-    state["data"]["analyst_signals"]["warren_buffett_agent"] = buffett_analysis
+    # Perform all analyses
+    fundamental_analysis = analyze_fundamentals(metrics)
+    consistency_analysis = analyze_consistency(financial_line_items)
+    moat_analysis = analyze_moat(metrics)
+    pricing_power_analysis = analyze_pricing_power(financial_line_items, metrics)
+    book_value_analysis = analyze_book_value_growth(financial_line_items)
+    mgmt_analysis = analyze_management_quality(financial_line_items)
+    intrinsic_value_analysis = calculate_intrinsic_value(financial_line_items)
 
-    progress.update_status("warren_buffett_agent", None, "Done")
+    # Calculate total score
+    total_score = (
+        fundamental_analysis["score"]
+        + consistency_analysis["score"]
+        + moat_analysis["score"]
+        + mgmt_analysis["score"]
+        + pricing_power_analysis["score"]
+        + book_value_analysis["score"]
+    )
 
-    return {"messages": [message], "data": state["data"]}
+    # Calculate max possible score
+    max_possible_score = (
+        10  # fundamental_analysis
+        + moat_analysis["max_score"]
+        + mgmt_analysis["max_score"]
+        + 5  # pricing_power
+        + 5  # book_value_growth
+    )
+
+    # Calculate margin of safety
+    margin_of_safety = None
+    intrinsic_value = intrinsic_value_analysis["intrinsic_value"]
+    if intrinsic_value and market_cap:
+        margin_of_safety = (intrinsic_value - market_cap) / market_cap
+
+    # Combine all analysis results
+    analysis_data = {
+        "ticker": ticker,
+        "score": total_score,
+        "max_score": max_possible_score,
+        "fundamental_analysis": fundamental_analysis,
+        "consistency_analysis": consistency_analysis,
+        "moat_analysis": moat_analysis,
+        "pricing_power_analysis": pricing_power_analysis,
+        "book_value_analysis": book_value_analysis,
+        "management_analysis": mgmt_analysis,
+        "intrinsic_value_analysis": intrinsic_value_analysis,
+        "market_cap": market_cap,
+        "margin_of_safety": margin_of_safety,
+    }
+
+    # Generate Buffett-style analysis
+    buffett_output = generate_buffett_output(ticker, analysis_data)
+
+    return {
+        "signal": buffett_output.signal,
+        "confidence": buffett_output.confidence,
+        "reasoning": buffett_output.reasoning,
+        "detailed_analysis": analysis_data,
+    }
 
 
 def analyze_fundamentals(metrics: list) -> dict[str, any]:
@@ -905,11 +854,7 @@ def analyze_pricing_power(financial_line_items: list, metrics: list) -> dict[str
     }
 
 
-def generate_buffett_output(
-    ticker: str,
-    analysis_data: dict[str, any],
-    state: AgentState,
-) -> WarrenBuffettSignal:
+def generate_buffett_output(ticker: str, analysis_data: dict) -> WarrenBuffettSignal:
     """Get investment decision from LLM with Buffett's principles"""
     template = ChatPromptTemplate.from_messages(
         [
@@ -917,86 +862,86 @@ def generate_buffett_output(
                 "system",
                 """You are Warren Buffett, the Oracle of Omaha. Analyze investment opportunities using my proven methodology developed over 60+ years of investing:
 
-                MY CORE PRINCIPLES:
-                1. Circle of Competence: "Risk comes from not knowing what you're doing." Only invest in businesses I thoroughly understand.
-                2. Economic Moats: Seek companies with durable competitive advantages - pricing power, brand strength, scale advantages, switching costs.
-                3. Quality Management: Look for honest, competent managers who think like owners and allocate capital wisely.
-                4. Financial Fortress: Prefer companies with strong balance sheets, consistent earnings, and minimal debt.
-                5. Intrinsic Value & Margin of Safety: Pay significantly less than what the business is worth - "Price is what you pay, value is what you get."
-                6. Long-term Perspective: "Our favorite holding period is forever." Look for businesses that will prosper for decades.
-                7. Pricing Power: The best businesses can raise prices without losing customers.
+            MY CORE PRINCIPLES:
+            1. Circle of Competence: "Risk comes from not knowing what you're doing." Only invest in businesses I thoroughly understand.
+            2. Economic Moats: Seek companies with durable competitive advantages - pricing power, brand strength, scale advantages, switching costs.
+            3. Quality Management: Look for honest, competent managers who think like owners and allocate capital wisely.
+            4. Financial Fortress: Prefer companies with strong balance sheets, consistent earnings, and minimal debt.
+            5. Intrinsic Value & Margin of Safety: Pay significantly less than what the business is worth - "Price is what you pay, value is what you get."
+            6. Long-term Perspective: "Our favorite holding period is forever." Look for businesses that will prosper for decades.
+            7. Pricing Power: The best businesses can raise prices without losing customers.
 
-                MY CIRCLE OF COMPETENCE PREFERENCES:
-                STRONGLY PREFER:
-                - Consumer staples with strong brands (Coca-Cola, P&G, Walmart, Costco)
-                - Commercial banking (Bank of America, Wells Fargo) - NOT investment banking
-                - Insurance (GEICO, property & casualty)
-                - Railways and utilities (BNSF, simple infrastructure)
-                - Simple industrials with moats (UPS, FedEx, Caterpillar)
-                - Energy companies with reserves and pipelines (Chevron, not exploration)
+            MY CIRCLE OF COMPETENCE PREFERENCES:
+            STRONGLY PREFER:
+            - Consumer staples with strong brands (Coca-Cola, P&G, Walmart, Costco)
+            - Commercial banking (Bank of America, Wells Fargo) - NOT investment banking
+            - Insurance (GEICO, property & casualty)
+            - Railways and utilities (BNSF, simple infrastructure)
+            - Simple industrials with moats (UPS, FedEx, Caterpillar)
+            - Energy companies with reserves and pipelines (Chevron, not exploration)
 
-                GENERALLY AVOID:
-                - Complex technology (semiconductors, software, except Apple due to consumer ecosystem)
-                - Biotechnology and pharmaceuticals (too complex, regulatory risk)
-                - Airlines (commodity business, poor economics)
-                - Cryptocurrency and fintech speculation
-                - Complex derivatives or financial instruments
-                - Rapid technology change industries
-                - Capital-intensive businesses without pricing power
+            GENERALLY AVOID:
+            - Complex technology (semiconductors, software, except Apple due to consumer ecosystem)
+            - Biotechnology and pharmaceuticals (too complex, regulatory risk)
+            - Airlines (commodity business, poor economics)
+            - Cryptocurrency and fintech speculation
+            - Complex derivatives or financial instruments
+            - Rapid technology change industries
+            - Capital-intensive businesses without pricing power
 
-                APPLE EXCEPTION: I own Apple not as a tech stock, but as a consumer products company with an ecosystem that creates switching costs.
+            APPLE EXCEPTION: I own Apple not as a tech stock, but as a consumer products company with an ecosystem that creates switching costs.
 
-                MY INVESTMENT CRITERIA HIERARCHY:
-                First: Circle of Competence - If I don't understand the business model or industry dynamics, I don't invest, regardless of potential returns.
-                Second: Business Quality - Does it have a moat? Will it still be thriving in 20 years?
-                Third: Management - Do they act in shareholders' interests? Smart capital allocation?
-                Fourth: Financial Strength - Consistent earnings, low debt, strong returns on capital?
-                Fifth: Valuation - Am I paying a reasonable price for this wonderful business?
+            MY INVESTMENT CRITERIA HIERARCHY:
+            First: Circle of Competence - If I don't understand the business model or industry dynamics, I don't invest, regardless of potential returns.
+            Second: Business Quality - Does it have a moat? Will it still be thriving in 20 years?
+            Third: Management - Do they act in shareholders' interests? Smart capital allocation?
+            Fourth: Financial Strength - Consistent earnings, low debt, strong returns on capital?
+            Fifth: Valuation - Am I paying a reasonable price for this wonderful business?
 
-                MY LANGUAGE & STYLE:
-                - Use folksy wisdom and simple analogies ("It's like...")
-                - Reference specific past investments when relevant (Coca-Cola, Apple, GEICO, See's Candies, etc.)
-                - Quote my own sayings when appropriate
-                - Be candid about what I don't understand
-                - Show patience - most opportunities don't meet my criteria
-                - Express genuine enthusiasm for truly exceptional businesses
-                - Be skeptical of complexity and Wall Street jargon
+            MY LANGUAGE & STYLE:
+            - Use folksy wisdom and simple analogies ("It's like...")
+            - Reference specific past investments when relevant (Coca-Cola, Apple, GEICO, See's Candies, etc.)
+            - Quote my own sayings when appropriate
+            - Be candid about what I don't understand
+            - Show patience - most opportunities don't meet my criteria
+            - Express genuine enthusiasm for truly exceptional businesses
+            - Be skeptical of complexity and Wall Street jargon
 
-                CONFIDENCE LEVELS:
-                - 90-100%: Exceptional business within my circle, trading at attractive price
-                - 70-89%: Good business with decent moat, fair valuation
-                - 50-69%: Mixed signals, would need more information or better price
-                - 30-49%: Outside my expertise or concerning fundamentals
-                - 10-29%: Poor business or significantly overvalued
+            CONFIDENCE LEVELS:
+            - 90-100%: Exceptional business within my circle, trading at attractive price
+            - 70-89%: Good business with decent moat, fair valuation
+            - 50-69%: Mixed signals, would need more information or better price
+            - 30-49%: Outside my expertise or concerning fundamentals
+            - 10-29%: Poor business or significantly overvalued
 
-                Remember: I'd rather own a wonderful business at a fair price than a fair business at a wonderful price. And when in doubt, the answer is usually "no" - there's no penalty for missed opportunities, only for permanent capital loss.
-                """,
+            Remember: I'd rather own a wonderful business at a fair price than a fair business at a wonderful price. And when in doubt, the answer is usually "no" - there's no penalty for missed opportunities, only for permanent capital loss.
+            """,
             ),
             (
                 "human",
                 """Analyze this investment opportunity for {ticker}:
 
-                COMPREHENSIVE ANALYSIS DATA:
-                {analysis_data}
+            COMPREHENSIVE ANALYSIS DATA:
+            {analysis_data}
 
-                Please provide your investment decision in exactly this JSON format:
-                {{
-                  "signal": "bullish" | "bearish" | "neutral",
-                  "confidence": float between 0 and 100,
-                  "reasoning": "string with your detailed Warren Buffett-style analysis"
-                }}
+            Please provide your investment decision in exactly this JSON format:
+            {{
+              "signal": "bullish" | "bearish" | "neutral",
+              "confidence": float between 0 and 100,
+              "reasoning": "string with your detailed Warren Buffett-style analysis"
+            }}
 
-                In your reasoning, be specific about:
-                1. Whether this falls within your circle of competence and why (CRITICAL FIRST STEP)
-                2. Your assessment of the business's competitive moat
-                3. Management quality and capital allocation
-                4. Financial health and consistency
-                5. Valuation relative to intrinsic value
-                6. Long-term prospects and any red flags
-                7. How this compares to opportunities in your portfolio
+            In your reasoning, be specific about:
+            1. Whether this falls within your circle of competence and why (CRITICAL FIRST STEP)
+            2. Your assessment of the business's competitive moat
+            3. Management quality and capital allocation
+            4. Financial health and consistency
+            5. Valuation relative to intrinsic value
+            6. Long-term prospects and any red flags
+            7. How this compares to opportunities in your portfolio
 
-                Write as Warren Buffett would speak - plainly, with conviction, and with specific references to the data provided.
-                """,
+            Write as Warren Buffett would speak - plainly, with conviction, and with specific references to the data provided.
+            """,
             ),
         ]
     )
@@ -1016,7 +961,5 @@ def generate_buffett_output(
     return call_llm(
         prompt=prompt,
         pydantic_model=WarrenBuffettSignal,
-        agent_name="warren_buffett_agent",
-        state=state,
         default_factory=create_default_warren_buffett_signal,
     )
