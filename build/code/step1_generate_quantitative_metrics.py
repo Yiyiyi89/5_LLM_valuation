@@ -22,32 +22,48 @@ FIELD_MAP = {
     "revenue": "revtq",  # Revenue (Net Sales)
     "cost_of_goods": "cogsq",  # Cost of Goods Sold
     "operating_net_cash_flow": "oancfy",  # Operating net cash flow
+    "quarter": "fqtr",  # Fiscal Quarter
+    "year": "fyearq",  # Fiscal Year
+    "price_close": "prccq",  # Price Close
+    "price_high": "prchq",  # Price High
+    "price_low": "prclq",  # Price Low
 }
+
 REVERSED_FIELD_MAP = {comp: py for py, comp in FIELD_MAP.items()}
 sp500 = sp500.rename(REVERSED_FIELD_MAP)
 
 
 #
 sp500 = (
-    sp500.with_columns(
-        (pl.col("revenue") - pl.col("cost_of_goods")).alias("gross_profit"),
-        (pl.col("operating_net_cash_flow") - pl.col("capital_expenditure")).alias(
-            "free_cash_flow"
-        ),
-        pl.col("datadate").str.strptime(pl.Date, "%Y-%m-%d").dt.year().alias("year"),
-        pl.col("datadate")
-        .str.strptime(pl.Date, "%Y-%m-%d")
-        .dt.quarter()
-        .alias("quarter"),
+    sp500.drop_nulls(
+        subset=[
+            "price_close",
+            "price_high",
+            "price_low",
+            "total_assets",
+            "total_liabilities",
+        ]
     )
-    .drop_nulls(subset=["total_assets", "total_liabilities"])
     .with_columns(
-        (pl.col("total_assets") - pl.col("total_liabilities")).alias(
-            "shareholders_equity"
-        ),
+        [
+            (pl.col("revenue") - pl.col("cost_of_goods")).alias("gross_profit"),
+            (pl.col("operating_net_cash_flow") - pl.col("capital_expenditure")).alias(
+                "free_cash_flow"
+            ),
+            ((pl.col("price_close") + pl.col("price_low")) / 2).alias("price_average"),
+            (pl.col("total_assets") - pl.col("total_liabilities")).alias(
+                "shareholders_equity"
+            ),
+        ]
+    )
+    .with_columns(
+        [
+            (pl.col("price_average") * pl.col("outstanding_shares") * 1_000_000).alias(
+                "market_capital"
+            ),
+        ]
     )
 )
-
 output_path = (
     DATA_TEMP / "sp500_fundamental_quarterly_quantitative_metrics.parquet.gzip"
 )
