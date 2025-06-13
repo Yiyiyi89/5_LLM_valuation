@@ -955,9 +955,22 @@ def generate_buffett_output(ticker: str, analysis_data: dict) -> WarrenBuffettSi
         ]
     )
 
-    prompt = template.invoke(
-        {"analysis_data": json.dumps(analysis_data, indent=2), "ticker": ticker}
+    # prompt = template.invoke(
+    #     {"analysis_data": json.dumps(analysis_data, indent=2), "ticker": ticker}
+    # )
+    prompt_value = template.format_prompt(
+        ticker=ticker, analysis_data=json.dumps(analysis_data, indent=2)
     )
+    messages = prompt_value.to_messages()
+    prompt = []
+    for m in messages:
+        role = m.type  # this will be "system", "human", or "ai"
+        if role == "human":
+            role = "user"
+        elif role == "ai":
+            role = "assistant"
+
+        prompt.append({"role": role, "content": m.content})
 
     # Default fallback signal in case parsing fails
     def create_default_warren_buffett_signal():
