@@ -47,16 +47,20 @@ def get_financial_metrics(
         limit (int): Number of periods to return
 
     Returns:
-        list[FinancialMetrics]: List of financial metrics for each period
+        list[FinancialMetrics]: List of financial metrics for each period, with most recent quarter first.
+        metrics[0] contains the most recent quarter's metrics,
+        metrics[1] contains the previous quarter's metrics, and so on.
     """
-    # Filter data for the specific ticker, year and quarter
+    # Get all quarters up to the specified year and quarter
     company_data = (
         sp500_data.filter(
             (pl.col("ticker") == ticker)
-            & (pl.col("year") == year)
-            & (pl.col("quarter") == quarter)
+            & (
+                (pl.col("year") < year)
+                | ((pl.col("year") == year) & (pl.col("quarter") <= quarter))
+            )
         )
-        .sort("datadate", descending=True)
+        .sort("datadate", descending=True)  # Sort by date in descending order
         .head(limit)
     )
 
@@ -142,19 +146,22 @@ def search_line_items(
         limit (int): Number of periods to return
 
     Returns:
-        list[FinancialLineItem]: List of financial line items for each period
+        list[FinancialLineItem]: List of financial line items for each period, with most recent quarter first.
+        items[0] contains the most recent quarter's line items,
+        items[1] contains the previous quarter's line items, and so on.
     """
-    # Filter data for the specific ticker, year and quarter
+    # Get all quarters for the ticker, sorted by date
     company_data = (
         sp500_data.filter(
             (pl.col("ticker") == ticker)
-            & (pl.col("year") == year)
-            & (pl.col("quarter") == quarter)
+            & (
+                (pl.col("year") < year)
+                | ((pl.col("year") == year) & (pl.col("quarter") <= quarter))
+            )
         )
-        .sort("datadate", descending=True)
+        .sort("datadate", descending=True)  # Sort by date in descending order
         .head(limit)
     )
-
     if company_data.is_empty():
         return []
 

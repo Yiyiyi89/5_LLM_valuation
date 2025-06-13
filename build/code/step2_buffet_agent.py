@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 import json
 from typing_extensions import Literal
 import polars as pl
@@ -23,8 +23,33 @@ sp500_data = pl.read_parquet(
 
 class WarrenBuffettSignal(BaseModel):
     signal: Literal["bullish", "bearish", "neutral"]
-    confidence: float
+    confidence: float = Field(ge=0, le=1)
     reasoning: str
+
+
+metrics = get_financial_metrics("AAPL", 2022, 4, period="ttm", limit=10)
+roe_history = [m.return_on_equity for m in metrics]
+financial_line_items = search_line_items(
+    "AAPL",
+    [
+        "capital_expenditure",
+        "depreciation_and_amortization",
+        "net_income",
+        "outstanding_shares",
+        "total_assets",
+        "total_liabilities",
+        "shareholders_equity",
+        "dividends_and_other_cash_distributions",
+        "issuance_or_purchase_of_equity_shares",
+        "gross_profit",
+        "revenue",
+        "free_cash_flow",
+    ],
+    2022,
+    4,
+    period="ttm",
+    limit=10,
+)
 
 
 def analyze_stock(ticker: str, year: int, quarter: int) -> dict:
