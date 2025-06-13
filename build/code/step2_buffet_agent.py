@@ -80,6 +80,7 @@ def analyze_stock(ticker: str, year: int, quarter: int) -> dict:
             "dividends_and_other_cash_distributions",
             "issuance_or_purchase_of_equity_shares",
             "gross_profit",
+            "gross_margin",
             "revenue",
             "free_cash_flow",
         ],
@@ -1016,7 +1017,7 @@ def generate_buffett_output(ticker: str, analysis_data: dict) -> WarrenBuffettSi
 if __name__ == "__main__":
     ticker = "AAPL"
     year = 2024
-    quarter = 4
+    quarter = 2
 
     print(f"\nAnalyzing {ticker} {year} Q{quarter} using Buffett's principles...")
     print("-" * 50)

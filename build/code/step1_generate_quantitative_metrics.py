@@ -47,10 +47,11 @@ sp500 = (
     .with_columns(
         [
             (pl.col("revenue") - pl.col("cost_of_goods")).alias("gross_profit"),
+            (pl.col("revenue") / pl.col("cost_of_goods")).alias("gross_margin"),
             (pl.col("operating_net_cash_flow") - pl.col("capital_expenditure")).alias(
                 "free_cash_flow"
             ),
-            ((pl.col("price_close") + pl.col("price_low")) / 2).alias("price_average"),
+            ((pl.col("price_close") + pl.col("price_low")) / 2).alias("price"),
             (pl.col("total_assets") - pl.col("total_liabilities")).alias(
                 "shareholders_equity"
             ),
@@ -58,7 +59,7 @@ sp500 = (
     )
     .with_columns(
         [
-            (pl.col("price_average") * pl.col("outstanding_shares") * 1_000_000).alias(
+            (pl.col("price") * pl.col("outstanding_shares") * 1_000_000).alias(
                 "market_capital"
             ),
         ]
