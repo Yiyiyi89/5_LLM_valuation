@@ -59,9 +59,7 @@ sp500 = (
     )
     .with_columns(
         [
-            (pl.col("price") * pl.col("outstanding_shares") * 1_000_000).alias(
-                "market_capital"
-            ),
+            (pl.col("price") * pl.col("outstanding_shares")).alias("market_capital"),
         ]
     )
 )
@@ -72,3 +70,18 @@ sp500.write_parquet(
     output_path,
     compression="gzip",
 )
+
+# check the AAPL market capital
+# the unit of outstanding shares is 1m
+# sp500_aa = sp500.filter(pl.col("ticker") == "AAPL")[
+#     [
+#         "market_capital",
+#         "price",
+#         "outstanding_shares",
+#         "year",
+#         "quarter",
+#         "ticker",
+#     ]
+# ]
+
+# sp500_aa.write_csv("sp500_aa.csv")
