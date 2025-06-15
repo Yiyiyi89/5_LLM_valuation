@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.35,
+  "reasoning": "First and foremost, META operates in the technology sector, which is generally outside my circle of competence. While I do own Apple, it's because I view it as a consumer products company with a strong ecosystem, not a tech company. META, on the other hand, is deeply entrenched in the digital advertising and social media space, which involves rapid technological changes and regulatory challenges that I typically avoid.\n\nLooking at the competitive moat, META does have strong operating margins, suggesting some pricing power. However, the inconsistent ROE and earnings growth raise concerns about the durability of its competitive advantage. A strong moat should reflect consistent performance, much like Coca-Cola's brand strength or GEICO's cost advantages.\n\nManagement's recent stock issuance could lead to dilution, which is not a shareholder-friendly move. I prefer managers who think like owners and allocate capital wisely, as seen with the leadership at Berkshire Hathaway or See's Candies.\n\nFinancially, META's weak ROE and high debt-to-equity ratio are red flags. I prefer companies with strong balance sheets and consistent earnings, akin to the financial fortresses of Bank of America or BNSF.\n\nValuation-wise, the intrinsic value analysis suggests a significant margin of safety is lacking, with a negative margin of safety of nearly 100%. This indicates the stock is overvalued relative to its intrinsic worth, which is a deal-breaker for me.\n\nIn terms of long-term prospects, the inconsistency in earnings growth and the potential for regulatory hurdles in the tech space make me cautious. I prefer businesses with predictable and stable long-term growth, like the railways or consumer staples.\n\nOverall, META doesn't align with my investment criteria. It's outside my circle of competence, lacks a consistent moat, and is overvalued. I'd rather stick to businesses I understand deeply and that offer a clear margin of safety.",
+  "detailed_analysis": {
+    "ticker": "META",
+    "score": 6,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 9.5%; High debt to equity ratio of 0.6; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.09535097156124452,
+        "debt_to_equity": 0.5584365066340888,
+        "operating_margin": 0.9175638719850205,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.061183738416898066,
+        "asset_turnover": 0.15829849302673862
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 134.6% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 2,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Strong and stable operating margins (avg: 89.1%) indicate pricing power moat; High performance stability (82.5%) suggests strong competitive moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 2,
+      "details": "Good book value per share growth pattern"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Recent common stock issuance (potential dilution); No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": 6884.397124132747,
+      "raw_intrinsic_value": 8099.290734273821,
+      "owner_earnings": 517.7994015478398,
+      "assumptions": {
+        "stage1_growth": 0.05515251145713628,
+        "stage2_growth": 0.02757625572856814,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.05515251145713628
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (5.5%, 5y), Stage 2 (2.8%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $2,289",
+        "Stage 2 PV: $1,722",
+        "Terminal PV: $4,088",
+        "Total IV: $8,099",
+        "Conservative IV (15% haircut): $6,884",
+        "Owner earnings: $518",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 1281043.58,
+    "margin_of_safety": -0.9946259461960437
+  }
+}

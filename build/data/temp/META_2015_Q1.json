@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.35,
+  "reasoning": "First and foremost, META operates in the technology sector, which is generally outside my circle of competence. While I have made an exception for Apple due to its consumer ecosystem, META's business model, heavily reliant on digital advertising and social media, is not something I fully understand or feel comfortable with.\n\nLooking at the competitive moat, the data suggests strong operating margins, which could indicate some pricing power. However, the inconsistent ROE and lack of detailed pricing power analysis raise concerns about the durability of this moat.\n\nManagement quality is difficult to assess from the data provided. There is no significant new stock issuance, which is a positive sign, but the lack of dividends suggests that capital allocation might not align with shareholder interests.\n\nFinancially, the company shows weak ROE and inconsistent earnings growth, which are red flags for me. While the book value per share growth is consistent, the overall financial health appears mixed.\n\nValuation is another concern. The intrinsic value analysis suggests a significant margin of safety deficit, indicating that the stock is overvalued relative to its intrinsic value.\n\nIn terms of long-term prospects, the inconsistent earnings growth and reliance on a rapidly changing industry are concerning. I prefer businesses with stable, predictable earnings and long-term durability.\n\nCompared to opportunities in my portfolio, such as Coca-Cola or Apple, META lacks the simplicity, predictability, and strong consumer brand that I favor. Therefore, I would not consider this a suitable investment.",
+  "detailed_analysis": {
+    "ticker": "META",
+    "score": 10,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 4,
+      "details": "Weak ROE of 1.4%; Conservative debt levels; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.013652969254153222,
+        "debt_to_equity": 0.12015679581877817,
+        "operating_margin": 0.9443974033305109,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.012188444783012354,
+        "asset_turnover": 0.08434308567619682
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 700.0% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 2,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Strong and stable operating margins (avg: 91.4%) indicate pricing power moat; High performance stability (77.4%) suggests strong competitive moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 4,
+      "details": "Consistent book value per share growth (Buffett's favorite metric); Good book value CAGR: 11.7%"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": 4067.233880189519,
+      "raw_intrinsic_value": 4784.981035517081,
+      "owner_earnings": 512.0,
+      "assumptions": {
+        "stage1_growth": -0.034999999999999996,
+        "stage2_growth": -0.017499999999999998,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": -0.034999999999999996
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (-3.5%, 5y), Stage 2 (-1.7%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $1,758",
+        "Stage 2 PV: $960",
+        "Terminal PV: $2,067",
+        "Total IV: $4,785",
+        "Conservative IV (15% haircut): $4,067",
+        "Owner earnings: $512",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 218397.99500000002,
+    "margin_of_safety": -0.9813769632812357
+  }
+}

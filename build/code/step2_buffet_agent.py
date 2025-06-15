@@ -14,6 +14,10 @@ from utils import (
     get_market_cap,
     call_llm,
 )
+import os
+import time
+from pathlib import Path
+from httpx import HTTPStatusError
 
 # Load the data once at module level
 sp500_data = pl.read_parquet(
@@ -1015,97 +1019,96 @@ def generate_buffett_output(ticker: str, analysis_data: dict) -> WarrenBuffettSi
 
 # Test the complete analysis pipeline for AAPL 2024 Q4
 if __name__ == "__main__":
-    ticker = "AAPL"
-    year = 2024
-    quarter = 2
+    # run a sample on meta 7 from 2000-2024
+    ticker_list = ["META", "AAPL", "MSFT", "GOOG", "AMZN", "TSLA", "NVDA", "NFLX"]
+    year_list = list(range(2000, 2025))
+    quarter_list = [1, 2, 3, 4]
 
-    print(f"\nAnalyzing {ticker} {year} Q{quarter} using Buffett's principles...")
-    print("-" * 50)
+    # create temp data folder if it doesn't exist
+    if not os.path.exists("temp_data"):
+        os.makedirs("temp_data")
 
-    # Get the complete analysis
-    analysis_result = analyze_stock(ticker, year, quarter)
+    # List to store all results
+    all_results = []
 
-    # Create a comprehensive output dictionary
-    output_dict = {
-        "ticker": ticker,
-        "year": year,
-        "quarter": quarter,
-        "investment_signal": {
-            "signal": analysis_result["signal"],
-            "confidence": analysis_result["confidence"],
-            "reasoning": analysis_result["reasoning"],
-        },
-        "detailed_analysis": {
-            "fundamental_analysis": analysis_result["detailed_analysis"][
-                "fundamental_analysis"
-            ],
-            "consistency_analysis": analysis_result["detailed_analysis"][
-                "consistency_analysis"
-            ],
-            "moat_analysis": analysis_result["detailed_analysis"]["moat_analysis"],
-            "pricing_power_analysis": analysis_result["detailed_analysis"][
-                "pricing_power_analysis"
-            ],
-            "book_value_analysis": analysis_result["detailed_analysis"][
-                "book_value_analysis"
-            ],
-            "management_analysis": analysis_result["detailed_analysis"][
-                "management_analysis"
-            ],
-            "intrinsic_value_analysis": analysis_result["detailed_analysis"][
-                "intrinsic_value_analysis"
-            ],
-        },
-        "valuation_metrics": {
-            "market_cap": analysis_result["detailed_analysis"]["market_cap"],
-            "margin_of_safety": analysis_result["detailed_analysis"][
-                "margin_of_safety"
-            ],
-            "total_score": analysis_result["detailed_analysis"]["score"],
-            "max_possible_score": analysis_result["detailed_analysis"]["max_score"],
-        },
-    }
+    for ticker in ticker_list:
+        for year in year_list:
+            for quarter in quarter_list:
+                try:
+                    print(
+                        f"\nAnalyzing {ticker} {year} Q{quarter} using Buffett's principles..."
+                    )
+                    print("-" * 50)
+                    if os.path.exists(f"{DATA_TEMP}/{ticker}_{year}_Q{quarter}.json"):
+                        print(
+                            f"Skipping {ticker} {year} Q{quarter} because it already exists"
+                        )
+                        continue
+                    # Get the complete analysis
+                    analysis_result = analyze_stock(ticker, year, quarter)
+                    # save to temp data folder
+                    with open(f"{DATA_TEMP}/{ticker}_{year}_Q{quarter}.json", "w") as f:
+                        json.dump(analysis_result, f, indent=2)
 
-    # Print the results in a structured format
-    print("\nInvestment Signal:")
-    print(f"Signal: {output_dict['investment_signal']['signal']}")
-    print(f"Confidence: {output_dict['investment_signal']['confidence']:.1%}")
-    print(f"\nReasoning:\n{output_dict['investment_signal']['reasoning']}")
+                    # Add to results list with metadata
+                    result_dict = {
+                        "ticker": ticker,
+                        "year": year,
+                        "quarter": quarter,
+                        "signal": analysis_result["signal"],
+                        "confidence": analysis_result["confidence"],
+                        "reasoning": analysis_result["reasoning"],
+                        "market_cap": analysis_result["detailed_analysis"][
+                            "market_cap"
+                        ],
+                        "margin_of_safety": analysis_result["detailed_analysis"][
+                            "margin_of_safety"
+                        ],
+                        "total_score": analysis_result["detailed_analysis"]["score"],
+                        "max_score": analysis_result["detailed_analysis"]["max_score"],
+                    }
+                    all_results.append(result_dict)
 
-    print("\nDetailed Analysis:")
+                    # Add delay between requests to avoid rate limiting
+                    time.sleep(3)
+
+                except Exception as e:
+                    error_msg = str(e).lower()
+                    if "429" in error_msg:
+                        # Check if it's hourly or minute limit
+                        if "hour" in error_msg or "hourly" in error_msg:
+                            wait_time = 3600  # 1 hour
+                            print(
+                                f"Hourly rate limit hit, waiting {wait_time} seconds..."
+                            )
+                        elif "minute" in error_msg or "minutely" in error_msg:
+                            wait_time = 60  # 1 minute
+                            print(
+                                f"Minute rate limit hit, waiting {wait_time} seconds..."
+                            )
+                        else:
+                            wait_time = 60  # default to 1 minute
+                            print(
+                                f"Rate limit hit (unknown type), waiting {wait_time} seconds..."
+                            )
+
+                        time.sleep(wait_time)
+                        continue
+                    else:
+                        print(f"Error analyzing {ticker} {year} Q{quarter}: {str(e)}")
+                        continue
+
+    # Create DataFrame from all results
+    import pandas as pd
+
+    df = pd.DataFrame(all_results)
+
+    # Save DataFrame to CSV
+    df.to_csv(f"{DATA_TEMP}/buffett_analysis_results.csv", index=False)
     print(
-        f"Fundamental Analysis: {output_dict['detailed_analysis']['fundamental_analysis']['details']}"
+        f"\nAnalysis complete. Results saved to {DATA_TEMP}/buffett_analysis_results.csv"
     )
+    print(f"Total analyses completed: {len(df)}")
     print(
-        f"Consistency Analysis: {output_dict['detailed_analysis']['consistency_analysis']['details']}"
+        f"Failed analyses: {len(ticker_list) * len(year_list) * len(quarter_list) - len(df)}"
     )
-    print(
-        f"Moat Analysis: {output_dict['detailed_analysis']['moat_analysis']['details']}"
-    )
-    print(
-        f"Pricing Power Analysis: {output_dict['detailed_analysis']['pricing_power_analysis']['details']}"
-    )
-    print(
-        f"Book Value Analysis: {output_dict['detailed_analysis']['book_value_analysis']['details']}"
-    )
-    print(
-        f"Management Analysis: {output_dict['detailed_analysis']['management_analysis']['details']}"
-    )
-
-    print("\nValuation Metrics:")
-    if output_dict["valuation_metrics"]["market_cap"]:
-        print(f"Market Cap: ${output_dict['valuation_metrics']['market_cap']:,.0f}")
-    if output_dict["valuation_metrics"]["margin_of_safety"]:
-        print(
-            f"Margin of Safety: {output_dict['valuation_metrics']['margin_of_safety']:.1%}"
-        )
-    print(
-        f"Total Score: {output_dict['valuation_metrics']['total_score']}/{output_dict['valuation_metrics']['max_possible_score']}"
-    )
-
-    # Save the complete output dictionary to a JSON file
-    import json
-
-    with open(f"analysis_{ticker}_{year}_Q{quarter}.json", "w") as f:
-        json.dump(output_dict, f, indent=2)
-    print(f"\nComplete analysis saved to analysis_{ticker}_{year}_Q{quarter}.json")

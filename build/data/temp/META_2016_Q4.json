@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.35,
+  "reasoning": "First and foremost, META operates in the technology sector, which is generally outside my circle of competence. While I have made an exception for Apple due to its consumer ecosystem, META's business model, heavily reliant on digital advertising and social media, is not something I fully understand or feel comfortable with.\n\nLooking at the competitive moat, META does have strong operating margins, suggesting some pricing power. However, the inconsistent ROE and earnings growth raise concerns about the durability of its competitive advantage. A strong moat is crucial for long-term success, and the data here is mixed.\n\nManagement quality is hard to assess from the data provided. While there is no significant stock issuance, the lack of dividends and minimal information on capital allocation decisions make it difficult to gauge their effectiveness.\n\nFinancially, META shows conservative debt levels, which is a positive. However, the weak ROE and inconsistent earnings growth are red flags. Consistency in earnings is a hallmark of a financially strong company, and META seems to lack this.\n\nIn terms of valuation, the intrinsic value analysis suggests that META is significantly overvalued with a negative margin of safety. Paying more than what a business is worth is a recipe for poor returns.\n\nLong-term prospects are uncertain given the rapid changes in technology and digital advertising landscapes. This adds another layer of risk that I typically avoid.\n\nCompared to opportunities in my portfolio, such as Coca-Cola or Apple, META does not offer the same level of understanding, consistency, or valuation comfort. Therefore, I would pass on this investment opportunity.",
+  "detailed_analysis": {
+    "ticker": "META",
+    "score": 10,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 4,
+      "details": "Weak ROE of 6.0%; Conservative debt levels; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.060276379362773254,
+        "debt_to_equity": 0.0974254147379802,
+        "operating_margin": 0.9507322056987172,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.054925262850017705,
+        "asset_turnover": 0.13560443958682902
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 342.7% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 2,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Strong and stable operating margins (avg: 94.4%) indicate pricing power moat; High performance stability (78.0%) suggests strong competitive moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 4,
+      "details": "Consistent book value per share growth (Buffett's favorite metric); Good book value CAGR: 10.8%"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": 11646.274009892732,
+      "raw_intrinsic_value": 13701.49883516792,
+      "owner_earnings": 760.3287002850097,
+      "assumptions": {
+        "stage1_growth": 0.08,
+        "stage2_growth": 0.04,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.105
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (8.0%, 5y), Stage 2 (4.0%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $3,599",
+        "Stage 2 PV: $2,940",
+        "Terminal PV: $7,162",
+        "Total IV: $13,701",
+        "Conservative IV (15% haircut): $11,646",
+        "Owner earnings: $760",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 330560.661,
+    "margin_of_safety": -0.9647681185817428
+  }
+}

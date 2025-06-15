@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.35,
+  "reasoning": "First and foremost, META falls outside my circle of competence. Technology companies, especially those involved in social media and digital advertising, are complex and subject to rapid change, which I generally avoid. While META has shown strong operating margins, indicating some pricing power, the inconsistent earnings growth and weak return on equity are concerning. Management's recent stock issuance suggests potential dilution, and the lack of dividends indicates a different capital allocation strategy than I typically prefer. Financially, while the company has conservative debt levels, the inconsistency in earnings growth and the weak ROE are red flags. The intrinsic value analysis shows a significant margin of safety deficit, which means the stock is currently overvalued relative to its intrinsic value. Long-term, the rapid technological changes and regulatory risks in this industry add uncertainty. Compared to the stable, understandable businesses in my portfolio like Coca-Cola or Apple, META doesn't offer the same level of predictability or competitive moat. Therefore, my signal is bearish with a low confidence level, as this opportunity doesn't align with my investment principles.",
+  "detailed_analysis": {
+    "ticker": "META",
+    "score": 8,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 4,
+      "details": "Weak ROE of 8.6%; Conservative debt levels; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.08589399284269886,
+        "debt_to_equity": 0.46870116035033776,
+        "operating_margin": 0.9061220311220312,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.058482961109808114,
+        "asset_turnover": 0.1697026555129909
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 80.4% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 2,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Strong and stable operating margins (avg: 88.6%) indicate pricing power moat; High performance stability (83.4%) suggests strong competitive moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 2,
+      "details": "Good book value per share growth pattern"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Recent common stock issuance (potential dilution); No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": 72220.86924031684,
+      "raw_intrinsic_value": 84965.72851801981,
+      "owner_earnings": 4714.950000000001,
+      "assumptions": {
+        "stage1_growth": 0.08,
+        "stage2_growth": 0.04,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.10265553244425538
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (8.0%, 5y), Stage 2 (4.0%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $22,320",
+        "Stage 2 PV: $18,234",
+        "Terminal PV: $44,412",
+        "Total IV: $84,966",
+        "Conservative IV (15% haircut): $72,221",
+        "Owner earnings: $4,715",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 1163558.8800000001,
+    "margin_of_safety": -0.9379310574808928
+  }
+}

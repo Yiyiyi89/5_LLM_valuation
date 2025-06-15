@@ -1,0 +1,44 @@
+{
+  "signal": "bearish",
+  "confidence": 0.3,
+  "reasoning": "First and foremost, META, which is primarily known for its social media platforms like Facebook, falls outside my circle of competence. The technology and social media industry is complex and rapidly changing, which makes it difficult for me to predict its long-term prospects with confidence. As I've often said, 'Risk comes from not knowing what you're doing,' and in this case, I don't have the necessary understanding to make an informed investment decision.\n\nRegarding the competitive moat, while META has a large user base and network effects, the data provided does not offer sufficient information to assess its durability. The lack of comprehensive moat analysis is a concern, as I prefer businesses with clear and sustainable competitive advantages.\n\nManagement quality is another critical factor, and the data lacks sufficient information to evaluate the competence and capital allocation skills of META's leadership. Without this insight, it's challenging to determine if management acts in shareholders' best interests.\n\nFinancial health and consistency are also unclear due to insufficient historical data. I prefer companies with strong balance sheets and consistent earnings, and the absence of this information makes it difficult to assess META's financial strength.\n\nValuation is a key component of my investment strategy, and the lack of intrinsic value analysis and margin of safety data means I cannot determine if META is trading at an attractive price relative to its worth.\n\nIn terms of long-term prospects, the rapid pace of change in the technology sector poses a significant risk. I prefer businesses with stable and predictable futures, and META's industry does not offer that certainty.\n\nOverall, given the lack of data and my limited understanding of the industry, I would rate this opportunity as bearish with a low confidence level of 30%. There are more straightforward and understandable opportunities within my portfolio, such as consumer staples and insurance, which offer more predictable and stable returns.",
+  "detailed_analysis": {
+    "ticker": "META",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

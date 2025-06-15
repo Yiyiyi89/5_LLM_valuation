@@ -1,0 +1,44 @@
+{
+  "signal": "bearish",
+  "confidence": 0.3,
+  "reasoning": "First and foremost, META, which is primarily known for its social media platforms like Facebook, falls outside my circle of competence. The technology and social media industry is complex and rapidly changing, which makes it difficult for me to predict its long-term prospects with confidence. As I've often said, 'Risk comes from not knowing what you're doing,' and in this case, I don't have the necessary understanding to make an informed investment decision.\n\nRegarding the competitive moat, while META does have a strong user base and network effects, the data provided is insufficient to assess its durability. The lack of comprehensive moat analysis makes it challenging to determine if META can maintain its competitive advantage over the long term.\n\nManagement quality is another critical factor, and the data here is lacking. Without insights into how management allocates capital and their track record of acting in shareholders' interests, it's difficult to form a positive opinion.\n\nFinancial health and consistency are crucial, yet the analysis indicates insufficient historical data. This lack of information on earnings consistency and balance sheet strength is a red flag.\n\nValuation is another area where we have insufficient data. Without a clear understanding of intrinsic value and margin of safety, it's impossible to determine if META is trading at an attractive price.\n\nIn terms of long-term prospects, the rapid changes in technology and potential regulatory challenges add layers of uncertainty. Compared to the stable, predictable businesses I prefer, such as Coca-Cola or GEICO, META presents too many unknowns.\n\nOverall, given the lack of data and the complexity of the industry, my confidence in this investment is low. As I've often said, 'I'd rather own a wonderful business at a fair price than a fair business at a wonderful price.' In this case, META doesn't meet my criteria for a wonderful business within my circle of competence.",
+  "detailed_analysis": {
+    "ticker": "META",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

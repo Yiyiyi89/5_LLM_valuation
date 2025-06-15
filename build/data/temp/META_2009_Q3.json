@@ -1,0 +1,44 @@
+{
+  "signal": "bearish",
+  "confidence": 0.3,
+  "reasoning": "First and foremost, META, which is Facebook's parent company, falls outside my circle of competence. The technology and social media industry is complex and rapidly changing, which makes it difficult for me to predict its long-term prospects with confidence. I prefer businesses that are more straightforward and have stood the test of time, like Coca-Cola or See's Candies.\n\nRegarding the competitive moat, while META has a strong user base and network effects, the data provided indicates insufficient information to assess its durability. The social media landscape is highly competitive, with new platforms emerging frequently, which could erode META's moat over time.\n\nAs for management, I don't have enough data to evaluate their quality or capital allocation decisions. In my experience, having honest and competent managers who think like owners is crucial, and without this information, it's hard to make a judgment.\n\nFinancial health and consistency are also unclear from the data. I prefer companies with strong balance sheets and consistent earnings, and without this information, I can't assess META's financial fortress.\n\nValuation is another critical factor, and the lack of intrinsic value data makes it impossible to determine if there's a margin of safety. I always say, 'Price is what you pay, value is what you get,' and without knowing the value, I can't assess the price.\n\nIn terms of long-term prospects, the rapid pace of change in technology and social media is a red flag for me. I prefer businesses with stable, predictable futures.\n\nOverall, compared to opportunities in my portfolio, META doesn't meet my criteria for a wonderful business at a fair price. I'd rather stick with what I know and understand well.",
+  "detailed_analysis": {
+    "ticker": "META",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "signal": "bearish",
+  "confidence": 0.3,
+  "reasoning": "First and foremost, META, being a technology company heavily involved in social media and virtual reality, falls outside my circle of competence. I prefer businesses that are simpler to understand, like Coca-Cola or See's Candies, where the business model and industry dynamics are clear and predictable. \n\nRegarding the competitive moat, while META has a strong user base and network effects, the data provided is insufficient to assess its durability. The tech industry is notorious for rapid changes and fierce competition, which can erode moats quickly.\n\nManagement quality is another critical factor, and without sufficient data, it's challenging to evaluate their capital allocation and shareholder alignment. Historically, tech companies often reinvest heavily in growth, which can be risky if not managed prudently.\n\nFinancial health and consistency are paramount, and the lack of historical data makes it difficult to assess META's earnings stability and balance sheet strength. I prefer companies with a track record of consistent earnings and low debt.\n\nValuation is a key component of my investment strategy, and without a clear intrinsic value or margin of safety, it's impossible to determine if META is trading at a reasonable price.\n\nLong-term prospects are uncertain given the rapid technological changes and regulatory scrutiny in the tech sector. I prefer businesses with predictable long-term growth prospects.\n\nIn comparison to opportunities in my portfolio, META lacks the simplicity and predictability I value. Therefore, my confidence in this investment is low, and I would rather focus on businesses within my circle of competence that offer a clearer path to long-term success.",
+  "detailed_analysis": {
+    "ticker": "META",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

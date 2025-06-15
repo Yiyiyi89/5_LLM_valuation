@@ -1,0 +1,44 @@
+{
+  "signal": "bearish",
+  "confidence": 0.3,
+  "reasoning": "First and foremost, META, which is Facebook's parent company, falls outside my circle of competence. The technology and social media industry is complex and rapidly changing, which makes it difficult for me to predict its future with confidence. As I've often said, 'Risk comes from not knowing what you're doing,' and in this case, I don't have the necessary understanding to make an informed investment decision.\n\nRegarding the competitive moat, while META has a strong user base and network effects, the data provided is insufficient to assess its durability. The lack of comprehensive moat analysis makes it challenging to determine if META can maintain its competitive advantage over the long term.\n\nManagement quality is another critical factor, and the data here is lacking. Without insights into how management allocates capital and their track record of acting in shareholders' interests, it's hard to form a positive opinion.\n\nFinancial health and consistency are crucial, and the absence of fundamental and historical data raises red flags. Without this information, I can't assess the company's earnings consistency or balance sheet strength.\n\nValuation is a key component of my investment strategy, and with no intrinsic value or margin of safety data, I can't determine if META is trading at a reasonable price.\n\nLong-term prospects are uncertain due to the rapid changes in technology and regulatory challenges that social media companies face. This adds another layer of risk that I'm not comfortable with.\n\nIn comparison to opportunities in my portfolio, such as Coca-Cola or Apple, which have strong brands, consistent earnings, and clear competitive advantages, META presents too many unknowns and risks. Therefore, my confidence level is low, and I would categorize this opportunity as bearish.",
+  "detailed_analysis": {
+    "ticker": "META",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.25,
+  "reasoning": "First and foremost, META falls outside my circle of competence. The technology sector, particularly social media and digital advertising, is an area I generally avoid due to its rapid pace of change and complexity. While I made an exception for Apple due to its consumer ecosystem, META does not present the same clear, durable competitive advantages.\n\nLooking at the business's competitive moat, the analysis indicates insufficient data for a comprehensive assessment. This lack of clarity on the moat is concerning, as I prefer businesses with strong, identifiable competitive advantages.\n\nRegarding management, the analysis shows no significant new stock issuance and minimal dividends, but there's no detailed insight into their capital allocation strategies. I value management that acts like owners and allocates capital wisely, and without more information, it's hard to assess this aspect.\n\nFinancially, META shows weak return on equity and return on invested capital, which are critical metrics for assessing a company's ability to generate returns. The operating margins are strong, but the overall financial health appears mixed, with a negative intrinsic value and owner earnings.\n\nThe valuation relative to intrinsic value is particularly concerning, with a significant negative margin of safety. This suggests the market price is far above what the business is worth, which is a red flag for any investment.\n\nLong-term prospects are uncertain, especially given the lack of historical data and the rapidly changing digital landscape. This uncertainty, combined with the financial and valuation concerns, makes it difficult to justify an investment.\n\nCompared to opportunities in my portfolio, such as Coca-Cola or Apple, META lacks the clear, enduring qualities I seek in a business. Therefore, my confidence in this investment is low, and I would prefer to pass on this opportunity.",
+  "detailed_analysis": {
+    "ticker": "META",
+    "score": 5,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 4,
+      "details": "Weak ROE of 0.5%; Conservative debt levels; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.005444491705657167,
+        "debt_to_equity": 0.28481497235219055,
+        "operating_margin": 0.8908517350157729,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.004237568694961266,
+        "asset_turnover": 0.1049460372111501
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 1,
+      "details": "Moderate book value per share growth"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": -8772.783721970432,
+      "raw_intrinsic_value": -10320.922025847569,
+      "owner_earnings": -761.75,
+      "assumptions": {
+        "stage1_growth": 0.03,
+        "stage2_growth": 0.015,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.03
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (3.0%, 5y), Stage 2 (1.5%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $-3,140",
+        "Stage 2 PV: $-2,168",
+        "Terminal PV: $-5,013",
+        "Total IV: $-10,321",
+        "Conservative IV (15% haircut): $-8,773",
+        "Owner earnings: $-762",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 53867.764200000005,
+    "margin_of_safety": -1.1628577657204944
+  }
+}

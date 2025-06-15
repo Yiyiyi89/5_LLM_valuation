@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.35,
+  "reasoning": "First and foremost, META operates in the technology sector, which is generally outside my circle of competence. While I have made an exception for Apple due to its consumer ecosystem, META's business model, heavily reliant on digital advertising and social media, is not something I fully understand or feel comfortable with.\n\nLooking at the competitive moat, the data suggests inconsistent ROE and limited pricing power analysis. While strong operating margins indicate some level of moat, the lack of consistent high returns on equity is concerning. A durable competitive advantage is crucial, and I'm not convinced META has one that will last decades.\n\nManagement quality is hard to assess from the data provided, but the lack of significant stock issuance is a positive sign. However, the absence of dividends suggests a reinvestment strategy that may not align with shareholder interests if not executed wisely.\n\nFinancially, META shows conservative debt levels, which is good, but a weak ROE and low return on invested capital are red flags. Consistent earnings growth is a positive, but the overall financial health doesn't scream 'fortress' to me.\n\nValuation is another concern. The intrinsic value analysis shows a negative margin of safety, indicating the stock is overvalued relative to its conservative intrinsic value estimate. Paying more than what a business is worth is a recipe for poor returns.\n\nLong-term prospects are uncertain given the rapid changes in technology and digital advertising landscapes. This adds a layer of risk that I typically avoid.\n\nCompared to opportunities in my portfolio, such as Coca-Cola or Apple, META lacks the simplicity, strong brand, and consumer loyalty that I prefer. Therefore, my signal is bearish with a low confidence level, as this opportunity doesn't align with my investment principles.",
+  "detailed_analysis": {
+    "ticker": "META",
+    "score": 10,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 4,
+      "details": "Weak ROE of 3.8%; Conservative debt levels; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.038358128696899085,
+        "debt_to_equity": 0.1368823564557567,
+        "operating_margin": 0.9136690647482014,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.033739751944502835,
+        "asset_turnover": 0.13149043514820266
+      }
+    },
+    "consistency_analysis": {
+      "score": 3,
+      "details": "Consistent earnings growth over past periods; Total earnings growth of 508.9% over past 8 periods"
+    },
+    "moat_analysis": {
+      "score": 1,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/8 periods >15%; Strong and stable operating margins (avg: 88.8%) indicate pricing power moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 2,
+      "details": "Good book value per share growth pattern"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": 9151.392555091208,
+      "raw_intrinsic_value": 10766.344182460245,
+      "owner_earnings": 597.45,
+      "assumptions": {
+        "stage1_growth": 0.08,
+        "stage2_growth": 0.04,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.105
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (8.0%, 5y), Stage 2 (4.0%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $2,828",
+        "Stage 2 PV: $2,311",
+        "Terminal PV: $5,628",
+        "Total IV: $10,766",
+        "Conservative IV (15% haircut): $9,151",
+        "Owner earnings: $597",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 143699.38,
+    "margin_of_safety": -0.9363157130177513
+  }
+}

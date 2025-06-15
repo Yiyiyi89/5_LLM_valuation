@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.25,
+  "reasoning": "First and foremost, META falls outside my circle of competence. While I understand the consumer-facing aspects of technology, the intricacies of social media platforms and their rapid evolution are not areas where I have deep expertise. This alone makes me cautious.\n\nLooking at the competitive moat, the data suggests some competitive advantage with high operating margins, but inconsistent ROE and earnings growth raise concerns about the durability of this moat. A strong moat is like a castle with a wide moat around it, and here, the moat seems to have some gaps.\n\nManagement quality is another area of concern. The recent common stock issuance could lead to dilution, and the lack of dividends suggests that capital allocation might not be aligned with shareholder interests. I prefer managers who think like owners and return capital to shareholders when appropriate.\n\nFinancially, while the company has conservative debt levels, the weak ROE and inconsistent earnings growth are red flags. Consistency is key, and this business seems to lack it.\n\nValuation is a significant issue here. The intrinsic value analysis shows a negative value, which is quite alarming. Paying a fair price for a wonderful business is crucial, and this doesn't seem to be the case here.\n\nLong-term prospects are uncertain given the rapid changes in technology and social media landscapes. This adds another layer of risk that I'm not comfortable with.\n\nCompared to opportunities in my portfolio, such as Coca-Cola or Apple, which have strong brands, consistent earnings, and clear moats, META doesn't measure up. I'd rather stick to businesses I understand well and that have proven their resilience over decades. In this case, the answer is 'no.'\"",
+  "detailed_analysis": {
+    "ticker": "META",
+    "score": 8,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 4,
+      "details": "Weak ROE of 6.4%; Conservative debt levels; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.06393916009061264,
+        "debt_to_equity": 0.15073062657140723,
+        "operating_margin": 0.9044947912872441,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.05556396832951153,
+        "asset_turnover": 0.1484770475489984
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 124.9% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 1,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Decent operating margins (avg: 93.4%) suggest some competitive advantage; High performance stability (93.0%) suggests strong competitive moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 3,
+      "details": "Consistent book value per share growth (Buffett's favorite metric)"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Recent common stock issuance (potential dilution); No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": -2529.2188106616045,
+      "raw_intrinsic_value": -2975.5515419548287,
+      "owner_earnings": -238.58667030239576,
+      "assumptions": {
+        "stage1_growth": 0.01550463383762679,
+        "stage2_growth": 0.007752316918813395,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.01550463383762679
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (1.6%, 5y), Stage 2 (0.8%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $-945",
+        "Stage 2 PV: $-620",
+        "Terminal PV: $-1,411",
+        "Total IV: $-2,976",
+        "Conservative IV (15% haircut): $-2,529",
+        "Owner earnings: $-239",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 464457.2244,
+    "margin_of_safety": -1.0054455365915105
+  }
+}

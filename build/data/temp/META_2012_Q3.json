@@ -1,0 +1,52 @@
+{
+  "signal": "bearish",
+  "confidence": 0.3,
+  "reasoning": "First and foremost, META falls outside my circle of competence. The technology sector, particularly social media and digital advertising, is not an area I fully understand or feel comfortable investing in. It's like trying to play a game where I don't know the rules. \n\nLooking at the competitive moat, the analysis provides insufficient data, which is concerning. A strong moat is crucial for long-term success, and without clear evidence of one, it's hard to justify an investment. \n\nManagement quality is another critical factor, and while there are no red flags regarding stock issuance or dividends, the lack of detailed information makes it difficult to assess their capital allocation skills. \n\nFinancially, the company shows a weak return on equity and return on invested capital, which are not encouraging signs. While the operating margins are strong, the negative ROE and ROIC suggest underlying issues. \n\nValuation is another area where there's insufficient data, making it impossible to determine if there's a margin of safety. Without knowing the intrinsic value, it's like buying a car without knowing its condition or price. \n\nLong-term prospects are uncertain due to the lack of historical data and the rapidly changing technology landscape. This adds a layer of risk that I'm not comfortable with. \n\nCompared to opportunities in my portfolio, such as Coca-Cola or Apple, which have clear moats, strong management, and consistent financial performance, META does not measure up. \n\nIn conclusion, given the lack of understanding, insufficient data, and financial concerns, I would steer clear of this investment. As I often say, 'Risk comes from not knowing what you're doing,' and in this case, the risk is too high.",
+  "detailed_analysis": {
+    "ticker": "META",
+    "score": 4,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 4,
+      "details": "Weak ROE of -0.4%; Conservative debt levels; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": -0.004162551149992945,
+        "debt_to_equity": 0.1315083956540144,
+        "operating_margin": 0.8835182250396196,
+        "current_ratio": null,
+        "return_on_invested_capital": -0.003678762938022197,
+        "asset_turnover": 0.07868811572515276
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": 42464.43,
+    "margin_of_safety": null
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.25,
+  "reasoning": "First and foremost, META operates in the technology sector, which is generally outside my circle of competence. While I have made an exception for Apple due to its consumer ecosystem, META's business model, heavily reliant on digital advertising and social media, is not something I fully understand or feel comfortable with.\n\nLooking at the competitive moat, the data suggests inconsistent ROE and limited pricing power analysis. While strong operating margins indicate some level of moat, the inconsistency in ROE is concerning. A durable competitive advantage is crucial, and I don't see a clear one here.\n\nManagement quality is hard to assess from the data provided, but the lack of significant new stock issuance is a positive sign. However, the absence of dividends suggests that capital allocation might not be aligned with shareholder returns.\n\nFinancially, the company shows weak ROE and a negative intrinsic value, which is a red flag. The intrinsic value analysis suggests a significant overvaluation, with a negative margin of safety. This is a critical concern, as I always emphasize paying less than what a business is worth.\n\nLong-term prospects are uncertain, especially given the rapid changes in technology and digital advertising landscapes. This adds to the risk, as I prefer businesses with predictable futures.\n\nCompared to opportunities in my portfolio, such as Coca-Cola or Apple, META lacks the strong brand, consumer loyalty, and pricing power that I value. Given these factors, I would rate this opportunity as bearish with a low confidence level of 25%. It's better to stick with what I know and understand well.",
+  "detailed_analysis": {
+    "ticker": "META",
+    "score": 10,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 4,
+      "details": "Weak ROE of 3.8%; Conservative debt levels; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.03795084282889161,
+        "debt_to_equity": 0.13890196817026085,
+        "operating_margin": 0.9122697471120824,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.033322308582768315,
+        "asset_turnover": 0.13242103522407805
+      }
+    },
+    "consistency_analysis": {
+      "score": 3,
+      "details": "Consistent earnings growth over past periods; Total earnings growth of 613.4% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 1,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Strong and stable operating margins (avg: 89.4%) indicate pricing power moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 2,
+      "details": "Good book value per share growth pattern"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": -335.4514971236024,
+      "raw_intrinsic_value": -394.64882014541456,
+      "owner_earnings": -21.899999999999864,
+      "assumptions": {
+        "stage1_growth": 0.08,
+        "stage2_growth": 0.04,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.105
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (8.0%, 5y), Stage 2 (4.0%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $-104",
+        "Stage 2 PV: $-85",
+        "Terminal PV: $-206",
+        "Total IV: $-395",
+        "Conservative IV (15% haircut): $-335",
+        "Owner earnings: $-22",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 184190.0,
+    "margin_of_safety": -1.0018212253494956
+  }
+}
