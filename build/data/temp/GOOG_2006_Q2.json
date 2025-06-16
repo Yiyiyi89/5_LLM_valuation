@@ -1,0 +1,44 @@
+{
+  "signal": "neutral",
+  "confidence": 0.3,
+  "reasoning": "1. Circle of Competence: Google operates a complex technology platform and ad network I don\u2019t fully understand beyond my Apple exception. I stick to businesses I can explain on a napkin. 2. Moat: The network effect and search dominance hint at a durable moat, but with zero data here I can\u2019t confirm pricing power or stickiness. 3. Management: I respect Alphabet\u2019s leadership and their capital allocation, but the provided analysis offers no insight into their long-term capital return plans or honesty. 4. Financial Health: Historically Alphabet has generated robust cash flow and little debt, yet we have no balance-sheet or earnings details to confirm here. 5. Valuation: With no intrinsic value estimate or margin of safety, I can\u2019t determine if today\u2019s price is generous or greedy. 6. Long-Term Prospects: The business could prosper for decades, but shifting regulations and AI competition introduce risks I can\u2019t quantify from this blank canvas. 7. Relative to My Portfolio: I\u2019d rather deploy capital into Coca-Cola\u2019s global brand, Bank of America\u2019s lending moat, or my own insurance float at GEICO, where I understand every dollar of risk. In short, I\u2019ll pass until I see comprehensive fundamentals and a clear margin of safety.",
+  "detailed_analysis": {
+    "ticker": "GOOG",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

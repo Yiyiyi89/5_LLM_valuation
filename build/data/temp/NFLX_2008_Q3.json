@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 1.0,
+  "reasoning": "I\u2019d pass on Netflix. First off, it isn\u2019t in my circle of competence\u2014streaming media feels more like high-tech gambling than the simple, predictable consumer businesses I understand. On durability, Netflix shows only a modest moat: operating margins are strong at 38%, but inconsistent ROE (just 6.3%) and churn in earnings growth suggest competitors can bite into its lead. Management has been aggressive with debt and dilution\u2014issuing stock and carrying a debt-to-equity near 0.8 without paying dividends\u2014which tells me capital allocation isn\u2019t quite conservative. The balance sheet is stretched, owner earnings are negative, and earnings consistency is weak (0/10 periods ROE over 15%, earnings growth choppy). Valuation is absurd: our three-stage DCF spits out a negative intrinsic value (about \u2013$24 per share conservatively), so the market is pricing in perfection, not reality. In contrast, I\u2019d rather own durable brands like Coca-Cola or Apple (where there\u2019s a real moat and fortress balance sheet) at fair valuations. Netflix has uncertain long-term economics, heavy content costs, and fierce competition. No margin of safety here\u2014I\u2019ll say no.",
+  "detailed_analysis": {
+    "ticker": "NFLX",
+    "score": 5,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 6.3%; High debt to equity ratio of 0.8; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.06271222443532522,
+        "debt_to_equity": 0.7947653101747667,
+        "operating_margin": 0.3793207560190816,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.03494174089492434,
+        "asset_turnover": 0.5965173182115235
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 19.6% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 1,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Decent operating margins (avg: 41.5%) suggest some competitive advantage; High performance stability (73.8%) suggests strong competitive moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 2,
+      "details": "Good book value per share growth pattern"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Recent common stock issuance (potential dilution); No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": -23.667298252821308,
+      "raw_intrinsic_value": -27.843880297436833,
+      "owner_earnings": -1.8571500000000007,
+      "assumptions": {
+        "stage1_growth": 0.047727505335600995,
+        "stage2_growth": 0.023863752667800497,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.047727505335600995
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (4.8%, 5y), Stage 2 (2.4%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $-8",
+        "Stage 2 PV: $-6",
+        "Terminal PV: $-14",
+        "Total IV: $-28",
+        "Conservative IV (15% haircut): $-24",
+        "Owner earnings: $-2",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 1692.9011999999998,
+    "margin_of_safety": -1.0139803186699976
+  }
+}

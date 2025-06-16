@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.9,
+  "reasoning": "1. Circle of Competence: Amazon sits at the intersection of complex technology, logistics algorithms and cloud computing\u2014far outside my circle of competence. I understand simple consumer franchises and straightforward utilities, but I don\u2019t claim to grasp every twist of AWS pricing algorithms or last-mile drone delivery economics.\n\n2. Competitive Moat: While Amazon boasts strong brand recognition and scale economies in e-commerce and cloud, the provided metrics show inconsistent return on equity (only 1.03% ROE) and only brief stretches of double-digit profitability. A true moat produces reliable, high returns on capital year after year\u2014Amazon\u2019s results are too uneven for my taste.\n\n3. Management & Capital Allocation: Jeff Bezos and Andy Jassy have built an impressive empire, but their preference for reinvestment over dividend distributions means owner earnings are negative\u2014$-2.3 billion in the latest analysis. I admire entrepreneurial spirit, but I need managers who think like owners and deliver free cash for shareholders.\n\n4. Financial Health & Consistency: Amazon\u2019s debt-to-equity of 3.7 is high for a retail operation, and owner earnings are negative. Inconsistent profitability\u2014zero or modest ROE in most periods\u2014raises a red flag. My best businesses post steady, growing returns on capital without deep leverage.\n\n5. Valuation vs. Intrinsic Value: The three-stage DCF spits out a negative intrinsic value, reflecting negative owner earnings and heavy capital requirements. No margin of safety exists\u2014in fact, margin_of_safety is \u20111.05. I\u2019d rather earn nothing owning nothing than risk permanent loss chasing a business that\u2019s priced beyond any defensible value.\n\n6. Long-Term Prospects & Red Flags: I believe in e-commerce growth, but fierce competition, razor-thin retail margins and capex demands make future returns uncertain. AWS is a gem, but it\u2019s buried inside a large, capital-hungry conglomerate. I prefer stand-alone businesses with transparent economics.\n\n7. Comparative Opportunities: I\u2019d rather own Coca-Cola at a fair price, Apple for its ecosystem, or a railroad with predictable cash flows. Amazon fails my first filter\u2014circle of competence\u2014and offers too little consistency or margin of safety.\n\nConclusion: I\u2019m out. Bearish signal with high confidence.",
+  "detailed_analysis": {
+    "ticker": "AMZN",
+    "score": 6,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 1.0%; High debt to equity ratio of 3.7; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.010341471327763809,
+        "debt_to_equity": 3.6746289236758862,
+        "operating_margin": 0.4368141916605706,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.0022122550252891113,
+        "asset_turnover": 0.3795015052009682
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 177.2% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 1,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Strong and stable operating margins (avg: 41.6%) indicate pricing power moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 3,
+      "details": "Consistent book value per share growth (Buffett's favorite metric)"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": -22692.400501196666,
+      "raw_intrinsic_value": -26696.941766113727,
+      "owner_earnings": -2311.4644200241783,
+      "assumptions": {
+        "stage1_growth": 0.0020740968016202507,
+        "stage2_growth": 0.0010370484008101254,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.0020740968016202507
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (0.2%, 5y), Stage 2 (0.1%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $-8,813",
+        "Stage 2 PV: $-5,513",
+        "Terminal PV: $-12,370",
+        "Total IV: $-26,697",
+        "Conservative IV (15% haircut): $-22,692",
+        "Owner earnings: $-2,311",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 456237.1,
+    "margin_of_safety": -1.0497381745175847
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.85,
+  "reasoning": "First off, Amazon sits outside my circle of competence. I understand simple, wide-moat businesses like Coca-Cola or See\u2019s Candies, but the moving parts of e-commerce algorithms and cloud-computing pricing are more complex than I care to dive into. On the moat front, AWS gives Amazon some pricing power, but the inconsistent ROE (just 4.7%) and spotty earnings growth show a moat that isn\u2019t as durable as the ones I cherish. Management is smart\u2014Jeff Bezos and Andy Jassy allocate capital aggressively\u2014but they pour most owner earnings back into growth, with minimal dividends and a debt-to-equity ratio of 1.6 that gives me pause. Financially, operating margins look strong at 25%, but the weak ROIC (1.8%) and uneven earnings pattern raise red flags. The DCF pegs intrinsic value at about $585, yet shares trade well above that with virtually no margin of safety. While Amazon may prosper, I\u2019d rather stick with proven, easy-to-understand businesses at fair prices than overpay for complexity. No regrets passing on this one.",
+  "detailed_analysis": {
+    "ticker": "AMZN",
+    "score": 7,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 4.7%; High debt to equity ratio of 1.6; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.04709141274238227,
+        "debt_to_equity": 1.5983379501385042,
+        "operating_margin": 0.252989449003517,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.01812366737739872,
+        "asset_turnover": 0.6495583307950046
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 440.9% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 1,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 3/10 periods >15%; Strong and stable operating margins (avg: 25.0%) indicate pricing power moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 4,
+      "details": "Good book value per share growth pattern; Excellent book value CAGR: 23.0%"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": 585.296821584139,
+      "raw_intrinsic_value": 688.5844959813401,
+      "owner_earnings": 39.75102292046833,
+      "assumptions": {
+        "stage1_growth": 0.0730583645268143,
+        "stage2_growth": 0.03652918226340715,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.0730583645268143
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (7.3%, 5y), Stage 2 (3.7%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $185",
+        "Stage 2 PV: $147",
+        "Terminal PV: $357",
+        "Total IV: $689",
+        "Conservative IV (15% haircut): $585",
+        "Owner earnings: $40",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 28760.160000000003,
+    "margin_of_safety": -0.9796490415357864
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "signal": "bearish",
+  "confidence": 0.3,
+  "reasoning": "First off, TSLA sits well outside my Circle of Competence. I understand consumer staples, insurance, banks and simple industrials\u2014automotive manufacturing entwined with cutting-edge battery and software development is a different animal altogether. Risk comes from not knowing what you\u2019re doing. \n\nOn moats, Tesla enjoys a strong brand and a growing Supercharger network, but those advantages are not infinitely durable. Legacy automakers are investing heavily in EVs, battery costs are falling industry-wide, and charging standards are opening up. In my view, Tesla\u2019s moat feels more like a garden fence than a fortress. \n\nManagement under Elon Musk is unquestionably visionary, but I\u2019m uneasy about distraction risk\u2014Twitter, rockets and solar roofs all vying for attention\u2014and governance questions. I prefer managers who think like owners, steadily plow free cash flow back into the business, and avoid headline-grabbing side projects. \n\nFinancially, the business is capital-intensive and cyclical, historically propped up by regulatory credits. I look for consistent earnings and rock-solid balance sheets with minimal debt. Tesla hasn\u2019t yet demonstrated the kind of predictability I require. \n\nValuation is another hurdle. With no reliable intrinsic value in the data provided, the stock has historically traded at lofty multiples that imply flawless execution for decades to come. I\u2019d much rather pay a fair price for a wonderful business than a wonderful price for a fair one. \n\nLong-term, the shift to electric drivetrains is real, but margin compression and technology shifts\u2014new chemistries, stronger competition\u2014pose significant risks. Compared to the wide-moat, predictable businesses in my portfolio\u2014Coca-Cola, Apple, BNSF\u2014Tesla simply doesn\u2019t fit the profile of a forever holding. \n\nWhen in doubt, the answer is no. For TSLA, I come away \u201cbearish.\u201d",
+  "detailed_analysis": {
+    "ticker": "TSLA",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

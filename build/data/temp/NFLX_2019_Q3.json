@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.2,
+  "reasoning": "1. Circle of Competence: I don\u2019t understand Netflix the way I understand Coca-Cola or a railroad. Streaming is a rapidly changing, capital-intensive business with content rights, technology platforms, and fickle consumer tastes. As I\u2019ve said, \u2018Risk comes from not knowing what you\u2019re doing.\u2019\n2. Economic Moat: Operating margins around 41% suggest some pricing power, but inconsistent ROE (only 0 of 10 periods above 15%) and choppy earnings growth point to a weak, unstable moat. Subscribers can jump to another service whenever they like\u2014far from the durable brands in my circle.\n3. Management & Capital Allocation: I see no dividends and heavy debt (debt/equity of 3.5). Management plows cash into content, which may grow subscribers but leaves shareholders with no tangible returns today. I admire frugality and owner-oriented behavior\u2014Netflix\u2019s approach is the opposite.\n4. Financial Health & Consistency: A ROE under 10%, ROIC of 2%, and erratic earnings growth hurt my heart. They\u2019ve grown book value, but at what cost? A mountain of debt raises the risk of permanent impairment if subscriber growth stalls.\n5. Valuation vs. Intrinsic Value: Your DCF pegs intrinsic value at $8,707 per share but the stock trades well above that (MOS \u201392%). Paying nearly double intrinsic value leaves no margin of safety. \u2018It\u2019s far better to buy a wonderful company at a fair price than a fair company at a wonderful price.\u2019\n6. Long-Term Prospects & Red Flags: Content spending will remain heavy, competition intensifies, and consumer preferences shift. With little visible pricing power moat and high leverage, long-term prospects look uncertain.\n7. Comparison to My Portfolio: I\u2019d rather own See\u2019s Candies, Coca-Cola, or BNSF\u2014businesses I understand with enduring advantages\u2014than a speculative tech-flavored content producer. When in doubt, I say no.",
+  "detailed_analysis": {
+    "ticker": "NFLX",
+    "score": 7,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 9.7%; High debt to equity ratio of 3.5; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.09695307370613297,
+        "debt_to_equity": 3.509464177319698,
+        "operating_margin": 0.4144383930690832,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.021499909943570997,
+        "asset_turnover": 0.16950921039886901
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 914.1% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 2,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Strong and stable operating margins (avg: 36.1%) indicate pricing power moat; High performance stability (73.6%) suggests strong competitive moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 3,
+      "details": "Consistent book value per share growth (Buffett's favorite metric)"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": 8707.106193925943,
+      "raw_intrinsic_value": 10243.654345795228,
+      "owner_earnings": 568.4447,
+      "assumptions": {
+        "stage1_growth": 0.08,
+        "stage2_growth": 0.04,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.09352658708582619
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (8.0%, 5y), Stage 2 (4.0%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $2,691",
+        "Stage 2 PV: $2,198",
+        "Terminal PV: $5,354",
+        "Total IV: $10,244",
+        "Conservative IV (15% haircut): $8,707",
+        "Owner earnings: $568",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 113923.34744999999,
+    "margin_of_safety": -0.923570484989941
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "signal": "neutral",
+  "confidence": 0.4,
+  "reasoning": "First off, Google (GOOG) lies outside my circle of competence. I like simple, predictable consumer franchises \u2013 Coca-Cola, See\u2019s Candies, Apple as a consumer play \u2013 and I steer clear of the complex algorithms, regulatory challenges, and rapid technology shifts that define a business like Google.\n\nOn the moat front, there\u2019s no denying Google\u2019s search algorithm, advertising network, Android ecosystem, and YouTube give it formidable advantages. It\u2019s like owning the tollbooth at the busiest highway in the world. But a strong moat alone doesn\u2019t get me to invest if I can\u2019t truly understand the bugs, bots, and board-level oversight required to keep it intact.\n\nManagement under Sundar Pichai is clearly capable \u2013 Alphabet\u2019s capital allocation into AI, YouTube, and cloud shows strategic thinking \u2013 but I have no detailed data here to evaluate insider integrity or long-term incentives. In the past, I\u2019ve backed founders like Warren McColl at Coca-Cola and David Sokol at BNSF because I knew them. Google\u2019s leadership is a bit of a black box to me.\n\nFinancially, we have no numbers in the packet \u2013 no earnings consistency, no debt levels, no cash flow breakdown. What I do know from public filings is that Alphabet has grown revenues for decades, generates cash like a river, and keeps debt low. But \u2018insufficient data\u2019 is all this model gives me.\n\nValuation? No intrinsic-value estimate, no margin of safety. A wonderful business at an unknown price is not enough. I want to know exactly what I\u2019m paying for each dollar of earnings.\n\nOver the next 20 years, the world will search, watch videos, and run businesses online, and Google will likely play a central role. Yet I\u2019d rather own a great consumer operation at a fair price than a fine tech franchise at an unknown price.\n\nCompared to opportunities in my portfolio \u2013 banks trading below book value, brand franchises like Coca-Cola or Apple with clear margins of safety, or our railroad that I understand inside-out \u2013 Google simply doesn\u2019t fit my approach. When in doubt, I say \u2018no.\u2019",
+  "detailed_analysis": {
+    "ticker": "GOOG",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.4,
+  "reasoning": "First things first, Amazon is outside my circle of competence. I stick to businesses I understand \u2013 utilities, consumer brands, railroads, simple financials \u2013 not a global e-commerce and cloud-computing conglomerate with a high-tech backbone. It\u2019s like trying to drive a rocket ship when you\u2019ve only flown prop planes. \n\nOn the moat front, Amazon\u2019s scale is impressive, but a score of 1 out of 5 tells me it lacks the kind of durable pricing power and brand strength we see with Coca-Cola or See\u2019s Candies. Strong operating margins in AWS don\u2019t necessarily translate to a fortress against future competitors, especially when retail margins remain razor thin. \n\nManagement has shown extraordinary vision, but the recent stock issuances hint at dilution and a preference for reinvestment over returning cash to shareholders \u2013 fine if you know the landscape, but not my wheelhouse. No dividends, no clear capital-allocation policy, and a debt/equity ratio north of 4.4 make me nervous about financial discipline. \n\nSpeaking of finances, ROE at 17% is respectable, but the business exhibits inconsistent earnings growth and a current ratio we can\u2019t even pin down. In my book, consistency is king. \n\nValuation is the smoking gun. A three-stage DCF pegs intrinsic value\u2014after a 15% haircut\u2014around $1,219 a share. At today\u2019s price, you\u2019re paying nearly double that, with a negative margin of safety of 96%. Even if I thought I understood the business better, paying that premium would offend my sense of value. \n\nLong term, AWS may shine, and Prime may lock in customers, but the retail arm faces constant margin pressure and cut-throat competition. Compared to the businesses in my portfolio\u2014brands with rock-solid pricing power and clean balance sheets\u2014this one doesn\u2019t measure up. \n\nI\u2019d rather miss out on a rocket that might soar than risk dropping my capital into something I don\u2019t fully understand at a price that leaves no margin for error.",
+  "detailed_analysis": {
+    "ticker": "AMZN",
+    "score": 9,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 4,
+      "details": "Strong ROE of 17.3%; High debt to equity ratio of 4.4; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.17293233082706766,
+        "debt_to_equity": 4.417710944026734,
+        "operating_margin": 0.2173836389280677,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.031919814957594446,
+        "asset_turnover": 0.8746337702390131
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 590.0% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 1,
+      "max_score": 5,
+      "details": "Good ROE performance: 6/10 periods >15%; Decent operating margins (avg: 25.0%) suggest some competitive advantage"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 4,
+      "details": "Good book value per share growth pattern; Excellent book value CAGR: 80.0%"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Recent common stock issuance (potential dilution); No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": 1219.266628814562,
+      "raw_intrinsic_value": 1434.4313280171318,
+      "owner_earnings": 79.6,
+      "assumptions": {
+        "stage1_growth": 0.08,
+        "stage2_growth": 0.04,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.105
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (8.0%, 5y), Stage 2 (4.0%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $377",
+        "Stage 2 PV: $308",
+        "Terminal PV: $750",
+        "Total IV: $1,434",
+        "Conservative IV (15% haircut): $1,219",
+        "Owner earnings: $80",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 35181.119999999995,
+    "margin_of_safety": -0.965343154828085
+  }
+}

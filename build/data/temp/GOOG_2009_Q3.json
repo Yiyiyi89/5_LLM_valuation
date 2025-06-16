@@ -1,0 +1,44 @@
+{
+  "signal": "bearish",
+  "confidence": 0.35,
+  "reasoning": "First off, GOOG sits well outside my Circle of Competence. I\u2019ve spent my life studying simple, predictable businesses\u2014retailing candy, insurance, railroads and consumer staples\u2014not the intricacies of search algorithms and ad auctions. When you can\u2019t grasp a business model end-to-end, you\u2019ve just added risk, plain and simple.\n\nOn the moat side, Alphabet certainly enjoys a strong position in search and online advertising, but network effects and lumpy regulatory risks temper its durability. It isn\u2019t like Coca-Cola\u2019s brand, which consumers will sip whether the economy is hot or cold. Ad spending can shift rapidly, and I worry about possible antitrust actions and an ever-evolving competitive landscape.\n\nManagement at Google has shown technical prowess, yet enormous R&D outlays and speculative bets on moonshots aren\u2019t exactly the hallmark of capital discipline I prize. A conservative balance sheet is nice, but I need consistent, understandable earnings and clear capital allocation\u2014a table of numbers I simply don\u2019t have here.\n\nWith no reliable intrinsic value estimate, no margin of safety and no evidence that I can project future free cash flows with any comfort, I can\u2019t justify a purchase. For me, a wonderful business at a fair price beats a fair business at a wonderful price. GOOG, under these circumstances, feels like the latter.\n\nCompared to opportunities I\u2019ve found in consumer staples or banks\u2014where I can state with confidence what the business will earn 10 years from now\u2014GOOG is a pass. I\u2019d rather hold my cash than gamble on complexity I don\u2019t understand.",
+  "detailed_analysis": {
+    "ticker": "GOOG",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

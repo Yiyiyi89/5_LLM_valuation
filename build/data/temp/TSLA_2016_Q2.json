@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.9,
+  "reasoning": "1. Circle of Competence: I steer clear of complex, rapidly evolving technology and capital\u2010intensive businesses without proven moats. Automobiles powered by cutting\u2010edge batteries and software sit well outside my wheelhouse \u2013 it\u2019s a world I don\u2019t fully understand. \n2. Moat Assessment: A true economic moat endures for decades. Tesla\u2019s only competitive edge appears tied to early\u2010mover buzz and hype around its brand. But its inconsistent ROE (0 of 10 periods above 15%) and reliance on government subsidies suggest it lacks the durable pricing power of a Coca-Cola or See\u2019s Candies. \n3. Management & Capital Allocation: Elon Musk is certainly a visionary, but the books show negative owner earnings and no dividends. High debt issuance (D/E of 3.6) and frequent equity raises imply management leaned on the capital markets rather than rely on strong cash flows \u2013 not the hallmark of shareholder-friendly stewards. \n4. Financial Health & Consistency: An ROE of -11.5%, declining invested capital returns, and a chaotic earnings growth pattern (-488.7% over 10 periods) point to financial inconsistency. Warren Buffett investments thrive on steady, predictable earnings \u2013 Tesla\u2019s track record is the opposite. \n5. Valuation vs. Intrinsic Value: A three\u2010stage DCF yields a negative intrinsic value, and the margin of safety is -120%. You simply can\u2019t buy an uncertain business for more than it can ever reasonably earn. \n6. Long-Term Prospects & Red Flags: High leverage, negative free cash flow, and unproven moat raise a red flag on capital exhaustion and competitive vulnerability as legacy automakers catch up. \n7. Opportunity Cost: For my money, I\u2019d much rather own a stalwart like Coca-Cola or Procter & Gamble \u2013 businesses I understand, with proven moats and consistent cash flows. \nIn short, Tesla sits outside my circle of competence, lacks a durable moat, and trades well above any defensible value. My answer here is a firm \u201cno.\u201d",
+  "detailed_analysis": {
+    "ticker": "TSLA",
+    "score": 3,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of -11.5%; High debt to equity ratio of 3.6; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": -0.11464120370370376,
+        "debt_to_equity": 3.6409503253253273,
+        "operating_margin": 0.3606313931230842,
+        "current_ratio": null,
+        "return_on_invested_capital": -0.02470209669733267,
+        "asset_turnover": 0.10700329734251181
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of -488.7% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Decent operating margins (avg: 34.4%) suggest some competitive advantage"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 1,
+      "details": "Moderate book value per share growth"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": -6274.232152385436,
+      "raw_intrinsic_value": -7381.44959104169,
+      "owner_earnings": -544.79815,
+      "assumptions": {
+        "stage1_growth": 0.03,
+        "stage2_growth": 0.015,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.03
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (3.0%, 5y), Stage 2 (1.5%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $-2,246",
+        "Stage 2 PV: $-1,550",
+        "Terminal PV: $-3,585",
+        "Total IV: $-7,381",
+        "Conservative IV (15% haircut): $-6,274",
+        "Owner earnings: $-545",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 29614.101124999994,
+    "margin_of_safety": -1.2118663715607014
+  }
+}

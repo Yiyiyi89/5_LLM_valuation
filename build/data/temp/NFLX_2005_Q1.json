@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.95,
+  "reasoning": "1. Circle of Competence: Streaming video sits outside my circle. I understand railroads, insurance, consumer staples and simple industrials \u2013 not the economics of multi-billion-dollar content budgets and subscriber churn.\n2. Competitive Moat: Netflix has scale, but it\u2019s offset by massive content spend, fierce competition from Disney+, Prime and HBO. Its operating margin looks high on paper, but true pricing power is limited; subscribers switch services for a few dollars\u2019 difference.\n3. Management Quality: Reed Hastings and Ted Sarandos have built a great subscriber base, but capital allocation means negative owner earnings of $18/share last year. I like managers who generate free cash, not burn it in hopes of growth.\n4. Financial Health and Consistency: ROE is \u20135.8%, ROIC \u20133.5%, debt/equity 0.67, earnings growth down 291% over 10 periods \u2013 that\u2019s not the consistent fortress I seek.\n5. Valuation vs. Intrinsic Value: A three-stage DCF yields a negative intrinsic value (\u2013$210/share). Margin of safety is negative 140%. Paying up here invites permanent loss.\n6. Long-Term Prospects and Red Flags: Content is a never-ending arms race. The industry\u2019s economics change fast; technology and taste shift. I\u2019d rather own See\u2019s Candies or Coca-Cola, which will prosper regardless of who makes the next hot show.\n7. Comparison to My Portfolio: I\u2019d pick Coca-Cola\u2019s brand, Apple\u2019s ecosystem, Berkshire\u2019s BNSF or GEICO over Netflix any day. There\u2019s no meaningful margin of safety and too many uncertainties here.\nIn short, I\u2019d pass \u2013 there\u2019s no shame in saying \u201cno\u201d to a popular stock when it doesn\u2019t meet our criteria.",
+  "detailed_analysis": {
+    "ticker": "NFLX",
+    "score": 4,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of -5.8%; High debt to equity ratio of 0.7; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": -0.05794376549012905,
+        "debt_to_equity": 0.6670633016244502,
+        "operating_margin": 0.43112315180457345,
+        "current_ratio": null,
+        "return_on_invested_capital": -0.03475798755432168,
+        "asset_turnover": 0.6011704300778447
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of -291.0% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Decent operating margins (avg: 61.6%) suggest some competitive advantage"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 2,
+      "details": "Good book value per share growth pattern"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": -210.96428672790924,
+      "raw_intrinsic_value": -248.19327850342265,
+      "owner_earnings": -18.318249999999995,
+      "assumptions": {
+        "stage1_growth": 0.03,
+        "stage2_growth": 0.015,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.03
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (3.0%, 5y), Stage 2 (1.5%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $-76",
+        "Stage 2 PV: $-52",
+        "Terminal PV: $-121",
+        "Total IV: $-248",
+        "Conservative IV (15% haircut): $-211",
+        "Owner earnings: $-18",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 523.2941999999999,
+    "margin_of_safety": -1.4031466175774723
+  }
+}

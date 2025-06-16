@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.95,
+  "reasoning": "1. Circle of Competence: I\u2019ve never made a practice of buying complex, capital-intensive manufacturing businesses. My wheelhouse is consumer staples, insurance, railroads and simple utilities. Tesla\u2019s mix of automotive engineering, battery chemistry and software is outside my circle. As I\u2019ve said, \u201cRisk comes from not knowing what you\u2019re doing.\u201d\n\n2. Competitive Moat: Automotive is a commodity business where scale matters and cars become cheaper toys for Wall Street to slice and dice. While Tesla has strong operating margins today (35.7%), that doesn\u2019t guarantee a durable moat. Competitors from legacy automakers to deep-pocketed Chinese startups are gunning for this market. Pricing power in cars is fickle\u2014consumers quickly shop on price once features become table stakes.\n\n3. Management Quality: Elon Musk is a visionary, but vision alone doesn\u2019t make a shareholder-friendly steward. Tesla has a history of debt issuance, stock compensation that dilutes, and swings in strategy. I look for managers who act like owners\u2014conserving capital, buying back shares when undervalued, and paying dividends when possible. Tesla\u2019s lack of dividends and ongoing equity raises suggest capital allocation priorities I don\u2019t admire.\n\n4. Financial Health & Consistency: Tesla shows a ROE of \u201327.9% and negative owner earnings. Its debt-to-equity ratio of 8.1 is heavy for a business with inconsistent earnings growth (\u20131,635% over ten periods). You can\u2019t build a fortress with negative bricks. Inconsistent profits and high leverage are a recipe for volatility, not the steady compounding engines I favor.\n\n5. Valuation vs. Intrinsic Value: The three-stage DCF model spits out a negative intrinsic value and a margin-of-safety of \u2013114%. In plain English, you\u2019re paying good money for negative owner earnings. As I like to remind folks, \u201cPrice is what you pay; value is what you get.\u201d Here, you\u2019re overpaying for a promise that hasn\u2019t consistently delivered.\n\n6. Long-Term Prospects & Red Flags: Electric vehicles may well be the future, but the business economics are unproven at scale across cyclical downturns. Batteries wear out, subsidies ebb, competition intensifies, and margins can vanish. I prefer companies that have demonstrated decades of steady earnings and pricing power\u2014businesses you can hold forever.\n\n7. Comparison to My Portfolio: I\u2019d rather own Coca-Cola for its global brand, Apple for its ecosystem, or BNSF for its predictable cash flows than stake my capital in a business with negative owner earnings and no durable moat. There\u2019s no shame in admitting when an opportunity is outside your circle of competence.\n\nIn short, this isn\u2019t a business I understand well enough, nor does it show the financial consistency or valuation cushion I require. I\u2019ll pass.",
+  "detailed_analysis": {
+    "ticker": "TSLA",
+    "score": 4,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of -27.9%; High debt to equity ratio of 8.1; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": -0.2786470955813035,
+        "debt_to_equity": 8.073823953026244,
+        "operating_margin": 0.3565046972750922,
+        "current_ratio": null,
+        "return_on_invested_capital": -0.03070889373915734,
+        "asset_turnover": 0.12479168711083106
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of -1635.5% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 1,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Strong and stable operating margins (avg: 34.0%) indicate pricing power moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 1,
+      "details": "Moderate book value per share growth"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": -3571.731068064724,
+      "raw_intrinsic_value": -4202.036550664381,
+      "owner_earnings": -310.13715,
+      "assumptions": {
+        "stage1_growth": 0.03,
+        "stage2_growth": 0.015,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.03
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (3.0%, 5y), Stage 2 (1.5%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $-1,279",
+        "Stage 2 PV: $-883",
+        "Terminal PV: $-2,041",
+        "Total IV: $-4,202",
+        "Conservative IV (15% haircut): $-3,572",
+        "Owner earnings: $-310",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 24818.611780000003,
+    "margin_of_safety": -1.1439134106180344
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.8,
+  "reasoning": "First, Apple sits squarely in my circle of competence\u2014I own it as a consumer products company with a sticky ecosystem and pricing power. Second, its moat remains intact: brand strength, customer loyalty and high operating margins (44.3%) underline real pricing power. Third, I respect management\u2014Tim Cook has returned over $500 billion to shareholders and acts like an owner\u2014but I note the recent equity issuance and the odd absence of increased dividends in this data set. Fourth, on financial health I see mixed signals: sizzling margins offset by a low ROE of 7%, a high debt-to-equity of 1.5, uneven earnings growth and a negative historical growth assumption in this DCF. Fifth, valuation is the killer here: a three-stage DCF pegs intrinsic value near $32,500 million, yet the market cap is north of $550,000 million, implying a negative 95% margin of safety. I\u2019d rather own a wonderful business at a fair price than chase one at a stretched valuation. Sixth, long-term prospects are still attractive\u2014Apple\u2019s ecosystem won\u2019t vanish\u2014but you don\u2019t pay up today and buy the franchise tomorrow. Finally, compared to opportunities I hold in Coca-Cola, See\u2019s Candies or simple banks, Apple today is simply too richly priced. Signal is bearish.",
+  "detailed_analysis": {
+    "ticker": "AAPL",
+    "score": 5,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 7.0%; High debt to equity ratio of 1.5; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.07028514842220993,
+        "debt_to_equity": 1.5082924623193943,
+        "operating_margin": 0.43458123452574066,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.028021113756893368,
+        "asset_turnover": 0.1456451322096703
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 16.3% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 2,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Strong and stable operating margins (avg: 44.3%) indicate pricing power moat; High performance stability (83.2%) suggests strong competitive moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 1,
+      "details": "Moderate book value per share growth"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Recent common stock issuance (potential dilution); No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": 27643.514886764184,
+      "raw_intrinsic_value": 32521.78221972257,
+      "owner_earnings": 3479.8784724333973,
+      "assumptions": {
+        "stage1_growth": -0.034999999999999996,
+        "stage2_growth": -0.017499999999999998,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": -0.034999999999999996
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (-3.5%, 5y), Stage 2 (-1.7%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $11,950",
+        "Stage 2 PV: $6,525",
+        "Terminal PV: $14,048",
+        "Total IV: $32,522",
+        "Conservative IV (15% haircut): $27,644",
+        "Owner earnings: $3,480",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 553413.77586,
+    "margin_of_safety": -0.9500491023306992
+  }
+}

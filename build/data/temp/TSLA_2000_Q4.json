@@ -1,0 +1,44 @@
+{
+  "signal": "bearish",
+  "confidence": 0.35,
+  "reasoning": "1. Circle of Competence: Automotive manufacturing\u2014especially electric vehicles combined with advanced software and autonomous driving\u2014is well outside my circle of competence. I stick to simple businesses I understand inside out.   2. Competitive Moat: Tesla enjoys a strong brand and early lead in EVs, plus a proprietary charging network. But incumbents like VW and GM are quickly building scale, and battery know-how isn\u2019t a secret. I\u2019d call the moat narrow and under threat.   3. Management Quality: Elon Musk is undoubtedly visionary, but he juggles multiple ventures and his decisions can be unpredictable. I prefer managers who think like owners over decades, with rock-solid governance.   4. Financial Health: Tesla\u2019s occasional profits have been supported by hefty regulatory credits. Capital expenditures remain enormous and cash\u2010flow volatile. A durable financial fortress should feature consistent earnings and low debt\u2014qualities Tesla hasn\u2019t yet demonstrated.   5. Valuation vs. Intrinsic Value: At current multiples, Tesla is priced for perfection. I see little margin of safety and significant downside risk if growth slows or competition intensifies.   6. Long-Term Prospects & Red Flags: Electric vehicles will commoditize, price wars will emerge and battery costs will fall. Reliance on regulatory incentives and Musk\u2019s shifting focus are red flags for a long-term hold.   7. Opportunity Cost: I\u2019d rather deploy capital in consumer franchises like Coca-Cola or Apple\u2014businesses with enduring pricing power, simpler economics and proven management. No penalty for saying no; my priority is avoiding permanent capital loss.",
+  "detailed_analysis": {
+    "ticker": "TSLA",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

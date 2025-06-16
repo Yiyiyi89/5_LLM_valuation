@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.8,
+  "reasoning": "1. Circle of Competence: Apple squarely sits in my backyard\u2014consumer products with a sticky ecosystem and brand strength. I understand the business model and switching costs built into the iPhone, Mac and Services franchises. \n\n2. Competitive Moat: As I\u2019ve said before, pricing power is the hallmark of a great business. Apple\u2019s 36% operating margin and 85% performance stability point to durable pricing power and brand moat\u2014much like the wide moat Coca-Cola enjoys around its secret formula. But a moat alone doesn\u2019t make a bargain. \n\n3. Management & Capital Allocation: Tim Cook and team have shown they think like owners, returning capital through buybacks and dividends. The data here says little in the way of dividends, but we know they\u2019ve been generous on buybacks. No signs of egregious dilution\u2014management scores well, even if the formal score is zero. \n\n4. Financial Health & Consistency: Margins are strong but ROE at 5.4% and ROIC near 2.9% are alarmingly low. Debt/equity at 0.9 is higher than I\u2019d like in a consumer business. Earnings growth has been lumpy\u20140 for 10 periods above 15% ROE\u2014suggesting inconsistency. A strong business, yes, but the financial fortress here has some cracks. \n\n5. Valuation & Intrinsic Value: The three-stage DCF pegs intrinsic value at about $7,400 a share. With the stock trading well above that, margin of safety is deeply negative (-0.92). As I\u2019ve often said, \u201cPrice is what you pay; value is what you get.\u201d Right now you\u2019re overpaying. \n\n6. Long-Term Prospects & Red Flags: I like the franchise, but I am not enchanted by high price, mediocre ROE, and stretched balance sheet. \n\n7. Relative Opportunity: I\u2019d rather own another Coca-Cola at a fair price than Apple at a lofty one. No penalty for waiting. \n\nConclusion: A wonderful business at the wrong price is still the wrong investment. I\u2019ll pass.",
+  "detailed_analysis": {
+    "ticker": "AAPL",
+    "score": 7,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 5.4%; High debt to equity ratio of 0.9; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.05401806942463148,
+        "debt_to_equity": 0.8816928197812649,
+        "operating_margin": 0.36390120329322356,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.028707166683513596,
+        "asset_turnover": 0.19950975437177804
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 140.7% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 2,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Strong and stable operating margins (avg: 34.7%) indicate pricing power moat; High performance stability (85.4%) suggests strong competitive moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 3,
+      "details": "Consistent book value per share growth (Buffett's favorite metric)"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": 7389.23446950289,
+      "raw_intrinsic_value": 8693.217022944576,
+      "owner_earnings": 602.0500874035928,
+      "assumptions": {
+        "stage1_growth": 0.04114044723525725,
+        "stage2_growth": 0.020570223617628624,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.04114044723525725
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (4.1%, 5y), Stage 2 (2.1%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $2,560",
+        "Stage 2 PV: $1,836",
+        "Terminal PV: $4,297",
+        "Total IV: $8,693",
+        "Conservative IV (15% haircut): $7,389",
+        "Owner earnings: $602",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 95161.92275,
+    "margin_of_safety": -0.9223509334829735
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.9,
+  "reasoning": "1. Circle of Competence: Frankly, streaming video feels more like Silicon Valley\u2019s latest gadget than a moaty consumer staple. I\u2019d rather stick to what I know \u2013 the likes of Coca-Cola or GEICO, not building ever-costly content libraries. 2. Competitive Moat: Netflix has scale and brand recognition, but its inconsistent ROE (just 1 of 10 periods above 15%) and limited pricing power put a question mark on any durable moat. 3. Management & Capital Allocation: Hastings & co. haven\u2019t diluted shareholders heavily, and there are no dividends, but negative owner earnings (\u20130.74) suggest content spending is burning cash, not earning it. 4. Financial Health & Consistency: A weak ROE of 2.3%, spotty earnings patterns and a negative intrinsic value signal a business burning more capital than it generates. 5. Valuation vs. Intrinsic Value: A three-stage DCF spits out a negative intrinsic\u2014\u2013$11 per share\u2014and a margin of safety well below zero. As I always say, \u2018price is what you pay, value is what you get,\u2019 and here you\u2019re paying for rosy growth that hasn\u2019t materialized. 6. Long-Term Prospects & Red Flags: Fierce competition from Disney+, Amazon and others means content costs will stay high and returns uncertain. 7. Relative to My Portfolio: I\u2019d far prefer adding to Apple or Coca-Cola at a fair price than hoping Netflix turns burning cash into durable profits. In short, this one\u2019s outside my circle, lacks a reliable moat, and trades well above any credible value\u2014so my signal is a firm bearish.",
+  "detailed_analysis": {
+    "ticker": "NFLX",
+    "score": 7,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 4,
+      "details": "Weak ROE of 2.3%; Conservative debt levels; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.022618948459523742,
+        "debt_to_equity": 0.44633089929755393,
+        "operating_margin": 0.37711581291759466,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.01563884756282894,
+        "asset_turnover": 0.4884260370174849
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 75.5% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 1/10 periods >15%; Decent operating margins (avg: 49.8%) suggest some competitive advantage"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 3,
+      "details": "Consistent book value per share growth (Buffett's favorite metric)"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": -11.366291481304636,
+      "raw_intrinsic_value": -13.372107625064277,
+      "owner_earnings": -0.7420500000000025,
+      "assumptions": {
+        "stage1_growth": 0.08,
+        "stage2_growth": 0.04,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.105
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (8.0%, 5y), Stage 2 (4.0%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $-4",
+        "Stage 2 PV: $-3",
+        "Terminal PV: $-7",
+        "Total IV: $-13",
+        "Conservative IV (15% haircut): $-11",
+        "Owner earnings: $-1",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 1495.2296900000001,
+    "margin_of_safety": -1.0076017026396156
+  }
+}

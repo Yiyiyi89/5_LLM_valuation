@@ -1,0 +1,44 @@
+{
+  "signal": "neutral",
+  "confidence": 0.35,
+  "reasoning": "1. Circle of Competence: Tesla sits outside my circle. I\u2019ve spent six decades in consumer staples, insurance, railroads and simple industrials. Electric vehicles, battery tech and autopilot software are far more complex than the businesses I understand. As I\u2019ve said, \u201cRisk comes from not knowing what you\u2019re doing.\u201d\n\n2. Competitive Moat: While Tesla enjoys a strong brand and first\u2010mover buzz, automotive is a low\u2010margin, capital\u2010intensive business where moats fade quickly. Competitors are pouring into EVs, and legacy automakers have deeper pockets and dealer networks. I don\u2019t see a durable, wide moat here.\n\n3. Management Quality: Elon Musk is visionary, but his capital allocation and messaging can be erratic. Consistency and shareholder\u2010friendly stewardship are hallmarks I prize\u2014think of how we run See\u2019s Candies or Geico\u2014Tesla\u2019s approach doesn\u2019t inspire the same confidence.\n\n4. Financial Health: Tesla only recently showed consistent profits, but it carries heavy CAPEX and levered balance sheets. I prefer companies with decades of reliable cash flow and minimal debt\u2014Coca-Cola and Apple come to mind\u2014whereas Tesla\u2019s past free\u2010cash\u2010flow volatility raises caution.\n\n5. Valuation & Margin of Safety: With market prices implying perfection across production, regulation, autopilot and energy storage, there\u2019s no margin of safety. I\u2019d rather buy a wonderful business at a fair price than gamble on perfection at a premium.\n\n6. Long\u2010Term Prospects & Red Flags: The auto industry is a commodity business with rapid technological change. Battery breakthroughs, competition from China, and regulatory shifts all pose threats. A 20\u2010year hold? I\u2019m not convinced.\n\n7. Portfolio Comparison: I\u2019d allocate capital to businesses like Apple\u2014where I understand the ecosystem and see durable pricing power\u2014or to railroad BNSF, which turns grass into money. Tesla doesn\u2019t stack up.\n\nConclusion: I pass. No shame in sitting on the sidelines when the odds\u2014and my own circle of competence\u2014aren\u2019t in your favor.",
+  "detailed_analysis": {
+    "ticker": "TSLA",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

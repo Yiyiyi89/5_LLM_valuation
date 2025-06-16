@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 1.0,
+  "reasoning": "First, AMZN sits outside my circle of competence. It\u2019s not a simple merchant or insurance operation; it\u2019s a sprawling e-commerce and cloud-computing conglomerate full of complex technology and reinvestment that I don\u2019t pretend to fully understand. Second, while Amazon has some scale advantages and a Prime ecosystem that create switching costs, its inconsistent ROE (negative in many periods) and no clear durable moat\u20140/10 years above 15% ROE\u2014tell me the economic advantages aren\u2019t as bullet-proof as with Coca-Cola or See\u2019s Candies. Third, management under Bezos and team has been visionary, but they habitually dilute returns by plowing free cash into new ventures and never paying dividends\u2014capital allocation I\u2019d rather see directed toward high-return share repurchases or dividends. Fourth, the financial picture shows weak ROE of \u20137.1%, patchwork earnings growth, and only a decent operating margin; inconsistent earnings over the past ten periods ring alarm bells for me. Fifth, the DCF intrinsic value of roughly $842 versus a current market price well above that yields a negative margin of safety near \u201396%, so I\u2019d be paying up for expected losses of value rather than a bargain. Sixth, although e-commerce and cloud may grow over the next couple of decades, Amazon\u2019s retail arm remains a low-margin, capital-heavy business under fierce competition; I see red flags rather than dependable compounders. Finally, when I compare this to opportunities in my portfolio\u2014Coca-Cola\u2019s enduring brand, Apple\u2019s sticky ecosystem, GEICO\u2019s profitable underwriting\u2014Amazon doesn\u2019t measure up as a simple, understandable business available at a sensible price. So I\u2019ll sit this one out.",
+  "detailed_analysis": {
+    "ticker": "AMZN",
+    "score": 6,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 4,
+      "details": "Weak ROE of -7.1%; Conservative debt levels; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": -0.0706046769300854,
+        "debt_to_equity": -3.0866889230552443,
+        "operating_margin": 0.22885723507173497,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.03383574626289238,
+        "asset_turnover": 0.899973312155735
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 143.1% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Decent operating margins (avg: 26.9%) suggest some competitive advantage"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 2,
+      "details": "Good book value per share growth pattern"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": 841.8756699061444,
+      "raw_intrinsic_value": 990.441964595464,
+      "owner_earnings": 54.96197610992035,
+      "assumptions": {
+        "stage1_growth": 0.08,
+        "stage2_growth": 0.04,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.105
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (8.0%, 5y), Stage 2 (4.0%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $260",
+        "Stage 2 PV: $213",
+        "Terminal PV: $518",
+        "Total IV: $990",
+        "Conservative IV (15% haircut): $842",
+        "Owner earnings: $55",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 20091.06274,
+    "margin_of_safety": -0.9580970065744693
+  }
+}

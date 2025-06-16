@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.9,
+  "reasoning": "1. Circle of Competence: Amazon sits outside my sweet spot. I know simple retailing, insurance, banks and candy shops \u2014 not multi-headed beasts juggling e-commerce, cloud services, logistics, media and advertising all at once. Risk comes from not knowing what you\u2019re doing, and this one\u2019s too complex for my playbook. 2. Moat: There\u2019s no doubt Amazon boasts scale, Prime membership lock-in and AWS pricing power, but wide doesn\u2019t always mean deep. Its inconsistent ROE (only zero out of ten years above 15%) suggests the moat isn\u2019t as durable as it appears. 3. Management & Capital Allocation: Bezos and Jassy have shown grit and vision, yet they plow every dollar back into growth rather than return cash to shareholders. No dividends and no share repurchases leave little margin of safety. 4. Financial Health & Consistency: A debt-to-equity north of 2.0, uneven earnings growth and spotty returns on invested capital point to a financial fortress that\u2019s more paper than rock. 5. Valuation vs Intrinsic Value: The three-stage DCF spits out a negative intrinsic value and a margin of safety at \u2013115%. Paying up for hope isn\u2019t my style \u2014 I want a wonderful business at a fair price, not the other way around. 6. Long-Term Prospects: I\u2019m sure e-commerce and cloud will keep humming, but tougher competition, rising costs and regulatory scrutiny could erode any lead Amazon has. 7. Comparison to My Portfolio: I\u2019d rather own Coca-Cola or Apple \u2014 businesses I deeply understand, with predictable cash flows, solid moats and reasonable valuations. So when in doubt, I say no.",
+  "detailed_analysis": {
+    "ticker": "AMZN",
+    "score": 8,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 10.4%; High debt to equity ratio of 2.0; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.10360591703135737,
+        "debt_to_equity": 2.04205577055228,
+        "operating_margin": 0.4685107559747329,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.03405786246073585,
+        "asset_turnover": 0.3267443270582025
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 571.2% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 2,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Strong and stable operating margins (avg: 47.8%) indicate pricing power moat; High performance stability (79.7%) suggests strong competitive moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 4,
+      "details": "Consistent book value per share growth (Buffett's favorite metric); Good book value CAGR: 10.1%"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": -257118.44290367395,
+      "raw_intrinsic_value": -302492.2857690282,
+      "owner_earnings": -16786.015110600725,
+      "assumptions": {
+        "stage1_growth": 0.08,
+        "stage2_growth": 0.04,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.105
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (8.0%, 5y), Stage 2 (4.0%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $-79,462",
+        "Stage 2 PV: $-64,917",
+        "Terminal PV: $-158,113",
+        "Total IV: $-302,492",
+        "Conservative IV (15% haircut): $-257,118",
+        "Owner earnings: $-16,786",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 1656945.155,
+    "margin_of_safety": -1.1551761940507161
+  }
+}

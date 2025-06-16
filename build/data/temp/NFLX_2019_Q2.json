@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.45,
+  "reasoning": "1. Circle of Competence: I\u2019m more comfortable with simple, predictable businesses\u2014consumer staples, banks, utilities. Netflix is a technology-driven streaming and content creation business with huge content spend and rapidly changing tech dynamics. That\u2019s outside my circle. 2. Moat: While Netflix has brand recognition and a large subscriber base, its moat is under attack from Disney, Amazon and other deep-pocketed competitors. Content costs are high and exclusive shows erode over time. 3. Management & Capital Allocation: Reed Hastings has steered impressive growth, but financing of new content by ramping debt (debt/equity ~3.9) is risky. No dividends or buybacks\u2014they\u2019re plowing every dollar back into content. 4. Financial Health & Consistency: Weak ROE at 4.4%, ROIC under 1%, and inconsistent earnings growth signal a shaky financial foundation. High operating margins are nice, but I\u2019d like to see steadier returns on capital and less leverage. 5. Valuation vs Intrinsic Value: Your DCF pegs intrinsic value at about $1,678 adjusted, yet the market cap implies you\u2019re paying well over twice that. A negative 99% margin of safety screams overvaluation. 6. Long-Term Prospects: Streaming is competitive, with subscriber saturation in many markets and rising content costs. I don\u2019t see a durable, widening moat. 7. Opportunity Cost: I\u2019d rather own Coca-Cola at a fair price or Bank of America or Apple\u2014businesses with pricing power, fortress balance sheets, honest capital allocation and clear moats. In short, this isn\u2019t a business I fully understand or would pay today\u2019s price for, so my signal is bearish.",
+  "detailed_analysis": {
+    "ticker": "NFLX",
+    "score": 7,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 4.4%; High debt to equity ratio of 3.9; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.04432853529281893,
+        "debt_to_equity": 3.941626697554422,
+        "operating_margin": 0.394659601764411,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.008970433827945124,
+        "asset_turnover": 0.16317194275003838
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 51.9% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 2,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Strong and stable operating margins (avg: 35.4%) indicate pricing power moat; High performance stability (76.1%) suggests strong competitive moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 3,
+      "details": "Consistent book value per share growth (Buffett's favorite metric)"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": 1677.541338035999,
+      "raw_intrinsic_value": 1973.578044748234,
+      "owner_earnings": 211.17574999999994,
+      "assumptions": {
+        "stage1_growth": -0.034999999999999996,
+        "stage2_growth": -0.017499999999999998,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": -0.034999999999999996
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (-3.5%, 5y), Stage 2 (-1.7%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $725",
+        "Stage 2 PV: $396",
+        "Terminal PV: $852",
+        "Total IV: $1,974",
+        "Conservative IV (15% haircut): $1,678",
+        "Owner earnings: $211",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 153235.682475,
+    "margin_of_safety": -0.9890525410861162
+  }
+}

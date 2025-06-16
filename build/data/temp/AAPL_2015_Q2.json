@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.9,
+  "reasoning": "First, Apple lies squarely in my circle of competence\u2014not as a gizmo maker but as a consumer products company with an ecosystem that locks in customers. That said, when price outruns value you get poor odds. \n\n1. Circle of Competence: I understand Apple\u2019s consumer-brand moat\u2014just as I understood Coca-Cola\u2019s business\u2014but I won\u2019t stretch simply because I like the story. \n2. Competitive Moat: Apple boasts strong operating margins (45%) and high stability (83% performance stability), suggesting real pricing power. Yet its ROE has never topped 15% in a single one of ten periods, pointing to inconsistent returns. \n3. Management & Capital Allocation: They\u2019ve issued stock recently (dilution risk) and pay minimal dividends. I want managers who think like owners\u2014returning excess capital or reinvesting at high rates\u2014but here they tiptoe. \n4. Financial Health & Consistency: Debt/equity of 1.0 is higher than I like, ROIC sits at just 5.2%, and earnings growth over ten periods has been a meager 3.8%\u2014hardly the steady compounding machine I seek. \n5. Valuation vs. Intrinsic Value: Your three-stage DCF pegs a conservative value of $147 per share, yet the market price implies a \u201378% margin of safety. I\u2019d rather wait than overpay. \n6. Long-Term Prospects & Red Flags: I admire the ecosystem, but inconsistent profitability and a sky-high share price are red flags. \n7. Opportunity Cost: I\u2019d rather add to stakes in Coca-Cola or Berkshire\u2019s insurance franchises at fair prices than buy Apple here. \n\nI\u2019ll pass for now\u2014wonderful businesses don\u2019t become bargains when you pay too much.",
+  "detailed_analysis": {
+    "ticker": "AAPL",
+    "score": 5,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 10.5%; High debt to equity ratio of 1.0; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.10518115436491327,
+        "debt_to_equity": 1.0246655194332046,
+        "operating_margin": 0.4505257714187209,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.05194989165141619,
+        "asset_turnover": 0.22209545395376618
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 3.8% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 2,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Strong and stable operating margins (avg: 42.7%) indicate pricing power moat; High performance stability (83.4%) suggests strong competitive moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 1,
+      "details": "Moderate book value per share growth"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Recent common stock issuance (potential dilution); No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": 147010.36331594147,
+      "raw_intrinsic_value": 172953.36860698997,
+      "owner_earnings": 11299.900000000001,
+      "assumptions": {
+        "stage1_growth": 0.05134674697628554,
+        "stage2_growth": 0.02567337348814277,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.05134674697628554
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (5.1%, 5y), Stage 2 (2.6%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $49,430",
+        "Stage 2 PV: $36,710",
+        "Terminal PV: $86,813",
+        "Total IV: $172,953",
+        "Conservative IV (15% haircut): $147,010",
+        "Owner earnings: $11,300",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 659953.69934,
+    "margin_of_safety": -0.7772413982026889
+  }
+}

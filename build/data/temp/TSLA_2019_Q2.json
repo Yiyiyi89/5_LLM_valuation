@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.35,
+  "reasoning": "1. Circle of Competence: I\u2019ll be the first to admit that building batteries, autonomous\u2010driving software and gigafactories isn\u2019t in my wheelhouse.  Tesla lives in a world of capital\u2010intensive manufacturing and rapid technological change \u2014 I stick to businesses I can forecast a decade from now.  \n2. Economic Moat: While Tesla has carved out a strong brand, the auto business has low switching costs and fierce competition.  Margins can evaporate faster than you can say \u2018mass production.\u2019  I see no true, durable moat here.  \n3. Management Quality: I admire Elon Musk\u2019s vision, but frequent equity raises and zero dividends aren\u2019t the hallmarks of management thinking like owners.  I look for capital allocators who return cash to shareholders once investments are made.  \n4. Financial Health & Consistency: The numbers are unsettling \u2014 negative ROE, heavy debt load, volatile earnings and negative owner earnings suggest a bumpy ride ahead.  I prefer companies with fortress balance sheets and dependable cash flow.  \n5. Valuation vs. Intrinsic Value: The three\u2010stage DCF spits out a negative intrinsic value, so you\u2019re paying a premium for potential rather than proven cash.  That violates my mantra: pay less than a business is worth.  \n6. Long-Term Prospects & Red Flags: Electric vehicles may have a bright future, but competition is intensifying, subsidies can shift, and capital needs remain enormous.  This feels more like a thin\u2010margined, high\u2010stakes game.  \n7. Relative Opportunity: I\u2019d rather own a piece of Coca-Cola, See\u2019s Candies or Apple \u2014 businesses with clear moats, reliable earnings and managements that think like partners.  Tesla is a gamble on technology, not a comfortable seat at a cash\u2010generating feast.  In short, this is outside my circle and overvalued \u2014 I\u2019ll pass.",
+  "detailed_analysis": {
+    "ticker": "TSLA",
+    "score": 3,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of -5.7%; High debt to equity ratio of 3.5; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": -0.05710596841238626,
+        "debt_to_equity": 3.457418479731585,
+        "operating_margin": 0.23617236533013658,
+        "current_ratio": null,
+        "return_on_invested_capital": -0.012811444263547146,
+        "asset_turnover": 0.1992205404536066
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of -23.6% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Decent operating margins (avg: 28.8%) suggest some competitive advantage"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 1,
+      "details": "Moderate book value per share growth"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": -4702.626673222284,
+      "raw_intrinsic_value": -5532.501968496805,
+      "owner_earnings": -408.334,
+      "assumptions": {
+        "stage1_growth": 0.03,
+        "stage2_growth": 0.015,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.03
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (3.0%, 5y), Stage 2 (1.5%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $-1,683",
+        "Stage 2 PV: $-1,162",
+        "Terminal PV: $-2,687",
+        "Total IV: $-5,533",
+        "Conservative IV (15% haircut): $-4,703",
+        "Owner earnings: $-408",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 35864.0717121,
+    "margin_of_safety": -1.1311236133747662
+  }
+}

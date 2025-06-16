@@ -1,0 +1,44 @@
+{
+  "signal": "neutral",
+  "confidence": 0.4,
+  "reasoning": "First, I\u2019ll be frank: enterprise software and cloud infrastructure aren\u2019t in my core circle of competence. I know consumer brands and simple industrials inside out, but I don\u2019t claim to fully grasp every nuance of Azure\u2019s AI roadmap or Windows licensing trends. That said, Microsoft does exhibit signs of a durable moat \u2013 a vast ecosystem of Office users, Windows installations, and a growing Azure franchise create switching costs you don\u2019t see in commodity businesses. Management under Satya Nadella has demonstrated strong capital allocation, turning around the culture and delivering consistent revenue growth. The balance sheet is likely rock solid, and cash flows have historically been abundant, though I lack specific numbers here. Without reliable data on intrinsic value or current valuation, I can\u2019t determine if today\u2019s price offers the margin of safety I demand. Long term, cloud and AI tailwinds could favor Microsoft, but technology evolution can erode advantages faster than consumer staples. Relative to businesses like Coca-Cola or See\u2019s Candies, Microsoft sits outside my highest conviction realm. With insufficient data and outside my highest comfort zone, I\u2019ll remain on the sidelines \u2013 neither bullish nor bearish.",
+  "detailed_analysis": {
+    "ticker": "MSFT",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

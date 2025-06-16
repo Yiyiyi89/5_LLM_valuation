@@ -1,0 +1,44 @@
+{
+  "signal": "neutral",
+  "confidence": 0.35,
+  "reasoning": "1. Circle of Competence: Tesla operates at the intersection of cutting\u2010edge automotive engineering, software, battery chemistry and energy storage\u200a\u2014\u200aa stew of rapid technological change. As I\u2019ve said, \u201cRisk comes from not knowing what you\u2019re doing,\u201d and this is well outside my circle of competence. I\u2019d rather fish where I can see the fish.\n\n2. Competitive Moat: Tesla has built a strong brand and first\u2010mover advantage in electric vehicles, but brand loyalty can shift in a heartbeat if a competitor offers better range or lower cost. Unlike Coca-Cola\u2019s formula, battery technology and autonomous systems aren\u2019t patented for eternity. I\u2019d call the moat more of a shallow trench than a castle moat.\n\n3. Management Quality: Elon Musk is a visionary and a showman. Vision counts for a lot\u200a\u2014\u200aI admire his willingness to bet big. But capital allocation has swung from burning cash on expansion to chasing other ventures (SpaceX, Twitter, etc.). I prefer managers who think like owners with predictable, shareholder-friendly discipline. Tesla\u2019s free-spending ways give me pause.\n\n4. Financial Health & Consistency: Tesla only recently moved into consistent profitability, yet it carries heavy fixed\u2010cost commitments in gigafactories and R&D. My preference is for decades of steady, predictable earnings (think See\u2019s Candies, GEICO), not a business that has only recently proven it can swim without water wings.\n\n5. Valuation & Intrinsic Value: With no reliable intrinsic\u2010value calculation on the data provided and a price tag that implies perfection, there\u2019s little margin of safety. I\u2019d rather buy a wonderful business at a fair price than a fair business at a wonderful price.\n\n6. Long\u2010Term Prospects & Red Flags: Electric vehicles will play a role in the future, but the competitive field is wide open. Battery breakthroughs, shifting regulations, and aggressive pricing from incumbents could erode Tesla\u2019s edge. Only a small handful of businesses enjoy pricing power that outlasts competitors for decades.\n\n7. Comparison to My Portfolio: I\u2019d rather own Coca-Cola for its consistency, Apple for its ecosystem, or a stable insurance franchise like GEICO. Each fits squarely in my wheelhouse. Tesla reads like a high-stakes poker game I\u2019m not prepared to play.\n\nConclusion: I\u2019ll sit this one out. No shame in missing a deal; the real sin is permanent loss of capital.",
+  "detailed_analysis": {
+    "ticker": "TSLA",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

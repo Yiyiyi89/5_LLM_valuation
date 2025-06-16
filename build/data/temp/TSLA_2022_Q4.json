@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 1.0,
+  "reasoning": "Well, the first thing I look at is whether I understand the business\u2014and I don\u2019t feel at home in the electric-car game the way I do with Coke or See\u2019s Candies. That knocks TSLA outside my Circle of Competence. On the moat front, you\u2019ve got strong operating margins, but inconsistent ROE and shaky pricing power suggest any advantage may prove fleeting in a cut-throat industry. Management under Mr. Musk has shown flair but also unpredictability, and I see no steady dividend or conservative capital allocation \u2013 more wild swings than a barnyard gate. Financially, returns on equity of 8%, a debt to equity near 0.8, and negative owner earnings in your DCF tell me the fortress walls are weak, with an intrinsic value that actually comes out negative. That puts TSLA firmly in overvalued territory \u2013 I\u2019d never pay for a business that shows a negative margin of safety. In the long run the electric vehicle market may grow, but I\u2019d sooner own a wonderful business at a fair price than a fair business at a wonderful price. Compared to the steady champs in my portfolio \u2013 Coca-Cola\u2019s consistent cash flow, BNSF\u2019s durable moat and Apple\u2019s lock-in ecosystem \u2013 TSLA doesn\u2019t make the cut for me.  ",
+  "detailed_analysis": {
+    "ticker": "TSLA",
+    "score": 6,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 8.0%; High debt to equity ratio of 0.8; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.08033029761645388,
+        "debt_to_equity": 0.7939343762255436,
+        "operating_margin": 0.278230117608356,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.044778838446403846,
+        "asset_turnover": 0.295343583764483
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 1013.9% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 1,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Strong and stable operating margins (avg: 29.8%) indicate pricing power moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 3,
+      "details": "Consistent book value per share growth (Buffett's favorite metric)"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": -18572.916778566465,
+      "raw_intrinsic_value": -21850.490327725252,
+      "owner_earnings": -1212.535585437351,
+      "assumptions": {
+        "stage1_growth": 0.08,
+        "stage2_growth": 0.04,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.08586426213678178
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (8.0%, 5y), Stage 2 (4.0%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $-5,740",
+        "Stage 2 PV: $-4,689",
+        "Terminal PV: $-11,421",
+        "Total IV: $-21,850",
+        "Conservative IV (15% haircut): $-18,573",
+        "Owner earnings: $-1,213",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 366106.44,
+    "margin_of_safety": -1.050730920708651
+  }
+}

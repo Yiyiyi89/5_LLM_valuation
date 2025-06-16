@@ -1,0 +1,44 @@
+{
+  "signal": "neutral",
+  "confidence": 1.0,
+  "reasoning": "First off, Alphabet (GOOG) largely sits outside my circle of competence. I don\u2019t fully grasp the intricacies of search algorithms and online ad-pricing the way I understand bottling Coca-Cola or running a railroad. That said, it\u2019s clear Google enjoys a formidable moat: network effects in search, massive data assets and brand power give it durable pricing power. Management appears capable \u2013 steering huge cash flows into prudent bets like YouTube and AI \u2013 and the balance sheet is fortress-like, generating consistent earnings with minimal debt. Unfortunately, with zero valuation data here, I can\u2019t determine a margin of safety. Regulatory headwinds and rapid tech shifts add long-term risk, and without a price tag versus intrinsic value, I\u2019m stuck. Compared to opportunities like Coca-Cola or Apple in my portfolio, I\u2019d rather sit on cash until the picture clears. Until I see the numbers that let me calculate intrinsic value, my signal is neutral \u2013 there just isn\u2019t enough here for a yes or a no.",
+  "detailed_analysis": {
+    "ticker": "GOOG",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

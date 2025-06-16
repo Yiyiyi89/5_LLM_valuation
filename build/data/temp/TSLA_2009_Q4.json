@@ -1,0 +1,44 @@
+{
+  "signal": "bearish",
+  "confidence": 0.45,
+  "reasoning": "First, Tesla sits well outside my circle of competence. I\u2019ve spent over 60 years betting on simple businesses I understand \u2013 Coca-Cola, See\u2019s Candies, GEICO \u2013 not capital-intensive auto manufacturing with volatile technology cycles.\n\nOn moat, I see little durable competitive advantage. Electric vehicles may win out long term, but the auto industry has low switching costs, heavy price competition and relentless innovation. No brand or network I know can protect returns for decades the way Coca-Cola\u2019s brand or Gillette\u2019s blades do.\n\nManagement under Elon Musk has charisma, but capital allocation has swung from profitable car sales to moonshots and debt-funded expansions. I prefer managers who think like owners, avoid reckless leverage and plow free cash into returning value. Tesla\u2019s history of spending on factories, crypto and social media distractions raises red flags.\n\nFinancially, without solid data here it\u2019s hard to tell. But memories of capital-hungry auto ventures and boom-bust profitability give me pause. Consistent earnings and fortress balance sheets rate high on my checklist; Tesla\u2019s record has been choppy and heavily debt-financed at times.\n\nValuation is another stumbling block. Even with no reliable intrinsic value estimate, the market price suggests sky-high growth baked in\u2014leaving little margin of safety. I never pay full price for uncertain future growth.\n\nLong term, electric vehicles will be big, but it\u2019s a crowded field: legacy automakers, new startups, and tech giants all compete. With no clear moat and sky-high expectations, I\u2019d rather watch than participate.\n\nCompared to opportunities in my portfolio\u2014whether it\u2019s Coca-Cola\u2019s steady cash flows, Apple\u2019s ecosystem or BNSF\u2019s freight moat\u2014Tesla simply doesn\u2019t fit my criteria. When in doubt, the answer for me is usually no.",
+  "detailed_analysis": {
+    "ticker": "TSLA",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

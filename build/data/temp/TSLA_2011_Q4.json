@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.95,
+  "reasoning": "First off, Tesla isn\u2019t in my circle of competence. I\u2019ve spent 60 years buying simple businesses I understand\u2014cigarettes, candy, railroads\u2014not electric cars and complex software-driven assemblies. As I\u2019ve said, \u201cRisk comes from not knowing what you\u2019re doing.\u201d\n\nOn a competitive moat, Tesla has a strong brand and early mover buzz, but making cars is a inherently capital-intensive, cyclical commodity business with no durable pricing power like See\u2019s Candies or Coca-Cola. Any advantage can be eroded by legacy automakers or new entrants.\n\nManagement under Elon Musk is undoubtedly visionary, but I look for teams that think like owners and steadily allocate capital. Tesla\u2019s negative owner earnings and episodic capital raises suggest a less predictable approach than Berkshire\u2019s disciplined capital allocation at GEICO or BNSF.\n\nFinancially, the numbers are troubling: ROE of \u201336.4%, negative ROIC, debt\u2010to\u2010equity over 2.2, inconsistent earnings with a 7-period earnings growth of \u2013111.6%. A three-stage DCF spits out a negative intrinsic value of roughly \u2013$1,820, leaving no margin of safety (MOS of \u20131.68).\n\nValuation is absurd when intrinsic value is negative. You can\u2019t pay less than zero. I\u2019d rather buy a wonderful business at a fair price than a fair business at a wonderful price.\n\nLong-term prospects? Electric vehicles may dominate, but there\u2019s no guarantee Tesla keeps a moat once others scale. I see red flags in execution risk, capital needs, and competition.\n\nCompared to opportunities in my portfolio\u2014say Apple\u2019s ecosystem or Coca-Cola\u2019s distribution\u2014I\u2019d put my chips elsewhere. My decision: bearish.",
+  "detailed_analysis": {
+    "ticker": "TSLA",
+    "score": 4,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of -36.4%; High debt to equity ratio of 2.2; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": -0.3637171104019283,
+        "debt_to_equity": 2.1843959918766322,
+        "operating_margin": 0.32099047619047616,
+        "current_ratio": null,
+        "return_on_invested_capital": -0.11421855552191611,
+        "asset_turnover": 0.055189726511252396
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of -111.6% over past 7 periods"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/7 periods >15%; Decent operating margins (avg: 37.5%) suggest some competitive advantage"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 2,
+      "details": "Inconsistent book value per share growth; Excellent book value CAGR: 66.3%"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": -1819.8314816770546,
+      "raw_intrinsic_value": -2140.9782137377115,
+      "owner_earnings": -158.01787381304922,
+      "assumptions": {
+        "stage1_growth": 0.03,
+        "stage2_growth": 0.015,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.03
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (3.0%, 5y), Stage 2 (1.5%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $-651",
+        "Stage 2 PV: $-450",
+        "Terminal PV: $-1,040",
+        "Total IV: $-2,141",
+        "Conservative IV (15% haircut): $-1,820",
+        "Owner earnings: $-158",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 2691.1248499999997,
+    "margin_of_safety": -1.676234505313663
+  }
+}

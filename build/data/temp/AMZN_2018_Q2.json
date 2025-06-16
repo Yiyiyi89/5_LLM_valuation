@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.35,
+  "reasoning": "1. Circle of Competence: I\u2019m not a technology analyst \u2013 I understand consumer staples and simple infrastructure, not a sprawling retail and cloud-computing empire. Risk comes from not knowing what you\u2019re doing, and Amazon\u2019s mix of e-commerce, logistics and AWS falls outside my wheelhouse.  \n2. Competitive Moat: There\u2019s real pricing power in AWS and Prime subscriptions, but the inconsistent ROE (only 7.2%) and uneven earnings growth tell me the advantage isn\u2019t as durable as Coca-Cola\u2019s brand or See\u2019s Candies\u2019 local grip.  \n3. Management Quality: Jeff Bezos and Andy Jassy have shown vision and willingness to reinvest, but minimal dividends and a debt-to-equity of 2.8 raise questions about capital allocation. I like managers who think like owners, returning cash rather than piling on leverage.  \n4. Financial Health & Consistency: A high operating margin (48.9%) is attractive, yet ROIC of only 1.9% and volatile earnings growth undermine the story. I prefer steady, predictable earnings \u2013 Amazon\u2019s past decade looks more like a roller coaster.  \n5. Valuation: My three-stage DCF pegs Amazon\u2019s conservative intrinsic value at about $11,858, yet the market price implies almost double that. A margin of safety of \u201398% tells me you\u2019re paying far more than what the business is worth in my view. As I always say: Price is what you pay, value is what you get.  \n6. Long-Term Prospects & Red Flags: E-commerce and cloud are here to stay, but competition is fierce and technology changes fast. I\u2019d rather own a business that\u2019ll look much the same in 20 years than one that depends on next-gen platforms I can\u2019t forecast.  \n7. Relative to My Portfolio: Given the choice, I\u2019d much rather own a business like Coca-Cola or Berkshire Hathaway Energy at attractive prices. There\u2019s no penalty for sitting on the sidelines \u2013 permanent loss comes from overpaying for complexity.  \nIn sum, Amazon is outside my circle of competence, overleveraged and priced above my estimate of intrinsic value. I\u2019d lean bearish here.",
+  "detailed_analysis": {
+    "ticker": "AMZN",
+    "score": 6,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 7.2%; High debt to equity ratio of 2.8; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.07241034433490498,
+        "debt_to_equity": 2.8319759965709386,
+        "operating_margin": 0.48943009492115114,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.01889634601043997,
+        "asset_turnover": 0.3943773303504847
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 394.0% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 1,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Strong and stable operating margins (avg: 43.6%) indicate pricing power moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 3,
+      "details": "Consistent book value per share growth (Buffett's favorite metric)"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": 11857.980662020025,
+      "raw_intrinsic_value": 13950.565484729443,
+      "owner_earnings": 774.1500000000005,
+      "assumptions": {
+        "stage1_growth": 0.08,
+        "stage2_growth": 0.04,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.105
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (8.0%, 5y), Stage 2 (4.0%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $3,665",
+        "Stage 2 PV: $2,994",
+        "Terminal PV: $7,292",
+        "Total IV: $13,951",
+        "Conservative IV (15% haircut): $11,858",
+        "Owner earnings: $774",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 743327.5800000001,
+    "margin_of_safety": -0.9840474361760934
+  }
+}

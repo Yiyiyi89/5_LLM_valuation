@@ -1,0 +1,44 @@
+{
+  "signal": "bearish",
+  "confidence": 0.35,
+  "reasoning": "1. Circle of Competence: I don\u2019t fully understand the competitive dynamics of electric vehicles at scale\u2014they involve rapid tech change, batteries, software updates, raw\u2010material supply chains and self-driving ambitions. That puts Tesla squarely outside my Circle of Competence.\n2. Competitive Moat: Tesla has a strong brand and early lead in EVs, but traditional auto makers and tech giants are pouring in. I\u2019m skeptical that its advantages in software or Supercharger networks will remain durable in the face of deep pockets and global scale.\n3. Management & Capital Allocation: I admire Elon Musk\u2019s vision, but his style is unconventional and he spreads capital across multiple ventures. I look for managers who think like owners, act conservatively with cash and return excess capital to shareholders. Tesla\u2019s reinvestment rate and occasional debt raises don\u2019t sit well with my preferences.\n4. Financial Health & Consistency: Tesla has posted profits recently, but it has a history of uneven earnings and heavy capital spending. I prefer businesses with predictable earnings and strong free cash flow without the need for constant refinancing.\n5. Valuation vs. Intrinsic Value: With no reliable intrinsic valuation data here and Tesla trading at high multiples, there\u2019s little margin of safety. I\u2019d rather pay fair prices for predictable cash flows than chase growth at premium valuations.\n6. Long-Term Prospects & Red Flags: EV adoption will grow, but competition is fierce, regulatory risks abound and batteries may commoditize. I see too many unanswered questions about sustainable margins two decades out.\n7. Relative Opportunity: I\u2019d rather own clear\u2010cut franchises like Coca-Cola or Apple, where I understand the moat, management has a proven track record and valuations leave room for error. Tesla feels to me like a complex bet, not a simple, wonderful business at a fair price.\nIn sum, I\u2019ll pass and wait for opportunities within my circle where the odds favor lasting success and minimal uncertainty.",
+  "detailed_analysis": {
+    "ticker": "TSLA",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

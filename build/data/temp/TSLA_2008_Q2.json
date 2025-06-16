@@ -1,0 +1,44 @@
+{
+  "signal": "bearish",
+  "confidence": 0.35,
+  "reasoning": "1. Circle of Competence: I\u2019ve spent my life investing in consumer staples, banking, insurance, and simple industrials\u2014not cutting-edge automakers. I confess I don\u2019t fully understand the long-term economics of building electric vehicles, charging infrastructure, and batteries at scale. As I like to say, \u201cRisk comes from not knowing what you\u2019re doing.\u201d \n\n2. Competitive Moat: Tesla enjoys a certain brand charisma and first-mover status, but those advantages can be fleeting in a capital-intensive, commoditized industry. Legacy automakers and well-capitalized new entrants are pouring billions into EVs. I see no unassailable pricing power or switching costs like we have with Coca-Cola or See\u2019s Candies. \n\n3. Management Quality: Elon Musk is undeniably visionary, but his unpredictable public behavior and repeated capital raises give me pause about disciplined capital allocation. I prefer managers who think and act like patient owners. \n\n4. Financial Health: The automotive business requires enormous, ongoing investment in factories, R&D, batteries, and service networks\u2014far from a financial fortress. While Tesla has shown profitability recently, its earnings can be lumpy and dependent on regulatory credits and volatile commodity costs. \n\n5. Valuation: With no reliable data here, history tells me Tesla often trades at sky-high multiples on optimistic growth assumptions. I wouldn\u2019t want to pay lofty prices for uncertain streams of future cash flow. \n\n6. Long-Term Prospects & Red Flags: EV adoption is accelerating, but competition will be fierce. Consumer preferences can shift, battery technology may improve, and new entrants like VW, GM, and Toyota have deeper pockets. I prefer businesses that, absent changes in technology or regulation, will look pretty much the same in 20 years. \n\n7. Relative to My Portfolio: I\u2019m happier owning businesses I understand\u2014Coca-Cola, Apple, or Burlington Northern\u2014where I see durable moats and sensible management. Tesla doesn\u2019t fit that mold. In light of my circle of competence and the valuation risks, I\u2019d say \u201cno\u201d here. Better opportunities, with wider moats and more predictable economics, exist elsewhere.",
+  "detailed_analysis": {
+    "ticker": "TSLA",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

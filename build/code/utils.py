@@ -346,112 +346,128 @@ def create_default_warren_buffett_signal():
 
 
 def call_llm(
-    prompt: Any,
-    pydantic_model=WarrenBuffettSignal,
-    default_factory=None,
-    model: str = "gpt-4o-2024-08-06",
+    prompt: list[dict],
+    pydantic_model: type[WarrenBuffettSignal] = WarrenBuffettSignal,
+    default_factory: Callable[[], WarrenBuffettSignal] = None,
+    model: str = "o4-mini-2025-04-16",
     temperature: float = 0.0,
     max_tokens: int = 2000,
 ) -> WarrenBuffettSignal:
     """
-    Analyze a stock using LLM based on provided financial metrics.
+    Call OpenAI LLM and parse the response into the specified Pydantic model.
+    Compatible with all GPT series models: prioritizes beta.chat.completions.parse (supports structured output),
+    falls back to chat.completions.create with manual JSON parsing.
 
     Args:
-        ticker: Stock symbol to analyze
-        analysis_data: String containing financial metrics and analysis data
-        model: OpenAI model to use
-        temperature: Temperature for response generation
-        max_tokens: Maximum tokens in the response
+        prompt: List of messages for OpenAI Chat API
+        pydantic_model: Pydantic class for parsing the output
+        default_factory: Fallback factory function if parsing fails
+        model: Name of the model to call
+        temperature: Sampling temperature
+        max_tokens: Maximum output token count
 
     Returns:
-        InvestmentAnalysis: Analysis result containing signal, confidence, and comments
+        Parsed Pydantic instance, or default_factory() (if provided)/None.
     """
-
-    # Call ChatGPT
     try:
-        # 1) invoke the API via the chat.completions.create method
-        resp = OPENAI_CLIENT.beta.chat.completions.parse(
-            model=model,
-            messages=prompt,
-            temperature=temperature,
-            max_tokens=max_tokens,
-            response_format=pydantic_model,
-        )
+        # Prioritize parse interface that supports structured output
+        parse_fn = getattr(OPENAI_CLIENT.beta.chat.completions, "parse", None)
+        if parse_fn:
+            # For parse, parameter name is max_completion_tokens
+            resp = parse_fn(
+                model=model,
+                messages=prompt,
+                # since o4-mini-2025-04-16 does not support max_tokens, we use max_completion_tokens
+                # since o4-mini defaulty greedy algorithm, they do not support temperature
+                max_completion_tokens=max_tokens,
+                response_format=pydantic_model,
+            )
+            content = resp.choices[0].message.content
+        else:
+            # Fall back to generic create interface
+            resp = OPENAI_CLIENT.chat.completions.create(
+                model=model,
+                messages=prompt,
+                temperature=temperature,
+                max_tokens=max_tokens,
+            )
+            content = resp.choices[0].message.content
 
     except Exception as e:
         print(f"LLM call failed: {e}")
         raise
 
-    # Parse JSON response
-    content = resp.choices[0].message.content
+    # Finally parse JSON with Pydantic
     try:
         return pydantic_model.model_validate_json(content)
     except Exception as e:
         print(f"Failed to parse response: {e}")
-        return default_factory
+        if default_factory:
+            return default_factory()
+        return None
 
 
-# Test
-if __name__ == "__main__":
-    # Example analysis data
-    analysis_data = """
-    ROE: 15%
-    Debt to Equity: 0.5
-    Current Ratio: 1.5
-    Operating Margin: 20%
-    Revenue Growth: 10%
-    Free Cash Flow: $1B
-    """
-    ticker = "AAPL"
-    # Define the template
-    template = ChatPromptTemplate.from_messages(
-        [
-            (
-                "system",
-                "You are a testing assistant. Follow instructions precisely and return valid JSON.",
-            ),
-            (
-                "human",
-                """Please analyze the symbol "{ticker}" using the data below:
+# # Test
+# if __name__ == "__main__":
+#     # Example analysis data
+#     analysis_data = """
+#     ROE: 15%
+#     Debt to Equity: 0.5
+#     Current Ratio: 1.5
+#     Operating Margin: 20%
+#     Revenue Growth: 10%
+#     Free Cash Flow: $1B
+#     """
+#     ticker = "AAPL"
+#     # Define the template
+#     template = ChatPromptTemplate.from_messages(
+#         [
+#             (
+#                 "system",
+#                 "You are a testing assistant. Follow instructions precisely and return valid JSON.",
+#             ),
+#             (
+#                 "human",
+#                 """Please analyze the symbol "{ticker}" using the data below:
 
-    {analysis_data}
+#     {analysis_data}
 
-    Return your answer in exactly this JSON format:
-    {{
-    "signal": "buy" | "sell" | "hold",
-    "confidence": float between 0 and 100,
-    "comments": "brief explanation of your decision"
-    }}
-    """,
-            ),
-        ]
-    )
+#     Return your answer in exactly this JSON format:
+#     {{
+#     "signal": "buy" | "sell" | "hold",
+#     "confidence": float between 0 and 100,
+#     "comments": "brief explanation of your decision"
+#     }}
+#     """,
+#             ),
+#         ]
+#     )
 
-    prompt_value = template.format_prompt(ticker=ticker, analysis_data=analysis_data)
-    messages = prompt_value.to_messages()
-    prompt = []
-    for m in messages:
-        role = m.type  # this will be "system", "human", or "ai"
-        if role == "human":
-            role = "user"
-        elif role == "ai":
-            role = "assistant"
+#     prompt_value = template.format_prompt(ticker=ticker, analysis_data=analysis_data)
+#     messages = prompt_value.to_messages()
+#     prompt = []
+#     for m in messages:
+#         role = m.type  # this will be "system", "human", or "ai"
+#         if role == "human":
+#             role = "user"
+#         elif role == "ai":
+#             role = "assistant"
 
-        prompt.append({"role": role, "content": m.content})
-    print(prompt)
+#         prompt.append({"role": role, "content": m.content})
+#     print(prompt)
 
-    # Analyze AAPL
-    result = call_llm(
-        prompt=prompt,
-        pydantic_model=WarrenBuffettSignal,
-        default_factory=create_default_warren_buffett_signal,
-        model="gpt-4o-2024-08-06",
-        temperature=0.0,
-        max_tokens=2000,
-    )
+#     # Analyze AAPL
+#     result = call_llm(
+#         prompt=prompt,
+#         pydantic_model=WarrenBuffettSignal,
+#         default_factory=create_default_warren_buffett_signal,
+#         model="gpt-4o-2024-08-06",
+#         temperature=0.0,
+#         max_tokens=2000,
+#     )
 
-    # Print results
-    print("\nInvestment Analysis Results:")
-    print(f"Signal: {result.signal.upper()}")
-    print(f"Confidence: {result.confidence:.1f}%")
-    print(f"Reasoning: {result.reasoning}")
+#     # Print results
+#     print("\nInvestment Analysis Results:")
+#     print(f"Signal: {result.signal.upper()}")
+#     print(f"Confidence: {result.confidence:.1f}%")
+#     print(f"Reasoning: {result.reasoning}")

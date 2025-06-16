@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.85,
+  "reasoning": "1. Circle of Competence: I\u2019ve spent my career avoiding businesses I don\u2019t fully grasp. E-commerce and cloud infrastructure are complex, capital-intensive operations outside my circle\u2014far removed from the simple consumer franchises and financials I understand.\n2. Competitive Moat: Amazon boasts scale, network effects and Prime lock-in, but the inconsistent ROE (only 7.1% last period and 0/10 years above 15%) suggests its advantage isn\u2019t translating into durable, high-return economics the way Coca-Cola\u2019s franchise has.\n3. Management & Capital Allocation: I admire Jeff Bezos\u2019s vision, yet the company plows owner earnings (negative $1,125M) back into massive CapEx. There\u2019s little in the way of dividends or buybacks to reward shareholders, and debt-to-equity at 2.5x raises concern about financial discipline.\n4. Financial Health & Consistency: Weak return on invested capital (2%), heavy leverage, and erratic earnings growth undermine the consistency I prize. A fortress balance sheet has minimal debt\u2014Amazon\u2019s is anything but.\n5. Valuation vs. Intrinsic Value: A three-stage DCF yields a negative intrinsic value and a margin of safety of \u2011101%. Even with generous growth assumptions, I\u2019d be paying far more than the business warrants.\n6. Long-Term Prospects & Red Flags: While e-commerce and AWS may grow, competition, regulatory scrutiny and capital intensity threaten margin sustainability. I don\u2019t see a path to the 15%+ ROEs I demand over decades.\n7. Comparison to Portfolio: I\u2019d rather own a proven, wide-moat consumer staple like Coca-Cola or a high-return insurer like GEICO at a fair price than bet on a negative-owner-earnings, high-debt complex tech retailer.\nIn short, this falls outside my sweet spot and trades at a price far above any intrinsic value I can calculate\u2014my answer is no.",
+  "detailed_analysis": {
+    "ticker": "AMZN",
+    "score": 6,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 7.1%; High debt to equity ratio of 2.5; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.07111273871527778,
+        "debt_to_equity": 2.5036078559027777,
+        "operating_margin": 0.4723771819326975,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.020297002872473036,
+        "asset_turnover": 0.34420124344789677
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 221.9% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 1,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Decent operating margins (avg: 48.0%) suggest some competitive advantage; High performance stability (86.1%) suggests strong competitive moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 3,
+      "details": "Consistent book value per share growth (Buffett's favorite metric)"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": -17230.565712983676,
+      "raw_intrinsic_value": -20271.253779980798,
+      "owner_earnings": -1124.8999999999996,
+      "assumptions": {
+        "stage1_growth": 0.08,
+        "stage2_growth": 0.04,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.105
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (8.0%, 5y), Stage 2 (4.0%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $-5,325",
+        "Stage 2 PV: $-4,350",
+        "Terminal PV: $-10,596",
+        "Total IV: $-20,271",
+        "Conservative IV (15% haircut): $-17,231",
+        "Owner earnings: $-1,125",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 1164316.485,
+    "margin_of_safety": -1.0147988677777622
+  }
+}

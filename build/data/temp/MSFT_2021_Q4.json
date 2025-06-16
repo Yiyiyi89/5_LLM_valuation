@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.35,
+  "reasoning": "First off, Microsoft falls well outside my circle of competence. I don\u2019t make a living trying to forecast cloud-computing growth rates or Azure usage patterns, any more than I\u2019d try to pick individual biotech winners. That alone puts a big yellow caution light on the dashboard. \n\nWhen I look at the moat call, I\u2019ll admit Microsoft has a durable franchise in Office, Windows, and a growing cloud business with switching costs. But the numbers aren\u2019t convincing: ROE of only 11.6% (below my 15% bar) and an inconsistent earnings pattern over ten periods make me wonder how wide and durable that moat really is. \n\nOn management and capital allocation, issuing stock to fund large acquisitions without a clear pathway to commensurate returns raises a flag. You don\u2019t see dividend kings handing out new shares to paper over growth. I want to see owners that think long term and reinvest wisely. \n\nThe balance sheet can look strong until you note a debt\u2010to\u2010equity ratio of 1.35\u2014hardly \u2018Fort Knox\u2019 quality\u2014and spot gaps in liquidity metrics.  Consistency is key in my book, and Microsoft\u2019s earnings have been anything but steady. \n\nValuation is the nail in the coffin. Even after a conservative 15% haircut to a three-stage DCF, you end up with an intrinsic value of about $81,800 a share\u2014but the stock trades well north of that. A margin of safety below zero is the last thing Warren Buffett wants. \n\nWill Microsoft be around in 20 years? Probably. But will I pay more than its calculated value for that privilege? No. I\u2019d rather own smaller companies in my wheelhouse\u2014think Coca-Cola or BNSF\u2014where I understand the business cold, I trust management implicitly, and I can buy at a price that gives me a real margin of safety. For me, \u2018no\u2019 is the right answer on Microsoft today.",
+  "detailed_analysis": {
+    "ticker": "MSFT",
+    "score": 6,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 11.6%; High debt to equity ratio of 1.4; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.11591120376369834,
+        "debt_to_equity": 1.3507549933797223,
+        "operating_margin": 0.7693057722308893,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.04930807510358651,
+        "asset_turnover": 0.13827113149718825
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 86.8% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 1,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Decent operating margins (avg: 76.5%) suggest some competitive advantage; High performance stability (93.8%) suggests strong competitive moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 3,
+      "details": "Consistent book value per share growth (Buffett's favorite metric)"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Recent common stock issuance (potential dilution); No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": 81763.13528571035,
+      "raw_intrinsic_value": 96191.92386554158,
+      "owner_earnings": 5629.071198362044,
+      "assumptions": {
+        "stage1_growth": 0.07066992718560267,
+        "stage2_growth": 0.03533496359280133,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.07066992718560267
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (7.1%, 5y), Stage 2 (3.5%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $25,972",
+        "Stage 2 PV: $20,577",
+        "Terminal PV: $49,643",
+        "Total IV: $96,192",
+        "Conservative IV (15% haircut): $81,763",
+        "Owner earnings: $5,629",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 1913397.90095,
+    "margin_of_safety": -0.9572680960687189
+  }
+}

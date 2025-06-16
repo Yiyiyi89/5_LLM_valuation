@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.92,
+  "reasoning": "1. Circle of Competence: I\u2019ve spent my life in consumer brands, banking, insurance and simple industrials. E-commerce, cloud computing and the myriad of fulfillment and digital services Amazon operates are outside my circle of competence. As I say, \u201cRisk comes from not knowing what you\u2019re doing,\u201d so I\u2019m inclined to pass when faced with complexity I\u2019ve never mastered. 2. Competitive Moat: Amazon\u2019s operating margin of 55.7% in parts of the business hints at pricing power (largely AWS), but its inconsistent ROE\u2014only 0 of 10 periods above 15%\u2014and erratic earnings patterns suggest an unstable moat across the whole company. 3. Management & Capital Allocation: Jeff Bezos and Andy Jassy are visionary, but owner earnings are negative ($-18.7 billion), no dividends are paid and share issuance remains minimal. That tells me they\u2019re plowing everything back into growth\u2014but at a cost to current returns. 4. Financial Health & Consistency: A 1.2 debt-to-equity ratio and patchy earnings growth with zero consistency score raise flags. I look for a fortress balance sheet; this isn\u2019t it. 5. Valuation vs. Intrinsic Value: A three-stage DCF spits out a negative intrinsic value (even after a 15% haircut to $-287 billion) and a margin of safety of \u2011114%. You don\u2019t need to be a genius to see there\u2019s no margin here. 6. Long-Term Prospects & Red Flags: While AWS may thrive, the rest of the flywheel is capital-intensive, returns are uneven and debt is mounting. That\u2019s not a recipe for a \u201cforever\u201d holding in my book. 7. Comparison to Current Portfolio: I\u2019d rather own Coca-Cola or Apple\u2014simple businesses with durable moats, honest management, fortress finances and attractive valuations. In short, Amazon sits outside what I understand, carries too much complexity, shows weak returns and offers no margin of safety. My answer is no.",
+  "detailed_analysis": {
+    "ticker": "AMZN",
+    "score": 7,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 7.0%; High debt to equity ratio of 1.2; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.06995139350281498,
+        "debt_to_equity": 1.1851732699234185,
+        "operating_margin": 0.5566264803612507,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.032011829206233376,
+        "asset_turnover": 0.30051816788127267
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 596.5% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 2,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Strong and stable operating margins (avg: 55.5%) indicate pricing power moat; High performance stability (74.1%) suggests strong competitive moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 3,
+      "details": "Consistent book value per share growth (Buffett's favorite metric)"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": -287197.10705832974,
+      "raw_intrinsic_value": -337878.94948038796,
+      "owner_earnings": -18749.705094503945,
+      "assumptions": {
+        "stage1_growth": 0.08,
+        "stage2_growth": 0.04,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.105
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (8.0%, 5y), Stage 2 (4.0%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $-88,757",
+        "Stage 2 PV: $-72,512",
+        "Terminal PV: $-176,610",
+        "Total IV: $-337,879",
+        "Conservative IV (15% haircut): $-287,197",
+        "Owner earnings: $-18,750",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 2116693.26,
+    "margin_of_safety": -1.1356819679476513
+  }
+}

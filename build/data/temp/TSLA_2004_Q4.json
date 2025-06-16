@@ -1,0 +1,44 @@
+{
+  "signal": "bearish",
+  "confidence": 0.85,
+  "reasoning": "1. Circle of Competence: I\u2019ve spent my life in consumer brands, insurance, banking and railroads \u2013 not running a high-tech auto company. Tesla\u2019s mix of cutting-edge software, battery chemistry and manufacturing scale falls squarely outside my wheelhouse. As I\u2019ve said, \u201cRisk comes from not knowing what you\u2019re doing,\u201d and I don\u2019t know enough about the long-term economics of electric vehicles to bet Berkshire shareholders\u2019 capital here.\n\n2. Competitive Moat: Tesla has a strong brand among EV enthusiasts and early adopters, but the auto industry is historically a commodity business with brutal price competition and low switching costs. Legacy automakers are pouring billions into EVs and have dealer networks, balance sheets and service infrastructures Tesla lacks. I see no wide, enduring moat like the moat we see around Coca-Cola or See\u2019s Candies.\n\n3. Management Quality: Elon Musk is a visionary, no doubt, but he also juggles multiple massive ventures and has shown a willingness to raise capital at lofty valuations \u2013 diluting insiders when it suits him. I prefer managers who think and act like owners, quietly allocating capital where returns exceed cost of capital. I\u2019m not confident Tesla\u2019s capital allocation track record meets that standard.\n\n4. Financial Health: We don\u2019t have consistent long-term profitability data here, and the auto business is capital-intensive with volatile earnings. That\u2019s the opposite of the financial fortress I like \u2013 predictable cash flow, low debt, strong return on equity.\n\n5. Valuation: With no reliable intrinsic value estimate provided, all I know is the market cap sits in the hundreds of billions. Paying that much for a business without a defensible moat or proven, consistent returns is far from the margin of safety I demand \u2013 I\u2019d rather wait for a price that allows for a durable margin of safety.\n\n6. Long-Term Prospects and Red Flags: Electric vehicles may dominate someday, but battery technologies, regulatory incentives and competitive responses are far too uncertain. In my experience, betting on uncertain outcomes is a recipe for disappointment.\n\n7. Portfolio Comparison: I\u2019d much rather own a business like Coca-Cola, where I understand the economics and management, and where pricing power endures. As the saying goes, I\u2019d rather own a wonderful business at a fair price than a fair business at a wonderful price.\n\nBottom line: Tesla sits outside my circle of competence, lacks a durable moat against well-capitalized competitors, and trades at a valuation that gives me no margin of safety. For Berkshire Hathaway, the answer here is no.",
+  "detailed_analysis": {
+    "ticker": "TSLA",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

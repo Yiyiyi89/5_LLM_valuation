@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.85,
+  "reasoning": "1. Circle of Competence: I\u2019ve spent my life investing in simple, predictable businesses \u2013 consumer staples, insurance, railroads. Netflix is a fast-changing content and technology play with shifting customer tastes and massive content spend. It\u2019s outside my circle, and \"risk comes from not knowing what you\u2019re doing.\"  \n2. Competitive Moat: While Netflix has strong brand recognition and scale, its content moat is neither exclusive nor durable. Competitors from Disney to Amazon can outspend or undercut it. Inconsistent ROE and earnings growth (-51% over ten periods) show the moat isn\u2019t holding.  \n3. Management & Capital Allocation: Reed Hastings has grown the business, but financing comes from high debt (D/E 3.1) and minimal free cash flow. No dividends, occasional stock issuance \u2013 not the hallmark of owners thinking like owners.  \n4. Financial Health & Consistency: Weak ROE (2.7%), shaky ROIC (0.7%), heavy leverage, and erratic earnings don\u2019t inspire confidence. A fortress balance sheet should have debt in check and steady profits.  \n5. Valuation vs. Intrinsic Value: A three-stage DCF pegs intrinsic value near $373, yet the market trades well above that (MOS ~ -96%). I keep my margin of safety wide; I won\u2019t pay up when the discount is negative.  \n6. Long-Term Prospects & Red Flags: Streaming will stay competitive. Content costs rise. Profitability can be squeezed at any moment, and there\u2019s no end to competition.  \n7. Opportunity Cost: I\u2019d rather add to giants like Coca-Cola or Apple, where I understand the economics, the pricing power, and where management treats shareholders like partners. On Netflix, I\u2019ll pass \u2013 better to watch than to own.",
+  "detailed_analysis": {
+    "ticker": "NFLX",
+    "score": 7,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 2.7%; High debt to equity ratio of 3.1; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.026655583915660138,
+        "debt_to_equity": 3.052697033886807,
+        "operating_margin": 0.2999180827625934,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.0065772456447591035,
+        "asset_turnover": 0.23865909978037164
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of -51.1% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 3/10 periods >15%; Decent operating margins (avg: 32.5%) suggest some competitive advantage"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 5,
+      "details": "Consistent book value per share growth (Buffett's favorite metric); Excellent book value CAGR: 15.2%"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": 372.5487565246847,
+      "raw_intrinsic_value": 438.29265473492313,
+      "owner_earnings": 24.3219,
+      "assumptions": {
+        "stage1_growth": 0.08,
+        "stage2_growth": 0.04,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.105
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (8.0%, 5y), Stage 2 (4.0%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $115",
+        "Stage 2 PV: $94",
+        "Terminal PV: $229",
+        "Total IV: $438",
+        "Conservative IV (15% haircut): $373",
+        "Owner earnings: $24",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 10903.22149,
+    "margin_of_safety": -0.9658313135373457
+  }
+}

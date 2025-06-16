@@ -1,0 +1,44 @@
+{
+  "signal": "bearish",
+  "confidence": 0.35,
+  "reasoning": "1. Circle of Competence: I\u2019ve spent my life investing in businesses I understand\u2014Coca-Cola, See\u2019s Candies, GEICO\u2014and I know the auto industry is a capital-hungry, low-margin commodity business. Tesla\u2019s mix of cutting-edge technology, software integration, and manufacturing scale is well outside my circle of competence. As I always say, \u201cRisk comes from not knowing what you\u2019re doing.\u201d\n2. Economic Moat: From the data provided, there\u2019s no clear moat analysis. The auto business has fierce competition, thin margins, and cyclicality. Any brand loyalty Tesla has may be eroded by entrenched automakers with deeper pockets or by new entrants. I don\u2019t see a durable competitive advantage here akin to Coca-Cola\u2019s brand or Moody\u2019s pricing power.\n3. Management Quality: Elon Musk may be a visionary, but my preference is for managers who think like owners and allocate capital conservatively. Tesla has raised capital at high valuations, burn rates remain high, and I\u2019m not convinced management\u2019s capital allocation will protect shareholders through downturns.\n4. Financial Health: With no reliable consistency analysis or financials provided, I can\u2019t verify earnings stability or debt levels. I know Tesla has swings in profitability and relies on government credits\u2014hardly the kind of fortress balance sheet I admire.\n5. Valuation: Without an intrinsic value estimate or margin of safety, paying a fair price is impossible. History shows me that buying auto stocks at lofty prices tends to be a recipe for long waits or permanent impairment.\n6. Long-Term Prospects & Red Flags: Electric vehicles may win in the long run, but I can\u2019t predict regulatory changes, battery breakthroughs, or competitive responses. In short, there are too many moving parts.\n7. Comparison to Portfolio: I\u2019d rather own a wonderful business like Apple or See\u2019s at a fair price than wrestle with an unpredictable, capital-intensive auto maker. When in doubt, I say no. Tesla simply doesn\u2019t meet my first criterion\u2014understanding the business\u2014so I\u2019ll pass.",
+  "detailed_analysis": {
+    "ticker": "TSLA",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

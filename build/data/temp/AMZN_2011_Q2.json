@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.9,
+  "reasoning": "1. Circle of Competence: Amazon operates at the intersection of e-commerce, cloud computing and digital services\u2014industries with razor-thin margins, rapid technological change and regulatory scrutiny. That\u2019s outside my wheelhouse. I\u2019d much rather stick to businesses I understand like consumer staples, insurance or railroads. \n\n2. Competitive Moat: While Amazon\u2019s scale gives it some advantage, the inconsistent ROE (only 1 out of 10 periods >15%) and erratic earnings growth argue against a durable economic moat. Operating margins around 26% hide the fact that retail is intensely competitive and AWS faces formidable rivals in Microsoft and Google. I see no wide moat that\u2019ll keep capital light and cash flow steady for decades. \n\n3. Management & Capital Allocation: Bezos and Jassy have built an empire and shown a shareholder focus by limiting share issuance. But reinvestment in new ventures has delivered uneven returns\u2014evident in negative owner earnings and volatile earnings growth. I prefer managers who allocate capital with a simpler, proven playbook, like our team at See\u2019s Candies or Geico. \n\n4. Financial Health & Consistency: A 2.4% ROE, debt\u2010to\u2010equity of 1.3 and negative owner earnings raise red flags. The business lacks the consistent, fortress-like balance sheet I seek. Strong book value growth (10.8% CAGR) is a bright spot, but it\u2019s swamped by unstable cash flows and a DCF that yields a negative intrinsic value. \n\n5. Valuation vs. Intrinsic Value: A DCF putting intrinsic value at \u2013$1,678 per share and a negative margin of safety makes Amazon one of the few companies I\u2019ve seen that looks overvalued even with zero margin\u2010of\u2010safety. I\u2019d rather pay a fair price for a wonderful business than an outrageous price for a mediocre one. \n\n6. Long-Term Prospects & Red Flags: E-commerce and cloud will grow, but any benefits are offset by fierce competition, price wars and cap-ex demands. The inconsistency in earnings and the uphill regulatory battles only add risk. I don\u2019t see the kind of predictable, wide-moat businesses that merit a \u2018forever\u2019 holding. \n\n7. Opportunity Cost: Money is finite. I\u2019d deploy capital into Coca-Cola, Apple or BNSF\u2014businesses with simple economics, proven moats and management teams that think like owners. Amazon, by contrast, falls short on every leg of my investment stool. For me, the answer is a decisive \u201cno.\u201d",
+  "detailed_analysis": {
+    "ticker": "AMZN",
+    "score": 7,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 2.4%; High debt to equity ratio of 1.3; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.02446877012234385,
+        "debt_to_equity": 1.310495814552479,
+        "operating_margin": 0.2655099364470897,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.010590268100997715,
+        "asset_turnover": 0.552533303606265
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 7.3% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 1,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Decent operating margins (avg: 24.8%) suggest some competitive advantage; High performance stability (80.4%) suggests strong competitive moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 4,
+      "details": "Consistent book value per share growth (Buffett's favorite metric); Good book value CAGR: 10.8%"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": -1677.764517611847,
+      "raw_intrinsic_value": -1973.840608955114,
+      "owner_earnings": -187.35000000000002,
+      "assumptions": {
+        "stage1_growth": -0.014007077315563598,
+        "stage2_growth": -0.007003538657781799,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": -0.014007077315563598
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (-1.4%, 5y), Stage 2 (-0.7%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $-683",
+        "Stage 2 PV: $-403",
+        "Terminal PV: $-888",
+        "Total IV: $-1,974",
+        "Conservative IV (15% haircut): $-1,678",
+        "Owner earnings: $-187",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 86228.22,
+    "margin_of_safety": -1.019457255613207
+  }
+}

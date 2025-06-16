@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.9,
+  "reasoning": "1. Circle of Competence: I\u2019m not a technology guy or an auto-manufacturer. I like simple, understandable businesses\u2014Coca-Cola, See\u2019s Candies, railroads\u2014not self-driving electric vehicles laden with software updates and regulatory questions. Tesla sits well outside my circle. \n\n2. Competitive Moat: Tesla does have some brand cachet and a head start in EVs, but inconsistent ROEs (only 0 of 10 periods above 15%) and high debt suggest any moat is shallow and unsteady. Automakers face fierce competition and rapid tech change\u2014hardly a fortress.\n\n3. Management & Capital Allocation: Elon Musk is charismatic, but he isn\u2019t wedded to shareholder returns\u2014owner earnings are negative $97 million. He\u2019s plowed cash back into growth rather than producing consistent free cash flow or dividends. That\u2019s fine for some investors, but not for me.\n\n4. Financial Health & Consistency: Weak ROE of 1.8%, debt/equity of 1.16, negative owner earnings, and wild swings in earnings growth. I prefer companies with steady earnings power and strong balance sheets. Tesla is on a financial roller-coaster.\n\n5. Valuation vs. Intrinsic Value: The three-stage DCF yields a negative intrinsic value (\u2013$1,486 per share conservative), and margin of safety is below zero. I don\u2019t buy businesses unless price is well below value. Here price well exceeds any sane estimate of value.\n\n6. Long-Term Prospects & Red Flags: EV competition is heating up, regulation shifting, and battery economics remain uncertain. Tesla\u2019s lead can evaporate. I\u2019d rather own a business I can count on for decades without fear of disruption.\n\n7. Opportunity Cost: I\u2019d rather deploy capital into durable franchises with bodies in seats\u2014banks, consumer staples, insurance\u2014or Apple, which I view as a consumer products company with pricing power and shareholder-friendly management. Tesla simply doesn\u2019t compare.\n\nConclusion: Outside my circle, weak moat, erratic management metrics, poor financial consistency, and an absurdly high price. The signal here is bearish.",
+  "detailed_analysis": {
+    "ticker": "TSLA",
+    "score": 5,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 1.8%; High debt to equity ratio of 1.2; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.017903126916002453,
+        "debt_to_equity": 1.1652156141426528,
+        "operating_margin": 0.2729810376359611,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.008268519217699917,
+        "asset_turnover": 0.1961224798006494
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 214.0% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 1,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Strong and stable operating margins (avg: 27.3%) indicate pricing power moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 2,
+      "details": "Good book value per share growth pattern"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": -1485.789736118248,
+      "raw_intrinsic_value": -1747.9879248449977,
+      "owner_earnings": -97.0,
+      "assumptions": {
+        "stage1_growth": 0.08,
+        "stage2_growth": 0.04,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.105
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (8.0%, 5y), Stage 2 (4.0%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $-459",
+        "Stage 2 PV: $-375",
+        "Terminal PV: $-914",
+        "Total IV: $-1,748",
+        "Conservative IV (15% haircut): $-1,486",
+        "Owner earnings: $-97",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 581372.73,
+    "margin_of_safety": -1.0025556577724557
+  }
+}

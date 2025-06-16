@@ -1,0 +1,44 @@
+{
+  "signal": "neutral",
+  "confidence": 0.3,
+  "reasoning": "First things first, Microsoft lies squarely in the technology world \u2013 a space I generally avoid except when I can treat it like a consumer products company, as I do with Apple. Based on the data you\u2019ve provided, I don\u2019t even have the basics: no market cap, no earnings history, no moat or management analysis, nothing to hang my hat on. With zero insight into its competitive advantages, financial strength or intrinsic value, I can\u2019t tell you if Microsoft\u2019s moat is durable or eroding. I have no read on management\u2019s track record of capital allocation. Likewise, without consistent earnings data or a price-to-value calculation, I can\u2019t form an opinion on valuation. In short, this opportunity doesn\u2019t clear my circle of competence hurdle, and there\u2019s simply not enough information to apply my usual playbook. I\u2019d instead wait for a full set of fundamentals or look to familiar turf \u2013 consumer staples, insurance, simple industrials \u2013 before pulling the trigger.",
+  "detailed_analysis": {
+    "ticker": "MSFT",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.88,
+  "reasoning": "1. Circle of Competence: Automobiles\u2014especially high-tech electric vehicles\u2014sit well outside my circle of competence. I\u2019ve spent my life studying simple consumer franchises, insurance, and banking, not bleeding-edge manufacturing with ever-shifting technologies and subsidy-driven demand.\n\n2. Competitive Moat: Tesla\u2019s strong operating margins suggest it has some pricing muscle today, but auto manufacturing is ultimately a commoditized business with thin moats. Legacy manufacturers, new entrants, and shifting technology standards make any advantage ephemeral. That\u2019s not the kind of fortress I look for.\n\n3. Management Quality: Elon Musk is undeniably visionary, but his capital-allocation decisions\u2014ample stock issuance and unpredictable commentary\u2014don\u2019t strike me as shareholder-first stewardship. I\u2019d rather see steady buybacks or dividends from a proven management team that thinks like owners.\n\n4. Financial Health & Consistency: The fundamentals are spotty: negative ROE, high debt-to-equity, inconsistent earnings growth, and negative owner earnings in the DCF. A strong balance sheet and reliable earnings are table stakes for me\u2014and Tesla doesn\u2019t deliver here.\n\n5. Valuation vs. Intrinsic Value: A three-stage DCF spits out a deeply negative intrinsic value and a margin of safety that\u2019s firmly below zero. Paying up for promised future growth when you\u2019re already underwater on owner earnings is like buying a used car with no wheels\u2014you\u2019re not going anywhere.\n\n6. Long-term Prospects & Red Flags: Competition is intensifying, raw-material costs fluctuate, and regulatory incentives could vanish. Auto manufacturing remains capital intensive with razor-thin margins and technological uncertainty\u2014hardly a business I\u2019d hold forever.\n\n7. Portfolio Comparison: I\u2019d far prefer owning a stable consumer brand like Coca-Cola or a fortress bank like Bank of America at a reasonable price. When in doubt, the answer is usually no. TSLA fails on circle of competence, financial strength, and valuation\u2014so I\u2019ll pass.",
+  "detailed_analysis": {
+    "ticker": "TSLA",
+    "score": 5,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of -11.1%; High debt to equity ratio of 5.0; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": -0.1109684856058216,
+        "debt_to_equity": 5.030740092338846,
+        "operating_margin": 0.34460796457679355,
+        "current_ratio": null,
+        "return_on_invested_capital": -0.018400475548065898,
+        "asset_turnover": 0.16355273521344868
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 2.9% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 1,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 1/10 periods >15%; Strong and stable operating margins (avg: 26.1%) indicate pricing power moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 2,
+      "details": "Good book value per share growth pattern"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": -6602.30592619046,
+      "raw_intrinsic_value": -7767.418736694659,
+      "owner_earnings": -573.2851394341639,
+      "assumptions": {
+        "stage1_growth": 0.03,
+        "stage2_growth": 0.015,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.03
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (3.0%, 5y), Stage 2 (1.5%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $-2,363",
+        "Stage 2 PV: $-1,632",
+        "Terminal PV: $-3,772",
+        "Total IV: $-7,767",
+        "Conservative IV (15% haircut): $-6,602",
+        "Owner earnings: $-573",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 26084.03064,
+    "margin_of_safety": -1.2531167831119547
+  }
+}

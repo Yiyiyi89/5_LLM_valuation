@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.2,
+  "reasoning": "Well, the very first question is whether Netflix falls into my circle of competence. I\u2019m fond of simple businesses I truly understand \u2013 consumer staples, banks, insurance, railroads \u2013 and I\u2019ve long steered clear of complex streaming platforms with ever-changing content costs and technology shifts. That alone sets off my guard.\n\nMoat: Netflix has a well-known brand and a global subscriber base, but the streaming business lacks the durable pricing power and switching costs of, say, Coca-Cola or Apple\u2019s ecosystem. Competition from deep-pocketed rivals (Disney+, Amazon, HBO Max) erodes any temporary edge. The moat looks more like a shallow trench.\n\nManagement: Reed Hastings and Ted Sarandos have done a fine job building subscriber counts, but management has plowed every penny back into content. I admire reinvestment, but I want capital allocation that rewards owners too. No dividends, limited buybacks, and enormous content spend raise questions about return on capital.\n\nFinancial Health & Consistency: Operating margins are strong (over 50%), yet ROE and ROIC are under 5% and wildly inconsistent. Owner earnings are negative ($\u201325/share), and the three-stage DCF spits out a negative intrinsic value. In my playbook, that\u2019s a flashing red light. Erratic earnings and occasional losses in owner earnings signal a financial fortress that\u2019s more like sandcastle.\n\nValuation: With an estimated intrinsic value that\u2019s negative \u2013 and a margin of safety of \u2013121% \u2013 the stock price sits well above anything I\u2019d consider paying. \u2018\u2018Price is what you pay, value is what you get,\u2019\u2019 and here the price vastly exceeds value.\n\nLong-Term Prospects & Red Flags: Streaming will remain competitive, capital-intensive, and subject to whims of content hits and subscriber churn. I want businesses that can prosper unchanged for decades, not ones reinventing how much they spend every year.\n\nOpportunity Cost: I\u2019d rather hold wonderful companies like Coca-Cola, Apple, or BNSF \u2013 businesses with proven moats, reliable owner earnings, and management teams that think like owners. Netflix, to me, looks like a fair business at a poor price.\n\nGiven all that, my signal is bearish.",
+  "detailed_analysis": {
+    "ticker": "NFLX",
+    "score": 8,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 4,
+      "details": "Weak ROE of 4.7%; Conservative debt levels; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.046504200854910825,
+        "debt_to_equity": 0.3994988453790596,
+        "operating_margin": 0.5203529544476522,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.03322918129476197,
+        "asset_turnover": 0.46683323191187254
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 394.2% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 1/10 periods >15%; Decent operating margins (avg: 53.9%) suggest some competitive advantage"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 4,
+      "details": "Consistent book value per share growth (Buffett's favorite metric); Good book value CAGR: 10.5%"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": -378.48885198516564,
+      "raw_intrinsic_value": -445.281002335489,
+      "owner_earnings": -24.709699999999998,
+      "assumptions": {
+        "stage1_growth": 0.08,
+        "stage2_growth": 0.04,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.105
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (8.0%, 5y), Stage 2 (4.0%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $-117",
+        "Stage 2 PV: $-96",
+        "Terminal PV: $-233",
+        "Total IV: $-445",
+        "Conservative IV (15% haircut): $-378",
+        "Owner earnings: $-25",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 1800.6701850000002,
+    "margin_of_safety": -1.2101933242067677
+  }
+}

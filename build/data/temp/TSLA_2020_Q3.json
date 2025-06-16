@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.9,
+  "reasoning": "1. Circle of Competence: Tesla is a high\u2010tech, capital\u2010intensive EV and software play\u2014far outside my wheelhouse. I stick to simple businesses I can understand, like Coca-Cola or GEICO. 2. Moat: While Tesla\u2019s 27.8% operating margins hint at pricing power, its inconsistent ROE (just 0 of 10 years above 15%) undermines a durable competitive advantage. 3. Management: Elon Musk is visionary but unpredictable, prone to big share issuances, no dividends, and erratic capital allocation. I need owners who act methodically. 4. Financial Health: ROE of 1.9%, D/E of 1.6, patchy earnings growth, negative owner earnings\u2014all red flags for a financial fortress. 5. Valuation: My three-stage DCF spits out a negative intrinsic value (-$8,542 conservative), giving a margin of safety of -103%. Paying $306B today makes no sense. 6. Long-Term Prospects: The auto sector is cutthroat, cyclical, and driven by subsidies and regulation. 7. Opportunity Cost: I\u2019d rather deploy capital in Coca-Cola, Apple or a solid bank with pricing power, consistent free cash flow, and a proven moat. When in doubt, I say no\u2014so this is a clear no for me.",
+  "detailed_analysis": {
+    "ticker": "TSLA",
+    "score": 5,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 1.9%; High debt to equity ratio of 1.6; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.018914285714285713,
+        "debt_to_equity": 1.6109142857142857,
+        "operating_margin": 0.3017899897389123,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.007244315072990304,
+        "asset_turnover": 0.1919634063601147
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 146.1% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 1,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Strong and stable operating margins (avg: 27.8%) indicate pricing power moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 2,
+      "details": "Good book value per share growth pattern"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": -8541.708403760666,
+      "raw_intrinsic_value": -10049.068710306667,
+      "owner_earnings": -557.6466811040375,
+      "assumptions": {
+        "stage1_growth": 0.08,
+        "stage2_growth": 0.04,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.105
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (8.0%, 5y), Stage 2 (4.0%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $-2,640",
+        "Stage 2 PV: $-2,157",
+        "Terminal PV: $-5,253",
+        "Total IV: $-10,049",
+        "Conservative IV (15% haircut): $-8,542",
+        "Owner earnings: $-558",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 305782.14,
+    "margin_of_safety": -1.027933967640362
+  }
+}

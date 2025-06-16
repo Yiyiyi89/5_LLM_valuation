@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.95,
+  "reasoning": "1. Circle of Competence: I stick to businesses I can draw on a cocktail napkin\u2014consumer staples, insurance, rail, utilities. Streaming video is outside my wheelhouse. I don\u2019t fully understand the economics of content licensing, subscriber churn, algorithm-driven recommendations and the constant arms race for original programming.  \n2. Economic Moat: Netflix shows strong operating margins (61%), but its ROE is just 2.4% and ROIC 1.4%. High margins alone don\u2019t translate to a durable moat when every deep-pocketed competitor from Disney to Amazon is pouring billions into content. There\u2019s limited pricing power because subscribers can cancel at any moment.  \n3. Management & Capital Allocation: Management has plowed money into content, yet owner earnings are negative $18 per share. No dividends, minimal buybacks, and rising debt to equity at 0.7x. That\u2019s not the capital allocation of a business thinking like an owner.  \n4. Financial Health & Consistency: Inconsistent earnings growth, negative free cash flow and a three-stage DCF that produces a negative intrinsic value (\u2013$153 per share, margin of safety \u2013109%). That\u2019s a giant red flag.  \n5. Valuation: With a market cap north of $1.5 trillion and negative owner earnings, NFLX is trading far above any reasonable estimate of intrinsic value.  \n6. Long-Term Prospects & Red Flags: The streaming space is a treadmill of rising content costs, intense competition and fickle customers. I don\u2019t see a franchise that will prosper unchanged for decades.  \n7. Opportunity Cost: I\u2019d rather own Coca-Cola, Apple, BNSF or a conservatively run insurer\u2014wonderful businesses with durable moats at fair prices. In my view, Netflix is an overvalued, capital-hungry enterprise outside my circle, so the answer here is a firm \u201cno.\u201d",
+  "detailed_analysis": {
+    "ticker": "NFLX",
+    "score": 4,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 2.4%; High debt to equity ratio of 0.7; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.023714993519597067,
+        "debt_to_equity": 0.6750036913687596,
+        "operating_margin": 0.6104586896717946,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.01415817388451122,
+        "asset_turnover": 0.5892513455407383
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 125.5% over past 9 periods"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/9 periods >15%; Decent operating margins (avg: 64.3%) suggest some competitive advantage"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 2,
+      "details": "Good book value per share growth pattern"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": -152.51373072304062,
+      "raw_intrinsic_value": -179.42791849769486,
+      "owner_earnings": -17.97365,
+      "assumptions": {
+        "stage1_growth": -0.023442513754990846,
+        "stage2_growth": -0.011721256877495423,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": -0.023442513754990846
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (-2.3%, 5y), Stage 2 (-1.2%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $-64",
+        "Stage 2 PV: $-36",
+        "Terminal PV: $-79",
+        "Total IV: $-179",
+        "Conservative IV (15% haircut): $-153",
+        "Owner earnings: $-18",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 1594.120785,
+    "margin_of_safety": -1.095672631683954
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.9,
+  "reasoning": "First things first, Netflix lies outside my Circle of Competence. I understand Coca-Cola bottles and insurance policies, but streaming content and subscriber churn? That\u2019s a world of rapidly shifting consumer tastes and technology\u2014risk comes from not knowing what you\u2019re doing. \n\n1. Circle of Competence: This is a content-creation and technology business facing constant platform and rights negotiations. I don\u2019t fully grasp its future competitive dynamics. \n\n2. Economic Moat: Operating margins look healthy at 61%, but that reflects huge spending on original programming, not durable pricing power. Competitors like Disney+, Amazon and Apple are muscling in. I see no wide, deep moat. \n\n3. Management Quality: Reed Hastings has been innovative, but negative owner earnings of \u2013$55M and high debt\u2010to\u2010equity at 0.61 suggest aggressive capital outlays. I like owners who generate cash for shareholders, not burn it on bidding wars for content rights. \n\n4. Financial Health: ROE of 3.6% and ROIC of 2.2% are weak; inconsistent earnings growth; no current ratio data; negative intrinsic value in DCF. It\u2019s like watching someone pour water into a bucket with a hole. \n\n5. Valuation: A three\u2010stage DCF yields a conservative intrinsic value of \u2013$850/share and a margin of safety around \u2013250%. You\u2019re paying a huge premium for uncertain future profits. \n\n6. Long-Term Prospects & Red Flags: Streaming is fast-changing, high-burn, heavy competition. Content costs keep rising. Subscriber fatigue could set in. \n\n7. Portfolio Comparison: I\u2019d rather own a Coca-Cola, Apple or Bank of America\u2014businesses with proven moats, reliable free cash flow and managers who think like owners. \n\nIn sum, I\u2019d say bearish with about 90% conviction. There\u2019s no penalty for missed opportunities, but plenty for permanent capital loss.",
+  "detailed_analysis": {
+    "ticker": "NFLX",
+    "score": 4,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 3.6%; High debt to equity ratio of 0.6; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.03563407408355355,
+        "debt_to_equity": 0.6111349283031423,
+        "operating_margin": 0.6133724364632053,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.022117374192292875,
+        "asset_turnover": 0.5714733928266472
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 295.4% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Decent operating margins (avg: 63.8%) suggest some competitive advantage"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 2,
+      "details": "Good book value per share growth pattern"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": -849.7604437643,
+      "raw_intrinsic_value": -999.7181691344706,
+      "owner_earnings": -55.47673472323481,
+      "assumptions": {
+        "stage1_growth": 0.08,
+        "stage2_growth": 0.04,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.105
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (8.0%, 5y), Stage 2 (4.0%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $-263",
+        "Stage 2 PV: $-215",
+        "Terminal PV: $-523",
+        "Total IV: $-1,000",
+        "Conservative IV (15% haircut): $-850",
+        "Owner earnings: $-55",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 568.9782799999999,
+    "margin_of_safety": -2.4934848545788078
+  }
+}

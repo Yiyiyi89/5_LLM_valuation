@@ -1,0 +1,44 @@
+{
+  "signal": "bearish",
+  "confidence": 0.35,
+  "reasoning": "1. Circle of Competence: I\u2019ve spent over sixty years sticking to businesses I understand\u2014consumer staples, insurance, railroads, simple banking. Tesla is a high-tech automaker with proprietary battery chemistry, software-driven autonomy, and an ever-evolving regulatory environment. Frankly, I can\u2019t get comfortable with the inner workings of its technology or the pace of change. 2. Competitive Moat: Elon Musk\u2019s brand has firepower, but in my view Tesla\u2019s moat is narrow. EV competitors are lining up, legacy automakers have deep pockets, and battery breakthroughs can come from any corner. A brand alone isn\u2019t a lasting castle. 3. Management & Capital Allocation: Musk is a visionary showman, but his approach to capital\u2014levering up for new factories and watchdog headlines\u2014feels more like a roller coaster than the steady hand I look for. He\u2019s smart, but I haven\u2019t seen the sort of disciplined, owner-like approach I\u2019ve praised in people such as Ajit Jain at GEICO. 4. Financial Health & Consistency: Tesla\u2019s recent profits are encouraging, but they\u2019re built on massive capex and questions remain on margins once price cuts and competition bite. I prefer companies with long, unbroken records of free cash flow like See\u2019s Candies or Coca-Cola. 5. Valuation vs. Intrinsic Value: With no reliable intrinsic valuation from the data provided and a sky-high P/E, there\u2019s no margin of safety here. I never buy a wonderful company at a head-scratching price. 6. Long-Term Prospects & Red Flags: Electric vehicles will matter for decades, but Tesla faces execution risk, regulatory scrutiny, and technological arms races. It\u2019s like betting on the fastest horse in a race where half the field can learn to run overnight. 7. Portfolio Comparison: I\u2019d rather own more shares of Coke, Procter & Gamble, or BNSF\u2014businesses I know inside out, with durable moats and simple economics. In my world, absence of understanding is the greatest risk of all. Therefore, I\u2019ll pass on Tesla.",
+  "detailed_analysis": {
+    "ticker": "TSLA",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

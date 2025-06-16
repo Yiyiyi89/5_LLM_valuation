@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.85,
+  "reasoning": "1. Circle of Competence: Apple sits in my sweet spot \u2014 I treat it as a consumer\u2010products company with an ecosystem moat, not a speculative tech play. I \u2018get\u2019 the iPhone, the switching costs and the loyalty of its user base.\n2. Competitive Moat: The 41.5% average operating margin and 90.3% performance stability argue for a durable brand moat. Yet inconsistent ROE \u2014 only 0/10 periods above 15% and a current ROE of 9.7% \u2014 suggests the edge may be dulling.\n3. Management Quality: I\u2019ve admired Tim Cook\u2019s stewardship and share-buyback discipline in the past. But recent equity issuances and minimal dividends (per your data) raise questions on capital allocation and shareholder focus.\n4. Financial Health & Consistency: Strong operating margins and a modest debt\u2010to\u2010equity of 0.54 signal a sound balance sheet, but uneven earnings growth and sub-10% ROIC fall short of my \u2018quality company\u2019 bar.\n5. Valuation vs. Intrinsic Value: A three-stage DCF pegs conservative IV at $74,423, yet the market values Apple with a margin of safety of \u201376%. I\u2019m not going to overpay for a good business.\n6. Long-Term Prospects & Red Flags: The ecosystem remains formidable, but inconsistent returns and a sky-high valuation risk permanent capital impairment if growth stumbles.\n7. Portfolio Comparison: I\u2019d rather deploy capital into my Coca-Cola or See\u2019s Candies type opportunities at fair prices than chase Apple here. A wonderful business at a rich price is still a poor investment.\n\nConclusion: Great business, but beyond my comfort zone on price. I say no.",
+  "detailed_analysis": {
+    "ticker": "AAPL",
+    "score": 7,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 9.7%; High debt to equity ratio of 0.5; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.09738601428176391,
+        "debt_to_equity": 0.5437318021373847,
+        "operating_margin": 0.4318320022702396,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.06308480148360449,
+        "asset_turnover": 0.25991528281210485
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 165.5% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 1,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Decent operating margins (avg: 41.5%) suggest some competitive advantage; High performance stability (90.3%) suggests strong competitive moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 4,
+      "details": "Consistent book value per share growth (Buffett's favorite metric); Good book value CAGR: 11.1%"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Recent common stock issuance (potential dilution); No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": 74422.74835956424,
+      "raw_intrinsic_value": 87556.17454066381,
+      "owner_earnings": 4858.7,
+      "assumptions": {
+        "stage1_growth": 0.08,
+        "stage2_growth": 0.04,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.105
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (8.0%, 5y), Stage 2 (4.0%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $23,000",
+        "Stage 2 PV: $18,790",
+        "Terminal PV: $45,766",
+        "Total IV: $87,556",
+        "Conservative IV (15% haircut): $74,423",
+        "Owner earnings: $4,859",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 311311.844928,
+    "margin_of_safety": -0.7609382695451994
+  }
+}

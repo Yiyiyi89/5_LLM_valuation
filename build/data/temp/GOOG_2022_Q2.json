@@ -1,0 +1,44 @@
+{
+  "signal": "neutral",
+  "confidence": 0.35,
+  "reasoning": "This falls outside my circle of competence. I know consumer brands, banks, insurance and simple industrials, but the intricacies of algorithms, cloud infrastructure and AI at Google are beyond what I understand well enough to invest. While on the surface GOOG seems to enjoy a moat\u2014dominant market share in search, network effects in advertising and switching costs\u2014there\u2019s insufficient data here for me to assess its durability. Management under Sundar Pichai appears competent, yet I lack insight into their capital allocation choices across R&D and acquisitions. Without fundamentals, balance\u2010sheet strength or a clear valuation, I can\u2019t determine a margin of safety. The long-term prospects in AI and cloud could be bright, but I\u2019d rather own wonderful businesses I grasp\u2014like Coca-Cola or Apple\u2014at a price I can calculate. In this case, I politely pass, so my signal is neutral with low conviction until I see the numbers.",
+  "detailed_analysis": {
+    "ticker": "GOOG",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "signal": "bearish",
+  "confidence": 0.85,
+  "reasoning": "First off, I don\u2019t view automobile manufacturing, especially a highly leveraged, rapidly evolving EV business, as part of my circle of competence. I\u2019ve steered clear of airlines and high-tech firms for similar reasons\u2014too much complexity and too many moving parts. On moat, Tesla\u2019s brand is strong today, but EVs are becoming a commodity with every legacy automaker and tech giant lining up new models. Pricing power will erode as competition intensifies and subsidies fade. Management under Elon Musk is visionary but also unpredictable; capital allocation can swing wildly from battery factories to solar roofs, and governance issues have been a concern. Financially, auto plants require enormous, ongoing investment\u2014balance-sheet risk is high, and consistency of earnings remains unproven without detailed data. Valuation feels frothy: even without concrete intrinsic-value figures here, TSLA trades at stratospheric multiples with no margin of safety. In contrast, I\u2019ve found better opportunities in consumer staples like Coca-Cola or in Apple\u2019s ecosystem, where cash flows are steadier and moats more durable. Long term, EVs will matter, but I\u2019d rather own a simpler, predictable business at a fair price than chase a great story at any price.",
+  "detailed_analysis": {
+    "ticker": "TSLA",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

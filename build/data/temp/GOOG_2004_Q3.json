@@ -1,0 +1,44 @@
+{
+  "signal": "bearish",
+  "confidence": 0.35,
+  "reasoning": "First and foremost, GOOG sits outside my circle of competence. I\u2019m not comfortable analyzing the complexities of ad-tech, AI algorithms, and regulatory headwinds in the search business, so I\u2019d rather pass than roll the dice. While Google undoubtedly enjoys a formidable competitive moat\u2014scale advantages, network effects in search, and a dominant ad platform\u2014I haven\u2019t been provided reliable data to measure its durability. Management quality and capital allocation also remain unquantified here. With no financial health metrics, no intrinsic value calculation, and no margin of safety shown, I can\u2019t gauge whether I\u2019m paying a sensible price. In contrast, I prefer simpler, proven businesses\u2014Coca-Cola\u2019s brand power, See\u2019s Candies\u2019 local monopoly, or Apple\u2019s consumer ecosystem\u2014where I understand the models and can pinpoint value. GOOG might prosper long term, but without clearer fundamentals and within my circle, the prudent choice is no investment.",
+  "detailed_analysis": {
+    "ticker": "GOOG",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

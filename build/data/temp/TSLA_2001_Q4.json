@@ -1,0 +1,44 @@
+{
+  "signal": "bearish",
+  "confidence": 0.4,
+  "reasoning": "1. Circle of Competence: I don\u2019t understand the battery chemistry, software-driven EV ecosystem, and global regulatory dynamics \u2013 this falls outside my circle. 2. Moat: The auto industry is a commodity business. Tesla has a strong brand today, but faces low switching costs, growing incumbents, and no scale advantage in manufacturing that\u2019s hard to replicate. 3. Management: Elon Musk is visionary, but I look for managers who act like owners and allocate capital with discipline; governance and communication gaps worry me. 4. Financial Health: Capital-intensive operations with heavy debt and capex needs, no consistent free cash flow history like GEICO or Coca-Cola. 5. Valuation: With no reliable intrinsic value estimate, the shares trade on optimism \u2013 there\u2019s no margin of safety. 6. Long-Term Prospects: EV adoption will rise, but auto remains cyclical, competitive, and dependent on raw materials; secular risks abound. 7. Portfolio Comparison: I\u2019d rather own a wonderful business like See\u2019s Candies at a fair price than a fair business at a wonderful price. Therefore, signal is bearish.",
+  "detailed_analysis": {
+    "ticker": "TSLA",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

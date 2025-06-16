@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.35,
+  "reasoning": "1. Circle of Competence: Microsoft operates complex enterprise software and cloud computing businesses that fall outside my traditional circle. I\u2019ve said, \u201cRisk comes from not knowing what you\u2019re doing.\u201d I don\u2019t fully understand the long-term dynamics of cloud economics or AI integrations.\n2. Competitive Moat: Operating margins average 71% suggest some pricing power, but ROE has only topped 15% zero out of ten periods\u2014moat is there but uneven.\n3. Management & Capital Allocation: Recent stock issuances dilute shareholders and dividends are minimal. That\u2019s not the owner-first mentality I look for.\n4. Financial Health & Consistency: ROE of 7.9% and ROIC of 2.4% are weak for a so-called tech juggernaut. Debt-to-equity of 2.2x is higher than I like. Earnings have fallen 6.4% over ten periods\u2014hardly consistent.\n5. Valuation vs. Intrinsic Value: Three-stage DCF pegs intrinsic around $42,861/share (15% haircut) versus market carrying a negative margin of safety. \u201cPrice is what you pay, value is what you get.\u201d\n6. Long-Term Prospects & Red Flags: Rapid technology change and competition from AWS and Google cloud pose execution risks. I prefer businesses with predictable decades-long prospects.\n7. Opportunity Cost: I\u2019d rather own simpler, proven moats\u2014Coca-Cola, See\u2019s Candies, GEICO\u2014at fair prices. Given overvaluation and complexity, I\u2019d pass.",
+  "detailed_analysis": {
+    "ticker": "MSFT",
+    "score": 3,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 7.9%; High debt to equity ratio of 2.2; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.07867601715211749,
+        "debt_to_equity": 2.227021755654032,
+        "operating_margin": 0.758443908323281,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.024380380149055404,
+        "asset_turnover": 0.10315665038641525
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of -6.4% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 1,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Strong and stable operating margins (avg: 71.1%) indicate pricing power moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Inconsistent book value per share growth"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Recent common stock issuance (potential dilution); No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": 42861.25161790155,
+      "raw_intrinsic_value": 50425.00190341359,
+      "owner_earnings": 2969.9000000000005,
+      "assumptions": {
+        "stage1_growth": 0.06953892964868118,
+        "stage2_growth": 0.03476946482434059,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.06953892964868118
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (7.0%, 5y), Stage 2 (3.5%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $13,660",
+        "Stage 2 PV: $10,782",
+        "Terminal PV: $25,982",
+        "Total IV: $50,425",
+        "Conservative IV (15% haircut): $42,861",
+        "Owner earnings: $2,970",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 493538.315,
+    "margin_of_safety": -0.9131551688790331
+  }
+}

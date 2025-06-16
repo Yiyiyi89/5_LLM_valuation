@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.85,
+  "reasoning": "First off, Apple falls squarely in my circle of competence \u2013 it\u2019s a consumer products business with a powerful ecosystem and brand, much like Coke in my portfolio. Now, let me tell you what I see in the numbers provided. The moat is real \u2013 Apple\u2019s sticky ecosystem, pricing power and brand loyalty give it durable advantages. Operating margins near 49% are the envy of most businesses. But I\u2019ve always said, \u2018\u2018You pay a high price for a silver medal.\u2019\u2019 \n\nManagement has done a fine job building the franchise, but the data here flags recent stock issuance and minimal dividends, which runs counter to my preference for shareholder-friendly capital allocation. I\u2019d rather see consistent buybacks or rising dividends instead of potential dilution. \n\nOn financial health, the balance sheet is conservative \u2013 debt-to-equity under 0.5 and strong cash flows \u2013 but the return on equity of 11.3% and ROIC of 7.7% leave me wanting more. I like to see returns north of 15% on equity. Earnings growth has also been erratic, even if cumulative growth over ten periods was 244%. Consistency matters to me, and the lack of a reliable track record gives me pause. \n\nThen there\u2019s valuation. A three-stage DCF pegs conservative intrinsic value at about $153,000 per share against a sky-high market cap, producing a negative margin of safety of roughly 67%. I\u2019m not interested in overpaying, no matter how wonderful the business. My mantra is \u2018\u2018It\u2019s far better to buy a wonderful company at a fair price than a fair company at a wonderful price.\u2019\u2019 \n\nLong term, I have no doubts Apple will keep churning out great products, but at today\u2019s price, there\u2019s simply no margin of safety. Compared to opportunities in our portfolio \u2013 think Coca-Cola at attractive yields or GEICO\u2019s underwriting \u2013 Apple doesn\u2019t offer the same risk-reward. So, for now, I\u2019ll sit on the sidelines and let the price come down before I\u2019m willing to pull the trigger.",
+  "detailed_analysis": {
+    "ticker": "AAPL",
+    "score": 10,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 4,
+      "details": "Weak ROE of 11.3%; Conservative debt levels; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.11338757829421062,
+        "debt_to_equity": 0.4725555620597475,
+        "operating_margin": 0.4926249170622161,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.07700054328381942,
+        "asset_turnover": 0.25962341155736945
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 244.0% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 2,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Strong and stable operating margins (avg: 42.9%) indicate pricing power moat; High performance stability (86.9%) suggests strong competitive moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 4,
+      "details": "Consistent book value per share growth (Buffett's favorite metric); Good book value CAGR: 12.0%"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Recent common stock issuance (potential dilution); No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": 153184.92179379138,
+      "raw_intrinsic_value": 180217.55505151927,
+      "owner_earnings": 10000.7,
+      "assumptions": {
+        "stage1_growth": 0.08,
+        "stage2_growth": 0.04,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.105
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (8.0%, 5y), Stage 2 (4.0%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $47,341",
+        "Stage 2 PV: $38,676",
+        "Terminal PV: $94,200",
+        "Total IV: $180,218",
+        "Conservative IV (15% haircut): $153,185",
+        "Owner earnings: $10,001",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 471488.04805,
+    "margin_of_safety": -0.6751032768967529
+  }
+}

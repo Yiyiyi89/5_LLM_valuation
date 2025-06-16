@@ -1,0 +1,44 @@
+{
+  "signal": "bearish",
+  "confidence": 0.35,
+  "reasoning": "1. Circle of Competence: Google operates at the cutting edge of digital advertising, search algorithms and AI \u2013 areas I frankly don\u2019t understand well enough to predict decades of outcomes. As I\u2019ve often said, \u201cRisk comes from not knowing what you\u2019re doing.\u201d With the data here marked \u201cinsufficient,\u201d I\u2019m outside my circle of competence.\n2. Competitive Moat: In theory, Google\u2019s scale, network effects and data advantages amount to a wide moat. But without detailed moat metrics or user retention numbers, I can\u2019t confirm the moat\u2019s durability or the threat of regulatory pricing pressure in advertising.\n3. Management Quality: I admire teams that think like owners, allocate capital conservatively and treat shareholders fairly. With no insight into compensation structure, capital returns or governance from this summary, I can\u2019t assess if current management behaves like Warren Buffett\u2019s long-term partners at Coca-Cola or See\u2019s Candies.\n4. Financial Health & Consistency: There\u2019s no profitability, balance sheet or cash-flow data here. I like businesses with predictable earnings you can almost set your watch by. Lacking that, I have no comfort in financial strength or debt levels.\n5. Valuation vs. Intrinsic Value: Intrinsic value is the cornerstone of my approach: \u201cPrice is what you pay; value is what you get.\u201d With no estimates or margin-of-safety calculation, I can\u2019t determine if Google is trading at a reasonable discount to intrinsic value.\n6. Long-Term Prospects & Red Flags: Search and advertising are powerful engines, but tech shifts and regulation can erode moats. Without a deep dive, I\u2019d be speculating rather than investing.\n7. Comparison to My Portfolio: I\u2019d rather own a wonderful business at a fair price \u2013 like Coca-Cola or Apple \u2013 than step into unfamiliar territory. When in doubt, I say no. Given my lack of circle competence and the dearth of data, I\u2019d pass on Google until I understand it better.",
+  "detailed_analysis": {
+    "ticker": "GOOG",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

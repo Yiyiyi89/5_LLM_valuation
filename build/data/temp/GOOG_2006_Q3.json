@@ -1,0 +1,44 @@
+{
+  "signal": "neutral",
+  "confidence": 0.35,
+  "reasoning": "1. Circle of Competence: Google lives in a world of complex algorithms, AI research and ad-tech that\u2019s outside my circle of competence. As I\u2019ve said, \u201cRisk comes from not knowing what you\u2019re doing.\u201d I stick to businesses I truly understand\u2014soft drinks, insurance, railroads\u2014not search engines and machine learning platforms.\n\n2. Competitive Moat: Google arguably enjoys network effects in search, YouTube and ad markets, but with no data supplied it\u2019s hard to gauge durability. My moat analysis score is zero because the provided information is insufficient.\n\n3. Management Quality: I admire Sundar Pichai\u2019s track record, but with no management analysis we can\u2019t assess if capital allocation aligns with shareholder interests. Without concrete evidence of share buybacks, prudent M&A or cost control, the score remains empty.\n\n4. Financial Health: Again, the data is missing\u2014no revenue, earnings consistency or debt levels. I like businesses with fortress balance sheets. Without numbers, I can\u2019t confirm financial strength or consistency of cash flows.\n\n5. Valuation: There\u2019s no intrinsic value estimate or market cap provided, so margin of safety is a blank. I\u2019ll buy only when price is meaningfully below intrinsic value\u2014right now, I have no handle on either.\n\n6. Long-Term Prospects & Red Flags: Technology moves fast; today\u2019s leader can be tomorrow\u2019s laggard. Google\u2019s core ad business faces regulatory scrutiny and shifting consumer habits. That\u2019s a red flag for me.\n\n7. Comparison to My Portfolio: I\u2019d rather own a wonderful business like Coca-Cola or Apple at a fair price than gamble on what I don\u2019t understand\u2014even if Google has an attractive story, it\u2019s outside my wheelhouse.\n\nConclusion: With zero data across every category and a business outside my circle, the prudent answer is no action. It\u2019s not a \u2018sell\u2019 on fundamentals\u2014just a \u2018no\u2019 due to lack of understanding and missing information.",
+  "detailed_analysis": {
+    "ticker": "GOOG",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

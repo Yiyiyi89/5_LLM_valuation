@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.92,
+  "reasoning": "First off, Netflix sits outside my circle of competence. I spend my days studying simple, predictable businesses \u2013 consumer staples, insurance, railroads \u2013 not volatile, high-tech content platforms with ever-changing economics. While Netflix does show strong operating margins (nearly 38%) and decent book-value growth, its return on equity is under 5%, debt to equity north of 2.5, and earnings growth has been all over the map. That tells me management is racing to keep up in a cut-throat market, loading up on debt to finance expensive content \u2013 not exactly the type of prudent capital allocation we like at Berkshire. \n\nAs for a moat, Netflix brags about brand and scale, but competition from Amazon, Disney and Apple is fierce, and I see no durable switch-cost advantage like we have with Coca-Cola or See\u2019s Candies. The financial fortress is shaky: high leverage and inconsistent returns on invested capital. And the price you\u2019re paying today is almost twice my conservative intrinsic value estimate of about $2,389 a share, leaving no margin of safety \u2013 in fact, it\u2019s deeply negative. \n\nGiven the unattractive valuation, shaky competitive position and complex dynamics, I\u2019d rather sit on my hands. There are far better opportunities within my circle \u2013 wonderful businesses at fair prices \u2013 than Netflix at today\u2019s level.",
+  "detailed_analysis": {
+    "ticker": "NFLX",
+    "score": 7,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 4.9%; High debt to equity ratio of 2.5; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.0489963163925952,
+        "debt_to_equity": 2.549887666241311,
+        "operating_margin": 0.37794370091574286,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.013802216013351609,
+        "asset_turnover": 0.16915430940944304
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 34.6% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 2,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Strong and stable operating margins (avg: 38.9%) indicate pricing power moat; High performance stability (81.8%) suggests strong competitive moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 3,
+      "details": "Consistent book value per share growth (Buffett's favorite metric)"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": 2389.273964740206,
+      "raw_intrinsic_value": 2810.9105467531836,
+      "owner_earnings": 266.42752753965374,
+      "assumptions": {
+        "stage1_growth": -0.013761419004324293,
+        "stage2_growth": -0.0068807095021621465,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": -0.013761419004324293
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (-1.4%, 5y), Stage 2 (-0.7%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $972",
+        "Stage 2 PV: $574",
+        "Terminal PV: $1,265",
+        "Total IV: $2,811",
+        "Conservative IV (15% haircut): $2,389",
+        "Owner earnings: $266",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 222364.29265000002,
+    "margin_of_safety": -0.9892551365317411
+  }
+}

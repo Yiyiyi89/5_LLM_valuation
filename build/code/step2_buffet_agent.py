@@ -17,7 +17,7 @@ from utils import (
 import os
 import time
 from pathlib import Path
-from httpx import HTTPStatusError
+
 
 # Load the data once at module level
 sp500_data = pl.read_parquet(
@@ -1058,14 +1058,104 @@ if __name__ == "__main__":
                         "signal": analysis_result["signal"],
                         "confidence": analysis_result["confidence"],
                         "reasoning": analysis_result["reasoning"],
+                        # Basic metrics
+                        "total_score": analysis_result["detailed_analysis"]["score"],
+                        "max_score": analysis_result["detailed_analysis"]["max_score"],
                         "market_cap": analysis_result["detailed_analysis"][
                             "market_cap"
                         ],
                         "margin_of_safety": analysis_result["detailed_analysis"][
                             "margin_of_safety"
                         ],
-                        "total_score": analysis_result["detailed_analysis"]["score"],
-                        "max_score": analysis_result["detailed_analysis"]["max_score"],
+                        # Fundamental analysis
+                        "fundamental_score": analysis_result["detailed_analysis"][
+                            "fundamental_analysis"
+                        ]["score"],
+                        "fundamental_details": analysis_result["detailed_analysis"][
+                            "fundamental_analysis"
+                        ]["details"],
+                        # Consistency analysis
+                        "consistency_score": analysis_result["detailed_analysis"][
+                            "consistency_analysis"
+                        ]["score"],
+                        "consistency_details": analysis_result["detailed_analysis"][
+                            "consistency_analysis"
+                        ]["details"],
+                        # Moat analysis
+                        "moat_score": analysis_result["detailed_analysis"][
+                            "moat_analysis"
+                        ]["score"],
+                        "moat_max_score": analysis_result["detailed_analysis"][
+                            "moat_analysis"
+                        ]["max_score"],
+                        "moat_details": analysis_result["detailed_analysis"][
+                            "moat_analysis"
+                        ]["details"],
+                        # Pricing power analysis
+                        "pricing_power_score": analysis_result["detailed_analysis"][
+                            "pricing_power_analysis"
+                        ]["score"],
+                        "pricing_power_details": analysis_result["detailed_analysis"][
+                            "pricing_power_analysis"
+                        ]["details"],
+                        # Book value analysis
+                        "book_value_score": analysis_result["detailed_analysis"][
+                            "book_value_analysis"
+                        ]["score"],
+                        "book_value_details": analysis_result["detailed_analysis"][
+                            "book_value_analysis"
+                        ]["details"],
+                        # Management analysis
+                        "management_score": analysis_result["detailed_analysis"][
+                            "management_analysis"
+                        ]["score"],
+                        "management_max_score": analysis_result["detailed_analysis"][
+                            "management_analysis"
+                        ]["max_score"],
+                        "management_details": analysis_result["detailed_analysis"][
+                            "management_analysis"
+                        ]["details"],
+                        # Intrinsic value analysis
+                        "intrinsic_value": analysis_result["detailed_analysis"][
+                            "intrinsic_value_analysis"
+                        ]["intrinsic_value"],
+                        "raw_intrinsic_value": analysis_result["detailed_analysis"][
+                            "intrinsic_value_analysis"
+                        ].get("raw_intrinsic_value"),
+                        "owner_earnings": analysis_result["detailed_analysis"][
+                            "intrinsic_value_analysis"
+                        ].get("owner_earnings"),
+                        "intrinsic_value_details": "; ".join(
+                            analysis_result["detailed_analysis"][
+                                "intrinsic_value_analysis"
+                            ]["details"]
+                        ),
+                        # Assumptions from intrinsic value analysis
+                        "stage1_growth": analysis_result["detailed_analysis"][
+                            "intrinsic_value_analysis"
+                        ]
+                        .get("assumptions", {})
+                        .get("stage1_growth"),
+                        "stage2_growth": analysis_result["detailed_analysis"][
+                            "intrinsic_value_analysis"
+                        ]
+                        .get("assumptions", {})
+                        .get("stage2_growth"),
+                        "terminal_growth": analysis_result["detailed_analysis"][
+                            "intrinsic_value_analysis"
+                        ]
+                        .get("assumptions", {})
+                        .get("terminal_growth"),
+                        "discount_rate": analysis_result["detailed_analysis"][
+                            "intrinsic_value_analysis"
+                        ]
+                        .get("assumptions", {})
+                        .get("discount_rate"),
+                        "historical_growth": analysis_result["detailed_analysis"][
+                            "intrinsic_value_analysis"
+                        ]
+                        .get("assumptions", {})
+                        .get("historical_growth"),
                     }
                     all_results.append(result_dict)
 
@@ -1112,3 +1202,13 @@ if __name__ == "__main__":
     print(
         f"Failed analyses: {len(ticker_list) * len(year_list) * len(quarter_list) - len(df)}"
     )
+
+    # df = pd.read_csv(f"{DATA_TEMP}/buffett_analysis_results.csv")
+    # print(df.head())
+    # print(df.tail())
+    # print(df.columns)
+    # print(df.info())
+    # print(df.describe())
+    # print(df.shape)
+    # print(df.dtypes)
+    # print(df.isnull().sum())

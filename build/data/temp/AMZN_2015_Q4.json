@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.35,
+  "reasoning": "First things first, Amazon falls well outside my circle of competence. I don\u2019t pretend to fully grasp the mix of cloud infrastructure, global e-commerce logistics, subscription services and the fine points of AWS\u2019s pricing models. If I don\u2019t understand the business, the first rule of the Buffett playbook says I don\u2019t invest.\n\nOn the moat front, Amazon certainly has scale and Prime membership creates some switching friction. But the analysis shows inconsistent returns on equity\u2014only 0 out of 10 periods over 15%\u2014even with strong operating margins near 36.8%. That tells me pricing power may exist in AWS, but the overall business still juggles hyper-competitive sectors with wafer-thin retail margins.\n\nManagement gets no red flags for self-dealing or massive share issuance, but they pay minimal dividends and plow practically every dollar back into growth. I admire reinvestment when it produces owner earnings\u2014I look for steady free cash flow\u2014but the DCF here spits out negative owner earnings of \u2013$1.67 billion and an intrinsic value that\u2019s a negative number. That\u2019s a flashing warning light in my book.\n\nThe balance sheet shows a hefty debt-to-equity ratio near 3.9x and a mediocre ROE of just 3.6%. Earnings have grown erratically, not marching higher in a predictable fashion the way I like. With inconsistent profits, significant leverage and no meaningful margin of safety (the analysis pegs MOS at \u2013109%), the financial health is shaky for a patient, permanent capital investor.\n\nValuation speaks for itself. You don\u2019t get a durable competitive advantage, clean free cash flow and low risk for free\u2014or at a negative price. I\u2019d rather own See\u2019s Candies or Coca-Cola, businesses I understand that earn money hand over fist and have intrinsic values climbing every year.\n\nIn the long run, Amazon may prosper in pockets, but this combination of complexity, inconsistent returns, heavy reinvestment and no margin of safety drives me to say \u201cno.\u201d When in doubt, the answer is usually no\u2014and in this case, it\u2019s definitely no.",
+  "detailed_analysis": {
+    "ticker": "AMZN",
+    "score": 6,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 3.6%; High debt to equity ratio of 3.9; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.036013150029886434,
+        "debt_to_equity": 3.8897190675433353,
+        "operating_margin": 0.3680868324614653,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.007365075484383595,
+        "asset_turnover": 0.5462227247723245
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 1275.6% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 1,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Strong and stable operating margins (avg: 35.9%) indicate pricing power moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 3,
+      "details": "Consistent book value per share growth (Buffett's favorite metric)"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": -25528.777976303896,
+      "raw_intrinsic_value": -30033.856442710465,
+      "owner_earnings": -1666.65,
+      "assumptions": {
+        "stage1_growth": 0.08,
+        "stage2_growth": 0.04,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.105
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (8.0%, 5y), Stage 2 (4.0%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $-7,890",
+        "Stage 2 PV: $-6,446",
+        "Terminal PV: $-15,699",
+        "Total IV: $-30,034",
+        "Conservative IV (15% haircut): $-25,529",
+        "Owner earnings: $-1,667",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 278335.095,
+    "margin_of_safety": -1.0917195798693797
+  }
+}

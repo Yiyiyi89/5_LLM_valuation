@@ -1,0 +1,44 @@
+{
+  "signal": "bearish",
+  "confidence": 0.4,
+  "reasoning": "1. Circle of Competence: Tesla operates at the intersection of complex automotive engineering, battery chemistry, software and autonomous driving\u2014a space I\u2019ve long shied away from. As I often say, \u201cRisk comes from not knowing what you\u2019re doing,\u201d and I don\u2019t have the expertise to predict breakthroughs in battery technology or regulatory approval of self-driving cars.\n2. Competitive Moat: The EV market is crowded, and while Tesla has a brand and scale advantage today, incumbents like Volkswagen and new entrants backed by deep pockets are closing the gap. Durability of Tesla\u2019s moat is unproven in a dynamic, capital-intensive industry.\n3. Management Quality: Elon Musk is a visionary, but his capital allocation\u2014aggressive factory expansions, crypto forays and social media distractions\u2014doesn\u2019t fit my template of prudent, shareholder-focused stewardship. I prefer management teams that think like owners every day.\n4. Financial Health: Automakers burn cash on factories and R&D. Tesla\u2019s profits have been lumpy and tied to regulatory credits. I look for consistent earnings power and minimal debt; Tesla\u2019s balance sheet volatility is a red flag for me.\n5. Valuation: With no reliable intrinsic value estimate provided and anecdotal evidence of a high P/E, there\u2019s little margin of safety. I\u2019d rather pay a fair price for a wonderful business than pay dearly for uncertainty.\n6. Long-Term Prospects: EV adoption will grow, but competition on price, features and charging networks could erode margins. Technological shifts in batteries or autonomous systems pose execution risks that are hard to model over decades.\n7. Portfolio Comparison: I\u2019d much rather hold a business like Coca-Cola or Apple\u2014simple, proven franchises with durable moats and management teams dedicated to rational capital deployment. Tesla simply falls outside the sweet spot of my investing playbook.\nFor these reasons, I\u2019d pass on Tesla and remain bearish.",
+  "detailed_analysis": {
+    "ticker": "TSLA",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

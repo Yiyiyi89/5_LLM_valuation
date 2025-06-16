@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 1.0,
+  "reasoning": "1. Circle of Competence: Streaming video is outside my sweet spot. I stick to simple consumer brands, insurance, railroads and banks. NFLX\u2019s business model\u2014huge content costs, fickle subscriber tastes and fast-evolving technology\u2014is not something I thoroughly understand. \n2. Competitive Moat: A large subscriber base delivers good operating margins today, but the moat looks shallow. Competitors like Disney+, Amazon Prime and Apple TV+ have deep pockets and established ecosystems. Inconsistent ROE (only 1 of 10 years above 15%) suggests Netflix can\u2019t defend pricing power over the long haul. \n3. Management Quality: Reed Hastings and Ted Sarandos have executed creatively, but capital allocation has been heavy on content spending with little return to shareholders. Debt to equity of 0.7 and negative owner earnings raise questions about whether capital is being deployed wisely. \n4. Financial Health & Consistency: ROE of 1.9% and ROIC of 1.1% are weak. Earnings growth is uneven. Owner earnings are negative (-$5.6B) and free cash flow is inconsistent. That\u2019s a red flag for a business I want to hold for decades. \n5. Valuation: A three-stage DCF produces a negative intrinsic value (\u2248\u2013$65/share) and margin of safety is \u2013104%. Even if I like the story, I\u2019m unwilling to pay a dime for negative economics. \n6. Long-Term Prospects & Red Flags: Content costs will remain high, competition fierce, and subscriber churn a constant concern. The capital requirements here are capital-intensive with little pricing leverage. \n7. Portfolio Comparison: I\u2019d rather own more shares of Coca-Cola, Apple or Bank of America\u2014businesses I understand with solid moats and healthy free cash flow. In short, when in doubt, no. Netflix fails key tests, so I\u2019ll step aside.",
+  "detailed_analysis": {
+    "ticker": "NFLX",
+    "score": 4,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 1.9%; High debt to equity ratio of 0.7; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.018519764507989908,
+        "debt_to_equity": 0.6524179983179142,
+        "operating_margin": 0.4763525873838823,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.011207675374416267,
+        "asset_turnover": 0.5703749888661264
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 93.9% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 1/10 periods >15%; Decent operating margins (avg: 55.3%) suggest some competitive advantage"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 2,
+      "details": "Good book value per share growth pattern"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": -64.83855904784181,
+      "raw_intrinsic_value": -76.28065770334331,
+      "owner_earnings": -5.6299999999999955,
+      "assumptions": {
+        "stage1_growth": 0.03,
+        "stage2_growth": 0.015,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.03
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (3.0%, 5y), Stage 2 (1.5%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $-23",
+        "Stage 2 PV: $-16",
+        "Terminal PV: $-37",
+        "Total IV: $-76",
+        "Conservative IV (15% haircut): $-65",
+        "Owner earnings: $-6",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 1445.4804,
+    "margin_of_safety": -1.0448560624190004
+  }
+}

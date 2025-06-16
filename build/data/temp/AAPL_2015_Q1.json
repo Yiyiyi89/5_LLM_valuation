@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.8,
+  "reasoning": "1. Circle of Competence: I know Apple well\u2014not as a bleeding\u2010edge tech play, but as a consumer products company with a sticky ecosystem. It sits squarely in my wheelhouse.  2. Competitive Moat: Apple\u2019s brand and ecosystem deliver strong operating margins (43.3%) and high performance stability (83.3%), which hint at pricing power. But inconsistent ROE\u2014only 14.6% on average and zero out of ten periods above 15%\u2014means the moat isn\u2019t quite as bullet-proof as Coca-Cola\u2019s.  3. Management & Capital Allocation: I admire Tim Cook\u2019s discipline on buybacks, but the recent issuance of common stock and minimal dividends give me pause. Owners ought to feel like owners, and dilution isn\u2019t my favorite trick in the book.  4. Financial Health & Consistency: Apple generates owner earnings north of $17.8 billion and has fat margins, but a debt-to-equity ratio over 1.1 and spotty earnings growth patterns (zero in consistency score) suggest the financial fortress has a few cracks.  5. Valuation vs. Intrinsic Value: Using a three-stage DCF yields an intrinsic value of roughly $242 billion on a haircut and suggests the market price carries a margin of safety of \u201359.6%. In plain terms, you\u2019re paying well above what the business earns into perpetuity.  6. Long-Term Prospects & Red Flags: I believe Apple will prosper for decades\u2014customers love it, and replacement cycles endure. Yet we can\u2019t ignore slowing ROIC trends and elevated leverage.  7. Comparison to My Portfolio: I\u2019d always prefer to own a wonderful business at a fair price than overpay for greatness. At these levels, I\u2019d park that cash elsewhere until Apple\u2019s price falls to something resembling value.  In short, fine business, lousy price.",
+  "detailed_analysis": {
+    "ticker": "AAPL",
+    "score": 5,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 14.6%; High debt to equity ratio of 1.1; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.14614686040477426,
+        "debt_to_equity": 1.123556694343539,
+        "operating_margin": 0.43319615544444295,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.06882173703864923,
+        "asset_turnover": 0.28484424996372576
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 119.2% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 2,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Strong and stable operating margins (avg: 42.5%) indicate pricing power moat; High performance stability (83.3%) suggests strong competitive moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 1,
+      "details": "Moderate book value per share growth"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Recent common stock issuance (potential dilution); No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": 242144.42549559893,
+      "raw_intrinsic_value": 284875.79470070463,
+      "owner_earnings": 17864.55,
+      "assumptions": {
+        "stage1_growth": 0.058534476510751894,
+        "stage2_growth": 0.029267238255375947,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.058534476510751894
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (5.9%, 5y), Stage 2 (2.9%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $79,715",
+        "Stage 2 PV: $60,652",
+        "Terminal PV: $144,509",
+        "Total IV: $284,876",
+        "Conservative IV (15% haircut): $242,144",
+        "Owner earnings: $17,865",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 598839.34482,
+    "margin_of_safety": -0.5956437605675642
+  }
+}

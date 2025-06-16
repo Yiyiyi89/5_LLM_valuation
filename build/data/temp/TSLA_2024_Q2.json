@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 1.0,
+  "reasoning": "First off, I\u2019m going to start at the beginning of my playbook: circle of competence. Electric\u2010vehicle manufacturing is a world apart from the simple, toll\u2010road economics of railroads or the predictability of consumer brands like Coca-Cola or See\u2019s Candies. I don\u2019t fully comprehend the engineering complexity, battery supply chains, or software integrations at the heart of TSLA; that alone keeps me on the sidelines.\n\nAs for a moat, the numbers tell the tale. Operating margins are solid at about 23%, but return on equity has been stuck at 2.1% and ROIC just over 1.2%, with earnings growth swinging wildly (down 57.8% over the past ten periods). That isn\u2019t the mark of a durable competitive advantage\u2014it\u2019s a business still finding its footing.\n\nManagement has certainly shown ambition and avoided heavy share issuances, but owner earnings are negative around $1.6 billion, and debt/equity sits at a worrying 0.7. There\u2019s little evidence of prudent, shareholder\u2010friendly capital allocation when the company burns cash at this pace.\n\nThe financial picture is inconsistent at best. Weak ROE, high leverage, uneven earnings\u2014my preference is for companies that generate reliable cash and throw off excess to shareholders, like GEICO or BNSF does within Berkshire. TSLA\u2019s free\u2010cash harvest looks more like a garden that never quite flowers.\n\nWhen we run a three\u2010stage DCF, we end up with a negative intrinsic value north of $\u201312,800 per share, and a margin of safety that\u2019s below zero. Paying anything for that is a recipe for permanent capital loss.\n\nLong term, EVs may catch on, but this is a highly competitive, capital\u2010intensive arena. New models, battery advancements, legacy automakers\u2014all are gunning for the same finish line. I\u2019d rather own a wonderful business at a fair price than speculate on an uncertain business hoping it turns wonderful.\n\nCompared to opportunities I already hold or that fit my circle\u2014think Apple\u2019s consumer franchise, Coca-Cola\u2019s brand, or our railroad\u2019s pricing power\u2014TSLA simply doesn\u2019t measure up. So my signal here is bearish.",
+  "detailed_analysis": {
+    "ticker": "TSLA",
+    "score": 5,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 2.1%; High debt to equity ratio of 0.7; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.020813820376730147,
+        "debt_to_equity": 0.6774749862480115,
+        "operating_margin": 0.2296470588235294,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.01240782756664776,
+        "asset_turnover": 0.22599971639251276
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of -57.8% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Decent operating margins (avg: 26.0%) suggest some competitive advantage"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 3,
+      "details": "Consistent book value per share growth (Buffett's favorite metric)"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": -12818.53896634339,
+      "raw_intrinsic_value": -15080.634078051047,
+      "owner_earnings": -1613.6499999999996,
+      "assumptions": {
+        "stage1_growth": -0.034999999999999996,
+        "stage2_growth": -0.017499999999999998,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": -0.034999999999999996
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (-3.5%, 5y), Stage 2 (-1.7%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $-5,541",
+        "Stage 2 PV: $-3,026",
+        "Terminal PV: $-6,514",
+        "Total IV: $-15,081",
+        "Conservative IV (15% haircut): $-12,819",
+        "Owner earnings: $-1,614",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 537681.9525,
+    "margin_of_safety": -1.0238403742337685
+  }
+}

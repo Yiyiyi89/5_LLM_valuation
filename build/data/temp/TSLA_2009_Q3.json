@@ -1,0 +1,44 @@
+{
+  "signal": "bearish",
+  "confidence": 0.4,
+  "reasoning": "1. Circle of Competence: I\u2019ll just come out and say it \u2013 I don\u2019t fully understand the electric-auto manufacturing business as a simple, predictable cash-generating machine. It\u2019s outside my circle of competence, and \u201crisk comes from not knowing what you\u2019re doing.\u201d  \n2. Economic Moat: From the data provided, there\u2019s no evidence of a durable moat. Cars remain a commodity: competitors from Detroit to Asia are racing into EVs, and switching costs for customers are low.  \n3. Management Quality: Elon Musk is a charismatic innovator, but my style favors steady, owner-oriented managers who allocate capital conservatively. Tesla\u2019s capital expenditures and unproven service network concern me.  \n4. Financial Health & Consistency: With no reliable earnings history in the data, I can\u2019t see the consistent profits and fortress balance sheet I demand. Electric-vehicle ventures have boom-or-bust dynamics, not the steady cash flow of a Coca-Cola or See\u2019s Candies.  \n5. Valuation vs. Intrinsic Value: The missing intrinsic-value inputs make me uneasy. Given market froth around TSLA, I suspect it\u2019s priced for perfection. As I\u2019ve said, \u201cIt\u2019s far better to buy a wonderful company at a fair price than a fair company at a wonderful price.\u201d  \n6. Long-Term Prospects & Red Flags: The EV wave is real, but it\u2019s attracting every manufacturer\u2019s capital. Margin pressure, regulatory shifts, and execution risk loom large.  \n7. Opportunity Cost: I\u2019d rather put capital into businesses like Coca-Cola or Apple \u2013 simple, cash-generative franchises with strong moats and transparent economics.  \nIn short, I\u2019d pass on Tesla at this stage. There\u2019s no margin of safety here, and it sits well outside my wheelhouse.",
+  "detailed_analysis": {
+    "ticker": "TSLA",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

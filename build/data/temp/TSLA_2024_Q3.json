@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.85,
+  "reasoning": "First things first, Tesla falls well outside my circle of competence. I like consumer staples, banks, insurance and simple industrials \u2013 not a fast-moving, technology-heavy electric car maker that cranks out software updates and buzzworthy delivery numbers every quarter. My rule is simple: if I don\u2019t understand the business, I don\u2019t invest. \n\nSecond, Tesla\u2019s moat looks more like a garden gate than a fortress. Sure, they have a strong brand and a charger network, but the numbers tell a different story \u2013 inconsistent ROE (only 0 of 10 periods above 15%) and an uneven earnings history (\u20133.8% growth over 10 periods). That doesn\u2019t strike me as a durable competitive advantage.\n\nManagement under Elon Musk may get headlines, but capital allocation raises questions. No dividends, periodic equity issuances and negative owner earnings (\u2013$3,048 per share) suggest they\u2019re burning cash rather than generating it for shareholders. That\u2019s far from the disciplined, owner-oriented management I admire at See\u2019s Candies or Berkshire\u2019s insurance operations.\n\nOn financial health, the fundamentals are shaky: a thin ROE of 3.1%, debt/equity near 0.7, and a string of inconsistent earnings. A business needs both strong returns and consistency to earn a spot in my portfolio.\n\nValuation is the nail in the coffin. A three-stage DCF yields a negative intrinsic value (\u2013$34,790 per share after a haircut) and a negative margin of safety. You can\u2019t pay less than zero for something you hope will someday earn you money. That flies in the face of my principle: \u201cPrice is what you pay, value is what you get.\u201d\n\nLong term, electric vehicles may be a real story, but I see formidable competition, technological disruption, and an inability to forecast sustainable free cash flow. Those red flags outweigh any growth hopes.\n\nCompared to the likes of Coca-Cola, Apple or our insurance float businesses \u2013 where we understand the economics, have pricing power and see consistent owner-earnings \u2013 Tesla simply doesn\u2019t measure up. Therefore, I\u2019d sit this one out.",
+  "detailed_analysis": {
+    "ticker": "TSLA",
+    "score": 5,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 3.1%; High debt to equity ratio of 0.7; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.030731155423561023,
+        "debt_to_equity": 0.6949794937066893,
+        "operating_margin": 0.25196568977841316,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.018130694523245335,
+        "asset_turnover": 0.2101091345993392
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of -3.8% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Decent operating margins (avg: 25.2%) suggest some competitive advantage"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 3,
+      "details": "Consistent book value per share growth (Buffett's favorite metric)"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": -34790.05841664587,
+      "raw_intrinsic_value": -40929.48049017161,
+      "owner_earnings": -3047.9001226148775,
+      "assumptions": {
+        "stage1_growth": 0.028440555296254087,
+        "stage2_growth": 0.014220277648127043,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.028440555296254087
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (2.8%, 5y), Stage 2 (1.4%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $-12,511",
+        "Stage 2 PV: $-8,590",
+        "Terminal PV: $-19,829",
+        "Total IV: $-40,929",
+        "Conservative IV (15% haircut): $-34,790",
+        "Owner earnings: $-3,048",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 711360.705,
+    "margin_of_safety": -1.0489063539384649
+  }
+}

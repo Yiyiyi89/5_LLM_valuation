@@ -1,0 +1,44 @@
+{
+  "signal": "bearish",
+  "confidence": 0.4,
+  "reasoning": "1. Circle of Competence: Tesla is a highly complex, capital-intensive electric-vehicle and energy-storage business driven by cutting-edge technology and rapid change. As I once said, \u201cRisk comes from not knowing what you\u2019re doing,\u201d and I don\u2019t have the technical expertise or comfort with the pace of innovation in the EV and battery space to claim it falls in my circle.\n2. Competitive Moat: While Tesla has brand recognition, its moat isn\u2019t yet durable. Automakers worldwide are pouring billions into EVs, and established players can match technology and scale. Switching costs are low once charging infrastructure is commoditized.\n3. Management: Elon Musk is visionary, but his style can be unpredictable and distracts from consistent capital-allocation discipline. I look for steady, owner-minded stewards.\n4. Financial Health: The business burns cash on rapid expansion and carries meaningful debt. We have insufficient data to gauge consistent free-cash-flow generation.\n5. Valuation: Without a reliable intrinsic-value estimate, Tesla\u2019s multiples appear stretched versus the uncertain earnings path\u2014no margin of safety here.\n6. Long-Term Prospects & Red Flags: I admire innovation, but history shows capital-intensive industries with thin economics rarely reward investors for patience. Regulatory shifts and competition pose serious risks.\n7. Portfolio Comparison: My capital is better employed in businesses I understand\u2014Coca-Cola, Apple\u2019s ecosystem, or insurance franchises\u2014where durable moats and management quality align with price.\nI\u2019d rather say \u201cno\u201d than invite a permanent loss of capital.",
+  "detailed_analysis": {
+    "ticker": "TSLA",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

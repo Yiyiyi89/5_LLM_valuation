@@ -1,0 +1,44 @@
+{
+  "signal": "bearish",
+  "confidence": 0.2,
+  "reasoning": "1. Circle of Competence: Automakers\u2014especially one built around cutting-edge battery tech, self-driving software and global manufacturing\u2014fall outside my wheelhouse. As I\u2019ve often said, \u201cRisk comes from not knowing what you\u2019re doing,\u201d and I simply don\u2019t have enough mastery over Tesla\u2019s technical complexity or its evolving regulatory landscape.\n\n2. Competitive Moat: While Tesla enjoys a powerful brand and early lead in EVs, I\u2019m skeptical that provides a durable moat. Established auto giants like General Motors and Toyota are pouring billions into EVs, and battery breakthroughs tend to diffuse quickly. Today\u2019s advantage can be tomorrow\u2019s catch-up game.\n\n3. Management Quality: I admire Elon Musk\u2019s vision and ability to rally markets, but I question the consistency of capital allocation and the potential distraction of his other ventures. I want managers who run their businesses as if they own 100%\u2014steady, prudent and shareholder-friendly.\n\n4. Financial Health: Tesla burns lots of capital to expand factories and R&D. We have no reliable data here, but auto manufacturing is capital-intensive with thin margins. I prefer companies with fortress balance sheets\u2014minimal debt and consistent cash flow.\n\n5. Valuation: Market prices for TSLA have been manic\u2014trading at nosebleed multiples with no margin of safety. I\u2019d rather own a wonderful business at a fair price than a fair business at a wonderful price.\n\n6. Long-Term Prospects & Red Flags: EV adoption will rise, but so will competition, price pressure and regulatory scrutiny. Autopilot lawsuits and safety concerns are wild cards that can inflict permanent damage to reputation.\n\n7. Comparison to My Portfolio: I\u2019d much rather own Coca-Cola\u2019s moat, Berkshire\u2019s rail network, See\u2019s Candies\u2019 consistent cash flows or Apple\u2019s ecosystem. When push comes to shove, I\u2019ll take simplicity, durability and value over hype.\n\nConclusion: Tesla sits outside my circle, carries execution risk, lacks a proven durable moat and trades at lofty multiples. The safe answer here is no\u2014bearish signal with low conviction.",
+  "detailed_analysis": {
+    "ticker": "TSLA",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

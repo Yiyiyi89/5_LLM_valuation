@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.85,
+  "reasoning": "1. Circle of Competence: I\u2019ll start with the most important step\u2014do I understand Amazon well enough to bet my shareholders\u2019 capital on it?  My circle is built around consumer staples, simple banks, insurance, railroads, and a couple of other businesses I\u2019ve owned for decades.  Amazon\u2019s mix of e-commerce algorithms, cloud-computing infrastructure, content streaming and everything-store model is beyond my sweet spot.  I\u2019m out of my depth when it comes to valuing technology that reinvents itself every year.  In my view, \"Risk comes from not knowing what you\u2019re doing.\"  This one is too complex for my tastes.\n\n2. Competitive Moat:  The data shows Amazon has strong and stable operating margins (avg. 24.3%) and high performance stability (74%).  Those are signs of pricing power and network effects in e-commerce and AWS.  But with only one period of ROE above 15% in ten years, I\u2019d say the moat is real but unsteady.  I\u2019d rather see a Coca-Cola or See\u2019s Candies style of consistency.\n\n3. Management and Capital Allocation:  Bezos and his team have plowed every dollar back into growth\u2014no dividends, no big share repurchases.  That\u2019s fine when returns on capital are high and predictable.  Here, return on invested capital is just 2.8% and debt-to-equity is a hefty 1.63.  I admire a business that reinvests, but I want to see managers who think like owners and deliver 15%+ on new projects.\n\n4. Financial Health and Consistency:  Operating margins look solid, but ROE of 7.3% and erratic earnings growth get a thumbs down from me.  I prefer companies with a record of consistent, rising owner earnings \u2013 the kind of steadiness we\u2019ve seen at GEICO or Burlington Northern.\n\n5. Valuation vs. Intrinsic Value:  The three-stage DCF pegs a conservative intrinsic value near $2,680 per share, yet the market price implies a negative margin of safety of nearly 95%.  As the saying goes, \"Price is what you pay, value is what you get.\"  That gulf is simply too wide for me to bridge.\n\n6. Long-term Prospects and Red Flags:  In its favor, Amazon has scale, brands and a growing cloud business.  But competitive pressures, thin returns, heavy reinvestment needs and an ever-changing tech landscape are red flags in my book.\n\n7. Relative to My Portfolio:  I\u2019d rather own a wonderful business at a fair price than a complex one with questionable returns at a frothy price.  Right now, I can put my money to work in predictable businesses\u2014Coca-Cola, Apple, Bank of America\u2014where I understand the economics, the moat and the downside.\n\nBottom line: Amazon is a great story, but it\u2019s outside my circle of competence, carrying uneven returns, high leverage, erratic earnings and an ask-price that leaves no margin of safety.  In this case, my answer is no.",
+  "detailed_analysis": {
+    "ticker": "AMZN",
+    "score": 9,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 7.3%; High debt to equity ratio of 1.6; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.07304546319193456,
+        "debt_to_equity": 1.627544226745292,
+        "operating_margin": 0.2190126050420168,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.02779989864620285,
+        "asset_turnover": 0.689205820603779
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 380.0% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 2,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 1/10 periods >15%; Strong and stable operating margins (avg: 24.3%) indicate pricing power moat; High performance stability (74.1%) suggests strong competitive moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 5,
+      "details": "Consistent book value per share growth (Buffett's favorite metric); Excellent book value CAGR: 23.0%"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": 2679.7826219988397,
+      "raw_intrinsic_value": 3152.685437645694,
+      "owner_earnings": 174.95,
+      "assumptions": {
+        "stage1_growth": 0.08,
+        "stage2_growth": 0.04,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.10008332031566396
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (8.0%, 5y), Stage 2 (4.0%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $828",
+        "Stage 2 PV: $677",
+        "Terminal PV: $1,648",
+        "Total IV: $3,153",
+        "Conservative IV (15% haircut): $2,680",
+        "Owner earnings: $175",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 49459.380000000005,
+    "margin_of_safety": -0.9458185156789503
+  }
+}

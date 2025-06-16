@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.85,
+  "reasoning": "1. Circle of Competence: Amazon straddles complex technology, cloud computing, and logistics \u2013 areas I\u2019ve largely steered clear of aside from a narrow Apple exception. I don\u2019t fully understand the underlying drivers of AWS margins or the long-term economics of their fulfillment network. \n2. Competitive Moat: Sure, Amazon boasts scale, Prime membership inertia, and brand recognition. But I question if these translate into a durable moat against deep-pocketed rivals (Microsoft, Google, Alibaba) and evolving retail habits. \n3. Management & Capital Allocation: Bezos has been a visionary, yet the company plows profits into lower-margin retail, capex-intensive delivery and new ventures. That sort of reinvestment has left owner earnings of \u2013$23/share in the data provided \u2013 not exactly what I look for from a disciplined allocator. \n4. Financial Health & Consistency: ROE of just 1.6% with ROIC in the red, erratic earnings growth despite strong operating margins, and no clear picture on liquidity metrics. I prefer steadier cash flows and simpler balance sheets (think Coca-Cola, See\u2019s Candies). \n5. Valuation vs. Intrinsic Value: The three-stage DCF points to a negative intrinsic value and a negative margin of safety. I\u2019d rather be hanging onto cash than pay up for a business that doesn\u2019t seem to generate reliable owner earnings. \n6. Long-Term Prospects & Red Flags: Technology businesses can prosper, but they can also falter as innovations and competitors emerge. AWS could be tomorrow\u2019s cash cow \u2013 or today\u2019s price to defend against Microsoft and Google. That uncertainty, combined with capex intensity and thin retail margins, rings alarm bells for me. \n7. Opportunity Cost: I\u2019d rather deploy capital in businesses I deeply understand \u2013 high-moat consumer staples, insurance operations like GEICO, or infrastructure assets like BNSF \u2013 where I can see the economics two decades ahead and sleep well at night. Amazon is simply too much of a black box for my taste on these terms.",
+  "detailed_analysis": {
+    "ticker": "AMZN",
+    "score": 5,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 4,
+      "details": "Weak ROE of 1.6%; Conservative debt levels; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.01599447275239658,
+        "debt_to_equity": -1.9409641592538218,
+        "operating_margin": 0.28800880789028377,
+        "current_ratio": null,
+        "return_on_invested_capital": -0.016997961713100838,
+        "asset_turnover": 0.6222223201226497
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 92.7% over past 8 periods"
+    },
+    "moat_analysis": {
+      "score": 1,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 4/8 periods >15%; Strong and stable operating margins (avg: 28.2%) indicate pricing power moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Inconsistent book value per share growth"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": -266.60970549867477,
+      "raw_intrinsic_value": -313.65847705726446,
+      "owner_earnings": -23.15,
+      "assumptions": {
+        "stage1_growth": 0.03,
+        "stage2_growth": 0.015,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.03
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (3.0%, 5y), Stage 2 (1.5%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $-95",
+        "Stage 2 PV: $-66",
+        "Terminal PV: $-152",
+        "Total IV: $-314",
+        "Conservative IV (15% haircut): $-267",
+        "Owner earnings: $-23",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 4375.646484999999,
+    "margin_of_safety": -1.0609303576997433
+  }
+}

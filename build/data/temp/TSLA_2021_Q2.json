@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.95,
+  "reasoning": "First off, Tesla falls well outside my circle of competence. I understand consumer brands, insurance, railroads and simple industrial businesses\u2014not a high-tech electric car company that reinvents its product every year. Risk, after all, comes from not knowing what you\u2019re doing.\n\nOn competitive moats, Tesla has built a strong brand and loyal fan base, and its operating margins are attractive. But brand enthusiasm in a rapidly evolving industry isn\u2019t the same as a durable moat like Coca-Cola\u2019s pricing power or See\u2019s Candies\u2019 razor-sharp returns. Only 0 of 10 periods saw ROE above 15%, suggesting their advantages aren\u2019t yet entrenched.\n\nManagement under Elon Musk is innovative, no doubt, but he issues stock frequently and reinvests heavily\u2014actions that dilute owners and generate negative owner earnings of about $621 million. I prefer managers who think like owners and steadily grow book value while handing back cash to shareholders.\n\nFinancially, Tesla shows strong operating margins near 30%, yet its return on invested capital is only about 2%, debt-to-equity sits north of 1.1, and earnings growth has been erratic. Consistency matters to me; here it\u2019s missing.\n\nValuation is the final nail in the coffin. A three-stage DCF spits out a negative intrinsic value, and its margin of safety is negative. You\u2019d have to pay me to own the stock as things stand.\n\nLong-term, electric vehicles will matter, but I worry about commodity economics, relentless competition, the need for massive capital, and shifting technologies. There\u2019s no penalty for passing on a business you don\u2019t understand or one that\u2019s overvalued. I\u2019d rather own a wonderful business at a fair price than a fair business at a wonderful price\u2014and Tesla isn\u2019t either, in my view. In my portfolio, I\u2019d stick with Coke, GEICO or BNSF, where the advantages and numbers add up.\n\nSo for me the signal is bearish with high confidence\u2014this one\u2019s a pass.",
+  "detailed_analysis": {
+    "ticker": "TSLA",
+    "score": 6,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 4.4%; High debt to equity ratio of 1.1; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.04350476190476191,
+        "debt_to_equity": 1.1008,
+        "operating_margin": 0.2981267770530189,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.02070866427302071,
+        "asset_turnover": 0.21684256337721683
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 262.6% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 1,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Strong and stable operating margins (avg: 27.6%) indicate pricing power moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 3,
+      "details": "Consistent book value per share growth (Buffett's favorite metric)"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": -9508.288440158789,
+      "raw_intrinsic_value": -11186.221694304457,
+      "owner_earnings": -620.75,
+      "assumptions": {
+        "stage1_growth": 0.08,
+        "stage2_growth": 0.04,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.105
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (8.0%, 5y), Stage 2 (4.0%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $-2,939",
+        "Stage 2 PV: $-2,401",
+        "Terminal PV: $-5,847",
+        "Total IV: $-11,186",
+        "Conservative IV (15% haircut): $-9,508",
+        "Owner earnings: $-621",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 603526.56,
+    "margin_of_safety": -1.0157545484661998
+  }
+}

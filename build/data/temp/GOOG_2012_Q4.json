@@ -1,0 +1,44 @@
+{
+  "signal": "neutral",
+  "confidence": 0.35,
+  "reasoning": "1. Circle of Competence: I\u2019d rather eat a horse than dive into a complex ad-tech business when I don\u2019t thoroughly understand how it makes money. GOOG is outside my circle \u2013 I\u2019m comfortable with Coca-Cola\u2019s fizzy drinks or Apple\u2019s consumer ecosystem, but not ad auctions and AI algorithms.\n\n2. Competitive Moat: On paper, Google has a strong network effect and enormous brand \u2014 folks use it out of habit. It\u2019s got scale and data advantages, but details are thin here. With no moat analysis, I can\u2019t gauge how durable it really is.\n\n3. Management Quality: Sundar Pichai and team have steered Alphabet well, but I don\u2019t have the granular insight into their capital allocation. Are they wisely deploying cash on AI or throwing money at moonshots? No clue.\n\n4. Financial Health: The summary shows no numbers \u2013 no profits, no debt levels, no free cash flow. Buffett likes consistent earnings and fat cash cushions. I can\u2019t assess that here.\n\n5. Valuation: Without an intrinsic value estimate or margin of safety, I\u2019d be flying blind. I always insist on paying significantly less than what a business is worth.\n\n6. Long-Term Prospects & Red Flags: Tech changes at warp speed. Today\u2019s search king can be tomorrow\u2019s also-ran. I\u2019d worry about competition, regulation and capital intensity.\n\n7. Comparison to My Portfolio: I\u2019d rather own a wonderful business at a fair price than a fair business at a wonderful price. With zero data and outside my wheelhouse, I\u2019ll pass and wait for simpler, proven opportunities.  ",
+  "detailed_analysis": {
+    "ticker": "GOOG",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

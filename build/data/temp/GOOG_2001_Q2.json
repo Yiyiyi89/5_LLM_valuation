@@ -1,0 +1,44 @@
+{
+  "signal": "neutral",
+  "confidence": 1.0,
+  "reasoning": "Well, this one\u2019s easy for me \u2013 I don\u2019t invest in complex technology businesses beyond Apple. Alphabet\u2019s search and advertising platform may have a strong franchise, but it falls outside my Circle of Competence. With no reliable financial or moat data in front of us, I can\u2019t gauge pricing power or management\u2019s capital allocation. I\u2019ve built my record on simple, durable businesses \u2013 Coke, See\u2019s Candies, insurance \u2013 where I grasp how cash flows and moats work over decades. Without intrinsic\u2010value calculations or balance\u2010sheet strength to review, I\u2019d pass. There\u2019s no penalty for saying no, and I\u2019d rather hold cash or add to companies I truly understand than dig into Google without sufficient data.",
+  "detailed_analysis": {
+    "ticker": "GOOG",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

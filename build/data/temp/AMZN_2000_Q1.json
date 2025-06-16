@@ -1,0 +1,44 @@
+{
+  "signal": "neutral",
+  "confidence": 0.3,
+  "reasoning": "1. Circle of Competence: Amazon straddles both retail and complex technology (AWS, advertising, logistics algorithms). I\u2019ve spent my life in simple consumer goods and straightforward infrastructure \u2013 I don\u2019t fully grasp the interplay of its cloud-computing arm or digital ad business. As I\u2019ve said, \u201cRisk comes from not knowing what you\u2019re doing.\u201d\n2. Competitive Moat: On the surface Amazon has scale in e-commerce, a Prime ecosystem and a network effect in AWS. Those are promising, but with no data on margins, growth rates or customer retention I can\u2019t size the moat.\n3. Management Quality: Jeff Bezos built something extraordinary, and Andy Jassy has big shoes. But with zero management analysis here, I can\u2019t judge their capital-allocation discipline or shareholder alignment.\n4. Financial Health: There\u2019s no balance-sheet, earnings history or debt information provided. A fortress needs solid walls \u2013 I\u2019m staring at empty blueprints.\n5. Valuation: Without an intrinsic value estimate or margin of safety, I have no idea if I\u2019d be paying a fair price for this business.\n6. Long-Term Prospects & Red Flags: Retail and cloud will be around, but technological change is rapid and competition fierce. No metrics mean too many unknowns.\n7. Comparison to My Portfolio: I\u2019d rather own See\u2019s Candies, Coca-Cola or GEICO, where I understand the economics cold. When in doubt, the answer is usually no.",
+  "detailed_analysis": {
+    "ticker": "AMZN",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

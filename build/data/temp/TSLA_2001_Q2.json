@@ -1,0 +1,44 @@
+{
+  "signal": "neutral",
+  "confidence": 1.0,
+  "reasoning": "Well, let me be plain: Tesla\u2019s a fascinating company, but it sits well outside my circle of competence. I\u2019ve spent my life studying simple businesses I can wrap my mind around\u2014Coca-Cola, See\u2019s Candies, insurance, railroads. Automotive manufacturing, especially one so steeped in cutting-edge battery chemistry, software updates and global regulatory shifts, is not in my sweet spot. \n\nOn the moat front, Tesla has built strong brand interest and first-mover buzz in the electric vehicle market. But I don\u2019t see a durable economic moat like the kind you get from a ubiquitous consumer brand or low-cost infrastructure. Competitors are circling, and manufacturing will become a commodity over time. \n\nAs for management, I admire Elon Musk\u2019s vision, but I prefer teams whose capital decisions I can predict and whose incentives squarely align with all shareholders. I\u2019m wary of unpredictable capital raises or ambitious diversification outside the auto and energy markets. \n\nWe don\u2019t have proper financials here, but history tells us auto profits fluctuate with cycles, raw material costs and capacity utilization\u2014nothing like the steady earnings of a consumer staples giant or a well-run reinsurer. \n\nWithout a reliable intrinsic value estimate or margin of safety, I can\u2019t judge if the current price is sensible. And frankly, I\u2019d rather own a wonderful business\u2014say Costco or Apple\u2014with durable pricing power at a fair price than a complex, high-risk auto business at any valuation. \n\nLong term, electric vehicles are here to stay, but the road is littered with once-promising car ventures. Give me a simple business with consistent cash flows every time. In my portfolio today, I find better risk-reward opportunities in names I understand and can hold forever.\n\nSo at this juncture, I\u2019d steer clear\u2014not because I think Tesla will crash, but because I wouldn\u2019t bet my money on something I can\u2019t thoroughly grasp.",
+  "detailed_analysis": {
+    "ticker": "TSLA",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

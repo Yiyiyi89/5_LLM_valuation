@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.25,
+  "reasoning": "1. Circle of Competence: Streaming video is outside my wheelhouse. I don\u2019t fully understand shifting viewer habits, global content rights or the technology race. I stick to businesses I can explain on a cocktail napkin \u2013 consumer staples, banks, insurance and utilities. \n2. Moat: Netflix has a big subscriber base and a strong brand, but it faces relentless competition from Disney, Amazon, Apple and an army of smaller rivals. I\u2019m skeptical that any one of them has a durable castle wall around its business when everyone\u2019s spending billions on content. \n3. Management & Capital Allocation: Reed Hastings built a great operation, but issuing more stock and piling on debt to fund content makes me nervous. They pay no dividends and reinvest at low returns on capital \u2013 not the sort of alchemy I admire in a management team. \n4. Financial Health & Consistency: A debt-to-equity ratio near 3.8 and an ROE of 5.5% are red flags. Earnings are inconsistent, and owner earnings have actually been shrinking. That\u2019s no financial fortress. \n5. Valuation: At a current market value roughly ten times my conservative intrinsic value ($74 per share), there\u2019s no margin of safety. You don\u2019t want to buy the farm at peak price. \n6. Long-Term Prospects & Red Flags: The economics of content creation push costs higher, and pricing power is limited by fierce competition. Technological shifts could erode subscriber loyalty faster than Netflix can produce hits. \n7. Opportunity Cost: Given the choice, I\u2019d lean into businesses like Coca-Cola or Bank of America \u2013 strong moats, honest stewards, fortress balance sheets and sensible valuations. Why overpay for a complex media business when simpler, predictable franchises are available at fair prices?",
+  "detailed_analysis": {
+    "ticker": "NFLX",
+    "score": 8,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 5.5%; High debt to equity ratio of 3.8; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.054789128980569694,
+        "debt_to_equity": 3.7746550302577746,
+        "operating_margin": 0.35661822231105283,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.011474992147780723,
+        "asset_turnover": 0.2852782943806782
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 16.8% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 3,
+      "max_score": 5,
+      "details": "Excellent ROE consistency: 8/10 periods >15% (avg: 17.5%) - indicates durable competitive advantage; Decent operating margins (avg: 38.5%) suggest some competitive advantage; High performance stability (82.4%) suggests strong competitive moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 3,
+      "details": "Good book value per share growth pattern; Good book value CAGR: 11.8%"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Recent common stock issuance (potential dilution); No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": 74.14129168569562,
+      "raw_intrinsic_value": 87.22504904199485,
+      "owner_earnings": 9.333208382230367,
+      "assumptions": {
+        "stage1_growth": -0.034999999999999996,
+        "stage2_growth": -0.017499999999999998,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": -0.034999999999999996
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (-3.5%, 5y), Stage 2 (-1.7%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $32",
+        "Stage 2 PV: $17",
+        "Terminal PV: $38",
+        "Total IV: $87",
+        "Conservative IV (15% haircut): $74",
+        "Owner earnings: $9",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 3646.91617,
+    "margin_of_safety": -0.9796701409548179
+  }
+}

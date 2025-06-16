@@ -1,0 +1,44 @@
+{
+  "signal": "neutral",
+  "confidence": 0.4,
+  "reasoning": "First thing: this is outside my Circle of Competence. I\u2019ve spent my life investing in simple consumer franchises, insurance, banking and utilities\u2014I don\u2019t pretend to understand the inner workings of search algorithms, ad auctions or cloud computing. As I\u2019ve often said, \u201cRisk comes from not knowing what you\u2019re doing,\u201d and with the lack of fundamental, financial or management data here, I simply don\u2019t know this business well enough to make a call.\n\nOn moats: Google undoubtedly benefits from network effects and brand strength in search and advertising, but without clear figures I can\u2019t gauge how durable those advantages are against regulatory or competitive threats. Management quality? No insight. Financial health and consistency? No filings, no numbers. Intrinsic value? Can\u2019t compute it when the inputs are missing\u2014rule one of investing is don\u2019t lose money, and I can\u2019t tell if the price leaves any margin of safety.\n\nLong-term prospects in technology can be attractive, but they invite rapid change\u2014something I generally steer clear of except for the rare case like Apple, where the consumer ecosystem creates lasting switching costs. Given the absence of data and my inability to assess valuation or capital allocation, I\u2019d rather put my available capital into businesses I understand: Coca-Cola\u2019s brand, See\u2019s Candies\u2019 pricing power or a solid bank franchise like Bank of America.\n\nWhen in doubt, I say no. This one earns a neutral signal, not out of dislike for the company, but out of respect for my own limitations and a desire to preserve capital until something better comes along.",
+  "detailed_analysis": {
+    "ticker": "GOOG",
+    "score": 0,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 0,
+      "details": "Insufficient fundamental data"
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Insufficient historical data"
+    },
+    "moat_analysis": {
+      "score": 0,
+      "max_score": 5,
+      "details": "Insufficient data for comprehensive moat analysis"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Insufficient data for pricing power analysis"
+    },
+    "book_value_analysis": {
+      "score": 0,
+      "details": "Insufficient data for book value analysis"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Insufficient data for management analysis"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": null,
+      "details": [
+        "Insufficient data for reliable valuation"
+      ]
+    },
+    "market_cap": null,
+    "margin_of_safety": null
+  }
+}

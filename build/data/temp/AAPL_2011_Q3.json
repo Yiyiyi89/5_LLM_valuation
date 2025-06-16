@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.8,
+  "reasoning": "First, Apple squarely falls within my circle of competence: it\u2019s a consumer products business with a powerful ecosystem and loyal customers\u2014exactly the kind of company I understand. On its moat, the brand and switching costs are real, but the metrics are mixed. Operating margins above 43% show pricing power, yet a ROE of just 10.5% and ROIC under 7%\u2014with only 1 out of 10 periods above 15% ROE\u2014suggest the business isn\u2019t deploying capital as efficiently as I\u2019d like. Management has delivered in the past with share buybacks and innovation, but recent stock issuance and minimal dividends raise mild concerns about shareholder focus. The balance sheet, at a debt-to-equity of 0.54, isn\u2019t a crisis, but inconsistent earnings growth (0 score) and lack of current ratio data leave gaps. Critically, my three-stage DCF pegs intrinsic value around $100,300 per share\u2014or about $85,260 on a conservative basis\u2014yet today\u2019s price implies a negative 71% margin of safety. I\u2019d rather own a wonderful business at a fair price than overpay for a good one. Long term, I admire Apple\u2019s staying power, but at these levels I see limited upside and meaningful risk of capital loss. In comparison to other opportunities in my portfolio\u2014like Coca-Cola, See\u2019s Candies or our insurance operations\u2014I\u2019d deploy new capital elsewhere. Hence, bearish with about 80% confidence.",
+  "detailed_analysis": {
+    "ticker": "AAPL",
+    "score": 7,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 10.5%; High debt to equity ratio of 0.5; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.10538915247393392,
+        "debt_to_equity": 0.5395641953766062,
+        "operating_margin": 0.4341115116726751,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.06845388635980441,
+        "asset_turnover": 0.2676239719739973
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of 351.1% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 1,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Decent operating margins (avg: 41.9%) suggest some competitive advantage; High performance stability (90.0%) suggests strong competitive moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 4,
+      "details": "Consistent book value per share growth (Buffett's favorite metric); Good book value CAGR: 11.9%"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Recent common stock issuance (potential dilution); No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": 85260.58885224945,
+      "raw_intrinsic_value": 100306.57512029348,
+      "owner_earnings": 5566.25,
+      "assumptions": {
+        "stage1_growth": 0.08,
+        "stage2_growth": 0.04,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": 0.105
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (8.0%, 5y), Stage 2 (4.0%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $26,349",
+        "Stage 2 PV: $21,527",
+        "Terminal PV: $52,430",
+        "Total IV: $100,307",
+        "Conservative IV (15% haircut): $85,261",
+        "Owner earnings: $5,566",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 299468.77884000004,
+    "margin_of_safety": -0.7152938974723558
+  }
+}

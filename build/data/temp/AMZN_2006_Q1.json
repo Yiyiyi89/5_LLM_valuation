@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.85,
+  "reasoning": "1. Circle of Competence: I\u2019d be stepping outside my circle by buying Amazon. I\u2019m comfortable with consumer staples, banks, railroads, insurance and energy pipelines \u2014 not a sprawling e-commerce and cloud-computing complex with ever-shifting technology risks. 2. Economic Moat: AWS shows pricing power, and the marketplace has scale, but inconsistent ROE (just 3 of 10 periods above 15%) and a -30% 10-period earnings trend suggest the moat may be less durable than we\u2019d like. 3. Management: Jeff Bezos and Andy Jassy are brilliant operators, but minimal dividends and high leverage (debt/equity of 8.2) signal they\u2019ve prioritized reinvestment in growth over returning capital \u2014 fine for growth investors, but not my style. 4. Financial Health & Consistency: Strong operating margins (25.8%) and ROE (15.7%) are positives, but the debt load, unpredictable earnings and negative owner\u2010earnings growth in your DCF assumptions raise red flags on consistency. 5. Valuation: Your DCF pegs intrinsic value at $405/sh with a 15% haircut versus a market price nearly double that \u2014 implying a margin of safety of -97%. I\u2019d rather pay up for a great cereal business at a fair price than this. 6. Long-Term Prospects & Red Flags: While Amazon can dominate global retail and cloud for years, rapid tech changes, fierce competition and thin e-commerce margins make me uneasy about forecasting 20-year outcomes. 7. Portfolio Comparison: My capital is better deployed in simple, predictable businesses like Coca-Cola or BNSF where I understand the economics inside and out. No penalty for saying no \u2014 better to sit on cash than buy something you don\u2019t fully grasp at a steep premium.",
+  "detailed_analysis": {
+    "ticker": "AMZN",
+    "score": 8,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 4,
+      "details": "Strong ROE of 15.7%; High debt to equity ratio of 8.2; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.1574074074074074,
+        "debt_to_equity": 8.228395061728396,
+        "operating_margin": 0.25756910925844667,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.01705685618729097,
+        "asset_turnover": 0.7622073578595318
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of -30.3% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 1,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 3/10 periods >15%; Strong and stable operating margins (avg: 25.0%) indicate pricing power moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 3,
+      "details": "Consistent book value per share growth (Buffett's favorite metric)"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "No significant new stock issuance detected; No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": 405.1346247845029,
+      "raw_intrinsic_value": 476.62897033470927,
+      "owner_earnings": 51.0,
+      "assumptions": {
+        "stage1_growth": -0.034999999999999996,
+        "stage2_growth": -0.017499999999999998,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": -0.034999999999999996
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (-3.5%, 5y), Stage 2 (-1.7%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $175",
+        "Stage 2 PV: $96",
+        "Terminal PV: $206",
+        "Total IV: $477",
+        "Conservative IV (15% haircut): $405",
+        "Owner earnings: $51",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 14943.00735,
+    "margin_of_safety": -0.9728880127476814
+  }
+}

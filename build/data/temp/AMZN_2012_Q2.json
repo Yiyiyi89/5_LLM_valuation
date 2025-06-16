@@ -1,0 +1,70 @@
+{
+  "signal": "bearish",
+  "confidence": 0.9,
+  "reasoning": "1. Circle of Competence: I generally steer clear of complex technology and e-commerce businesses\u2014except for Apple, which I view as a consumer products company. Amazon\u2019s mix of AWS cloud, digital marketplaces and logistics is beyond my simple, tried-and-true circle.\n2. Moat: While Amazon boasts a strong brand, network effects and high operating margins (avg. 25.5%), its inconsistent ROE (0/10 years >15%) and volatile earnings argue against a durable, wide moat.\n3. Management & Capital Allocation: Jeff Bezos and Andy Jassy are visionary, but constant reinvestment, recent stock issuance and no shareholder distributions raise concerns about return on capital.\n4. Financial Health & Consistency: ROE of 0.1%, ROIC ~0.03%, debt/equity of 1.8 and negative owner earnings paint a shaky balance sheet. Earnings have shrunk nearly 98% over ten periods\u2014hardly a model of stability.\n5. Valuation: A three-stage DCF yields a negative intrinsic value with a negative margin of safety. You don\u2019t pay to lose money.\n6. Long-Term Prospects & Red Flags: Amazon\u2019s scale is impressive, but unpredictable cash flows and heavy capex jeopardize consistent returns.\n7. Portfolio Comparison: I\u2019d rather own Coca-Cola, See\u2019s Candies or BNSF at a fair price than bet on Amazon\u2019s uncertain financials. Therefore, I\u2019m bearish with high conviction.",
+  "detailed_analysis": {
+    "ticker": "AMZN",
+    "score": 5,
+    "max_score": 27,
+    "fundamental_analysis": {
+      "score": 2,
+      "details": "Weak ROE of 0.1%; High debt to equity ratio of 1.8; Strong operating margins; Current ratio data not available",
+      "metrics": {
+        "return_on_equity": 0.000932711525649567,
+        "debt_to_equity": 1.8010659560293139,
+        "operating_margin": 0.29850397381954186,
+        "current_ratio": null,
+        "return_on_invested_capital": 0.0003329844924364951,
+        "asset_turnover": 0.6105032822757112
+      }
+    },
+    "consistency_analysis": {
+      "score": 0,
+      "details": "Inconsistent earnings growth pattern; Total earnings growth of -97.7% over past 10 periods"
+    },
+    "moat_analysis": {
+      "score": 1,
+      "max_score": 5,
+      "details": "Inconsistent ROE: only 0/10 periods >15%; Strong and stable operating margins (avg: 25.5%) indicate pricing power moat"
+    },
+    "pricing_power_analysis": {
+      "score": 0,
+      "details": "Limited pricing power analysis available"
+    },
+    "book_value_analysis": {
+      "score": 2,
+      "details": "Good book value per share growth pattern"
+    },
+    "management_analysis": {
+      "score": 0,
+      "max_score": 2,
+      "details": "Recent common stock issuance (potential dilution); No or minimal dividends paid"
+    },
+    "intrinsic_value_analysis": {
+      "intrinsic_value": -3134.2326707593256,
+      "raw_intrinsic_value": -3687.3325538345007,
+      "owner_earnings": -394.54999999999995,
+      "assumptions": {
+        "stage1_growth": -0.034999999999999996,
+        "stage2_growth": -0.017499999999999998,
+        "terminal_growth": 0.025,
+        "discount_rate": 0.1,
+        "stage1_years": 5,
+        "stage2_years": 5,
+        "historical_growth": -0.034999999999999996
+      },
+      "details": [
+        "Using three-stage DCF: Stage 1 (-3.5%, 5y), Stage 2 (-1.7%, 5y), Terminal (2.5%)",
+        "Stage 1 PV: $-1,355",
+        "Stage 2 PV: $-740",
+        "Terminal PV: $-1,593",
+        "Total IV: $-3,687",
+        "Conservative IV (15% haircut): $-3,134",
+        "Owner earnings: $-395",
+        "Discount rate: 10.0%"
+      ]
+    },
+    "market_cap": 93112.0,
+    "margin_of_safety": -1.0336608887228211
+  }
+}
