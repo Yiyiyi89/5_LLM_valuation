@@ -351,7 +351,7 @@ def call_llm(
     default_factory: Callable[[], WarrenBuffettSignal] = None,
     model: str = "o4-mini-2025-04-16",
     temperature: float = 0.0,
-    max_tokens: int = 2000,
+    max_tokens: int = 4000,
 ) -> WarrenBuffettSignal:
     """
     Call OpenAI LLM and parse the response into the specified Pydantic model.
