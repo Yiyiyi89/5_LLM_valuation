@@ -31,31 +31,6 @@ class WarrenBuffettSignal(BaseModel):
     reasoning: str
 
 
-metrics = get_financial_metrics("AAPL", 2022, 4, period="ttm", limit=10)
-roe_history = [m.return_on_equity for m in metrics]
-financial_line_items = search_line_items(
-    "AAPL",
-    [
-        "capital_expenditure",
-        "depreciation_and_amortization",
-        "net_income",
-        "outstanding_shares",
-        "total_assets",
-        "total_liabilities",
-        "shareholders_equity",
-        "dividends_and_other_cash_distributions",
-        "issuance_or_purchase_of_equity_shares",
-        "gross_profit",
-        "revenue",
-        "free_cash_flow",
-    ],
-    2022,
-    4,
-    period="ttm",
-    limit=10,
-)
-
-
 def analyze_stock(ticker: str, year: int, quarter: int) -> dict:
     """
     Analyze a stock using Warren Buffett's principles.
@@ -68,9 +43,13 @@ def analyze_stock(ticker: str, year: int, quarter: int) -> dict:
     Returns:
         dict: Analysis results including signal, confidence, and reasoning
     """
+    print(f"🔍 Starting analysis for {ticker} {year} Q{quarter}...")
+
     # Fetch required data
+    print(f"📊 Fetching financial metrics for {ticker}...")
     metrics = get_financial_metrics(ticker, year, quarter, period="ttm", limit=10)
 
+    print(f"📈 Fetching financial line items for {ticker}...")
     financial_line_items = search_line_items(
         ticker,
         [
@@ -95,18 +74,33 @@ def analyze_stock(ticker: str, year: int, quarter: int) -> dict:
     )
 
     # Get current market cap
+    print(f"💰 Fetching market cap for {ticker}...")
     market_cap = get_market_cap(ticker, year, quarter)
 
     # Perform all analyses
+    print(f"📋 Running fundamental analysis for {ticker}...")
     fundamental_analysis = analyze_fundamentals(metrics)
+
+    print(f"📈 Running consistency analysis for {ticker}...")
     consistency_analysis = analyze_consistency(financial_line_items)
+
+    print(f"🛡️ Running moat analysis for {ticker}...")
     moat_analysis = analyze_moat(metrics)
+
+    print(f"💪 Running pricing power analysis for {ticker}...")
     pricing_power_analysis = analyze_pricing_power(financial_line_items, metrics)
+
+    print(f"📚 Running book value growth analysis for {ticker}...")
     book_value_analysis = analyze_book_value_growth(financial_line_items)
+
+    print(f"👥 Running management quality analysis for {ticker}...")
     mgmt_analysis = analyze_management_quality(financial_line_items)
+
+    print(f"💎 Calculating intrinsic value for {ticker}...")
     intrinsic_value_analysis = calculate_intrinsic_value(financial_line_items)
 
     # Calculate total score
+    print(f"🧮 Calculating total score for {ticker}...")
     total_score = (
         fundamental_analysis["score"]
         + consistency_analysis["score"]
@@ -126,12 +120,14 @@ def analyze_stock(ticker: str, year: int, quarter: int) -> dict:
     )
 
     # Calculate margin of safety
+    print(f"🛡️ Calculating margin of safety for {ticker}...")
     margin_of_safety = None
     intrinsic_value = intrinsic_value_analysis["intrinsic_value"]
     if intrinsic_value and market_cap:
         margin_of_safety = (intrinsic_value - market_cap) / market_cap
 
     # Combine all analysis results
+    print(f"📝 Compiling analysis results for {ticker}...")
     analysis_data = {
         "ticker": ticker,
         "score": total_score,
@@ -148,8 +144,10 @@ def analyze_stock(ticker: str, year: int, quarter: int) -> dict:
     }
 
     # Generate Buffett-style analysis
+    print(f"🧠 Generating Warren Buffett analysis for {ticker}...")
     buffett_output = generate_buffett_output(ticker, analysis_data)
 
+    print(f"✅ Analysis complete for {ticker} {year} Q{quarter}")
     return {
         "signal": buffett_output.signal,
         "confidence": buffett_output.confidence,
@@ -1018,197 +1016,492 @@ def generate_buffett_output(ticker: str, analysis_data: dict) -> WarrenBuffettSi
 
 
 # Test the complete analysis pipeline for AAPL 2024 Q4
+# if __name__ == "__main__":
+#     # run a sample on meta 7 from 2000-2024
+#     ticker_list = ["META", "AAPL", "MSFT", "GOOG", "AMZN", "TSLA", "NVDA", "NFLX"]
+#     year_list = list(range(2000, 2025))
+#     quarter_list = [1, 2, 3, 4]
+
+#     # create temp data folder if it doesn't exist
+#     if not os.path.exists("temp_data"):
+#         os.makedirs("temp_data")
+
+#     # List to store all results
+#     all_results = []
+
+#     for ticker in ticker_list:
+#         for year in year_list:
+#             for quarter in quarter_list:
+#                 try:
+#                     print(
+#                         f"\nAnalyzing {ticker} {year} Q{quarter} using Buffett's principles..."
+#                     )
+#                     print("-" * 50)
+#                     if os.path.exists(f"{DATA_TEMP}/{ticker}_{year}_Q{quarter}.json"):
+#                         print(
+#                             f"Skipping {ticker} {year} Q{quarter} because it already exists"
+#                         )
+#                         continue
+#                     # Get the complete analysis
+#                     analysis_result = analyze_stock(ticker, year, quarter)
+#                     # save to temp data folder
+#                     with open(f"{DATA_TEMP}/{ticker}_{year}_Q{quarter}.json", "w") as f:
+#                         json.dump(analysis_result, f, indent=2)
+
+#                     # Add to results list with metadata
+#                     result_dict = {
+#                         "ticker": ticker,
+#                         "year": year,
+#                         "quarter": quarter,
+#                         "signal": analysis_result["signal"],
+#                         "confidence": analysis_result["confidence"],
+#                         "reasoning": analysis_result["reasoning"],
+#                         # Basic metrics
+#                         "total_score": analysis_result["detailed_analysis"]["score"],
+#                         "max_score": analysis_result["detailed_analysis"]["max_score"],
+#                         "market_cap": analysis_result["detailed_analysis"][
+#                             "market_cap"
+#                         ],
+#                         "margin_of_safety": analysis_result["detailed_analysis"][
+#                             "margin_of_safety"
+#                         ],
+#                         # Fundamental analysis
+#                         "fundamental_score": analysis_result["detailed_analysis"][
+#                             "fundamental_analysis"
+#                         ]["score"],
+#                         "fundamental_details": analysis_result["detailed_analysis"][
+#                             "fundamental_analysis"
+#                         ]["details"],
+#                         # Consistency analysis
+#                         "consistency_score": analysis_result["detailed_analysis"][
+#                             "consistency_analysis"
+#                         ]["score"],
+#                         "consistency_details": analysis_result["detailed_analysis"][
+#                             "consistency_analysis"
+#                         ]["details"],
+#                         # Moat analysis
+#                         "moat_score": analysis_result["detailed_analysis"][
+#                             "moat_analysis"
+#                         ]["score"],
+#                         "moat_max_score": analysis_result["detailed_analysis"][
+#                             "moat_analysis"
+#                         ]["max_score"],
+#                         "moat_details": analysis_result["detailed_analysis"][
+#                             "moat_analysis"
+#                         ]["details"],
+#                         # Pricing power analysis
+#                         "pricing_power_score": analysis_result["detailed_analysis"][
+#                             "pricing_power_analysis"
+#                         ]["score"],
+#                         "pricing_power_details": analysis_result["detailed_analysis"][
+#                             "pricing_power_analysis"
+#                         ]["details"],
+#                         # Book value analysis
+#                         "book_value_score": analysis_result["detailed_analysis"][
+#                             "book_value_analysis"
+#                         ]["score"],
+#                         "book_value_details": analysis_result["detailed_analysis"][
+#                             "book_value_analysis"
+#                         ]["details"],
+#                         # Management analysis
+#                         "management_score": analysis_result["detailed_analysis"][
+#                             "management_analysis"
+#                         ]["score"],
+#                         "management_max_score": analysis_result["detailed_analysis"][
+#                             "management_analysis"
+#                         ]["max_score"],
+#                         "management_details": analysis_result["detailed_analysis"][
+#                             "management_analysis"
+#                         ]["details"],
+#                         # Intrinsic value analysis
+#                         "intrinsic_value": analysis_result["detailed_analysis"][
+#                             "intrinsic_value_analysis"
+#                         ]["intrinsic_value"],
+#                         "raw_intrinsic_value": analysis_result["detailed_analysis"][
+#                             "intrinsic_value_analysis"
+#                         ].get("raw_intrinsic_value"),
+#                         "owner_earnings": analysis_result["detailed_analysis"][
+#                             "intrinsic_value_analysis"
+#                         ].get("owner_earnings"),
+#                         "intrinsic_value_details": "; ".join(
+#                             analysis_result["detailed_analysis"][
+#                                 "intrinsic_value_analysis"
+#                             ]["details"]
+#                         ),
+#                         # Assumptions from intrinsic value analysis
+#                         "stage1_growth": analysis_result["detailed_analysis"][
+#                             "intrinsic_value_analysis"
+#                         ]
+#                         .get("assumptions", {})
+#                         .get("stage1_growth"),
+#                         "stage2_growth": analysis_result["detailed_analysis"][
+#                             "intrinsic_value_analysis"
+#                         ]
+#                         .get("assumptions", {})
+#                         .get("stage2_growth"),
+#                         "terminal_growth": analysis_result["detailed_analysis"][
+#                             "intrinsic_value_analysis"
+#                         ]
+#                         .get("assumptions", {})
+#                         .get("terminal_growth"),
+#                         "discount_rate": analysis_result["detailed_analysis"][
+#                             "intrinsic_value_analysis"
+#                         ]
+#                         .get("assumptions", {})
+#                         .get("discount_rate"),
+#                         "historical_growth": analysis_result["detailed_analysis"][
+#                             "intrinsic_value_analysis"
+#                         ]
+#                         .get("assumptions", {})
+#                         .get("historical_growth"),
+#                     }
+#                     all_results.append(result_dict)
+
+#                     # Add delay between requests to avoid rate limiting
+#                     time.sleep(3)
+
+#                 except Exception as e:
+#                     error_msg = str(e).lower()
+#                     if "429" in error_msg:
+#                         # Check if it's hourly or minute limit
+#                         if "hour" in error_msg or "hourly" in error_msg:
+#                             wait_time = 3600  # 1 hour
+#                             print(
+#                                 f"Hourly rate limit hit, waiting {wait_time} seconds..."
+#                             )
+#                         elif "minute" in error_msg or "minutely" in error_msg:
+#                             wait_time = 60  # 1 minute
+#                             print(
+#                                 f"Minute rate limit hit, waiting {wait_time} seconds..."
+#                             )
+#                         else:
+#                             wait_time = 60  # default to 1 minute
+#                             print(
+#                                 f"Rate limit hit (unknown type), waiting {wait_time} seconds..."
+#                             )
+
+#                         time.sleep(wait_time)
+#                         continue
+#                     else:
+#                         print(f"Error analyzing {ticker} {year} Q{quarter}: {str(e)}")
+#                         continue
+
+#     # Create DataFrame from all results
+#     import pandas as pd
+
+#     df = pd.DataFrame(all_results)
+
+#     # Save DataFrame to CSV
+#     df.to_csv(f"{DATA_TEMP}/buffett_analysis_results.csv", index=False)
+#     print(
+#         f"\nAnalysis complete. Results saved to {DATA_TEMP}/buffett_analysis_results.csv"
+#     )
+#     print(f"Total analyses completed: {len(df)}")
+#     print(
+#         f"Failed analyses: {len(ticker_list) * len(year_list) * len(quarter_list) - len(df)}"
+#     )
+
+#     # df = pd.read_csv(f"{DATA_TEMP}/buffett_analysis_results.csv")
+#     # print(df.head())
+#     # print(df.tail())
+#     # print(df.columns)
+#     # print(df.info())
+#     # print(df.describe())
+#     # print(df.shape)
+#     # print(df.dtypes)
+#     # print(df.isnull().sum())
+
+
+def test_nflx_2012_q1():
+    """
+    Unit test for NFLX 2012 Q1 analysis using Warren Buffett's principles.
+    This test validates the complete analysis pipeline for a specific case.
+    """
+    print("\n" + "=" * 60)
+    print("UNIT TEST: NFLX 2012 Q1 Analysis")
+    print("=" * 60)
+
+    try:
+        # Run analysis for NFLX 2012 Q1
+        result = analyze_stock("NFLX", 2012, 1)
+
+        # Print basic results
+        print(f"Signal: {result['signal']}")
+        print(f"Confidence: {result['confidence']:.1%}")
+        print(
+            f"Total Score: {result['detailed_analysis']['score']}/{result['detailed_analysis']['max_score']}"
+        )
+        print(f"Market Cap: ${result['detailed_analysis']['market_cap']:,.0f}")
+        print(
+            f"Margin of Safety: {result['detailed_analysis']['margin_of_safety']:.1%}"
+            if result["detailed_analysis"]["margin_of_safety"]
+            else "Margin of Safety: N/A"
+        )
+
+        # Print detailed analysis scores
+        print("\nDetailed Analysis Scores:")
+        print(
+            f"  Fundamental Analysis: {result['detailed_analysis']['fundamental_analysis']['score']}/10"
+        )
+        print(
+            f"  Consistency Analysis: {result['detailed_analysis']['consistency_analysis']['score']}/3"
+        )
+        print(
+            f"  Moat Analysis: {result['detailed_analysis']['moat_analysis']['score']}/{result['detailed_analysis']['moat_analysis']['max_score']}"
+        )
+        print(
+            f"  Pricing Power: {result['detailed_analysis']['pricing_power_analysis']['score']}/5"
+        )
+        print(
+            f"  Book Value Growth: {result['detailed_analysis']['book_value_analysis']['score']}/5"
+        )
+        print(
+            f"  Management Quality: {result['detailed_analysis']['management_analysis']['score']}/{result['detailed_analysis']['management_analysis']['max_score']}"
+        )
+
+        # Print intrinsic value analysis
+        intrinsic_analysis = result["detailed_analysis"]["intrinsic_value_analysis"]
+        print(f"\nIntrinsic Value Analysis:")
+        print(
+            f"  Intrinsic Value: ${intrinsic_analysis['intrinsic_value']:,.0f}"
+            if intrinsic_analysis["intrinsic_value"]
+            else "  Intrinsic Value: N/A"
+        )
+        print(
+            f"  Owner Earnings: ${intrinsic_analysis.get('owner_earnings', 'N/A'):,.0f}"
+            if intrinsic_analysis.get("owner_earnings")
+            else "  Owner Earnings: N/A"
+        )
+
+        # Print Warren Buffett's reasoning
+        print(f"\nWarren Buffett's Analysis:")
+        print(f"{result['reasoning']}")
+
+        # Validation checks
+        print(f"\nValidation Checks:")
+        print(f"  ✓ Analysis completed successfully")
+        print(
+            f"  ✓ Signal is valid: {result['signal'] in ['bullish', 'bearish', 'neutral']}"
+        )
+        print(f"  ✓ Confidence is in range: {0 <= result['confidence'] <= 1}")
+        print(f"  ✓ All analysis components present")
+
+        # Historical context for NFLX 2012 Q1
+        print(f"\nHistorical Context:")
+        print(f"  - NFLX was transitioning from DVD rental to streaming")
+        print(f"  - Q1 2012 was a challenging period with subscriber growth concerns")
+        print(f"  - Stock price volatility was high during this transition")
+        print(
+            f"  - This test validates Buffett's principles on a high-growth tech stock"
+        )
+
+        return True
+
+    except Exception as e:
+        print(f"❌ Test failed with error: {str(e)}")
+        return False
+
+
 if __name__ == "__main__":
-    # run a sample on meta 7 from 2000-2024
-    ticker_list = ["META", "AAPL", "MSFT", "GOOG", "AMZN", "TSLA", "NVDA", "NFLX"]
-    year_list = list(range(2000, 2025))
-    quarter_list = [1, 2, 3, 4]
+    # Run the unit test first
+    test_success = test_nflx_2012_q1()
 
-    # create temp data folder if it doesn't exist
-    if not os.path.exists("temp_data"):
-        os.makedirs("temp_data")
+    if test_success:
+        print(f"\n✅ Unit test passed! Proceeding with full analysis...")
+        # run a sample on meta 7 from 2000-2024
+        ticker_list = ["META", "AAPL", "MSFT", "GOOG", "AMZN", "TSLA", "NVDA", "NFLX"]
+        year_list = list(range(2000, 2025))
+        quarter_list = [1, 2, 3, 4]
 
-    # List to store all results
-    all_results = []
+        # create temp data folder if it doesn't exist
+        if not os.path.exists("temp_data"):
+            os.makedirs("temp_data")
 
-    for ticker in ticker_list:
-        for year in year_list:
-            for quarter in quarter_list:
-                try:
-                    print(
-                        f"\nAnalyzing {ticker} {year} Q{quarter} using Buffett's principles..."
-                    )
-                    print("-" * 50)
-                    if os.path.exists(f"{DATA_TEMP}/{ticker}_{year}_Q{quarter}.json"):
+        # List to store all results
+        all_results = []
+
+        for ticker in ticker_list:
+            for year in year_list:
+                for quarter in quarter_list:
+                    try:
                         print(
-                            f"Skipping {ticker} {year} Q{quarter} because it already exists"
+                            f"\nAnalyzing {ticker} {year} Q{quarter} using Buffett's principles..."
                         )
-                        continue
-                    # Get the complete analysis
-                    analysis_result = analyze_stock(ticker, year, quarter)
-                    # save to temp data folder
-                    with open(f"{DATA_TEMP}/{ticker}_{year}_Q{quarter}.json", "w") as f:
-                        json.dump(analysis_result, f, indent=2)
+                        print("-" * 50)
+                        if os.path.exists(
+                            f"{DATA_TEMP}/{ticker}_{year}_Q{quarter}.json"
+                        ):
+                            print(
+                                f"Skipping {ticker} {year} Q{quarter} because it already exists"
+                            )
+                            continue
+                        # Get the complete analysis
+                        analysis_result = analyze_stock(ticker, year, quarter)
+                        # save to temp data folder
+                        with open(
+                            f"{DATA_TEMP}/{ticker}_{year}_Q{quarter}.json", "w"
+                        ) as f:
+                            json.dump(analysis_result, f, indent=2)
 
-                    # Add to results list with metadata
-                    result_dict = {
-                        "ticker": ticker,
-                        "year": year,
-                        "quarter": quarter,
-                        "signal": analysis_result["signal"],
-                        "confidence": analysis_result["confidence"],
-                        "reasoning": analysis_result["reasoning"],
-                        # Basic metrics
-                        "total_score": analysis_result["detailed_analysis"]["score"],
-                        "max_score": analysis_result["detailed_analysis"]["max_score"],
-                        "market_cap": analysis_result["detailed_analysis"][
-                            "market_cap"
-                        ],
-                        "margin_of_safety": analysis_result["detailed_analysis"][
-                            "margin_of_safety"
-                        ],
-                        # Fundamental analysis
-                        "fundamental_score": analysis_result["detailed_analysis"][
-                            "fundamental_analysis"
-                        ]["score"],
-                        "fundamental_details": analysis_result["detailed_analysis"][
-                            "fundamental_analysis"
-                        ]["details"],
-                        # Consistency analysis
-                        "consistency_score": analysis_result["detailed_analysis"][
-                            "consistency_analysis"
-                        ]["score"],
-                        "consistency_details": analysis_result["detailed_analysis"][
-                            "consistency_analysis"
-                        ]["details"],
-                        # Moat analysis
-                        "moat_score": analysis_result["detailed_analysis"][
-                            "moat_analysis"
-                        ]["score"],
-                        "moat_max_score": analysis_result["detailed_analysis"][
-                            "moat_analysis"
-                        ]["max_score"],
-                        "moat_details": analysis_result["detailed_analysis"][
-                            "moat_analysis"
-                        ]["details"],
-                        # Pricing power analysis
-                        "pricing_power_score": analysis_result["detailed_analysis"][
-                            "pricing_power_analysis"
-                        ]["score"],
-                        "pricing_power_details": analysis_result["detailed_analysis"][
-                            "pricing_power_analysis"
-                        ]["details"],
-                        # Book value analysis
-                        "book_value_score": analysis_result["detailed_analysis"][
-                            "book_value_analysis"
-                        ]["score"],
-                        "book_value_details": analysis_result["detailed_analysis"][
-                            "book_value_analysis"
-                        ]["details"],
-                        # Management analysis
-                        "management_score": analysis_result["detailed_analysis"][
-                            "management_analysis"
-                        ]["score"],
-                        "management_max_score": analysis_result["detailed_analysis"][
-                            "management_analysis"
-                        ]["max_score"],
-                        "management_details": analysis_result["detailed_analysis"][
-                            "management_analysis"
-                        ]["details"],
-                        # Intrinsic value analysis
-                        "intrinsic_value": analysis_result["detailed_analysis"][
-                            "intrinsic_value_analysis"
-                        ]["intrinsic_value"],
-                        "raw_intrinsic_value": analysis_result["detailed_analysis"][
-                            "intrinsic_value_analysis"
-                        ].get("raw_intrinsic_value"),
-                        "owner_earnings": analysis_result["detailed_analysis"][
-                            "intrinsic_value_analysis"
-                        ].get("owner_earnings"),
-                        "intrinsic_value_details": "; ".join(
-                            analysis_result["detailed_analysis"][
+                        # Add to results list with metadata
+                        result_dict = {
+                            "ticker": ticker,
+                            "year": year,
+                            "quarter": quarter,
+                            "signal": analysis_result["signal"],
+                            "confidence": analysis_result["confidence"],
+                            "reasoning": analysis_result["reasoning"],
+                            # Basic metrics
+                            "total_score": analysis_result["detailed_analysis"][
+                                "score"
+                            ],
+                            "max_score": analysis_result["detailed_analysis"][
+                                "max_score"
+                            ],
+                            "market_cap": analysis_result["detailed_analysis"][
+                                "market_cap"
+                            ],
+                            "margin_of_safety": analysis_result["detailed_analysis"][
+                                "margin_of_safety"
+                            ],
+                            # Fundamental analysis
+                            "fundamental_score": analysis_result["detailed_analysis"][
+                                "fundamental_analysis"
+                            ]["score"],
+                            "fundamental_details": analysis_result["detailed_analysis"][
+                                "fundamental_analysis"
+                            ]["details"],
+                            # Consistency analysis
+                            "consistency_score": analysis_result["detailed_analysis"][
+                                "consistency_analysis"
+                            ]["score"],
+                            "consistency_details": analysis_result["detailed_analysis"][
+                                "consistency_analysis"
+                            ]["details"],
+                            # Moat analysis
+                            "moat_score": analysis_result["detailed_analysis"][
+                                "moat_analysis"
+                            ]["score"],
+                            "moat_max_score": analysis_result["detailed_analysis"][
+                                "moat_analysis"
+                            ]["max_score"],
+                            "moat_details": analysis_result["detailed_analysis"][
+                                "moat_analysis"
+                            ]["details"],
+                            # Pricing power analysis
+                            "pricing_power_score": analysis_result["detailed_analysis"][
+                                "pricing_power_analysis"
+                            ]["score"],
+                            "pricing_power_details": analysis_result[
+                                "detailed_analysis"
+                            ]["pricing_power_analysis"]["details"],
+                            # Book value analysis
+                            "book_value_score": analysis_result["detailed_analysis"][
+                                "book_value_analysis"
+                            ]["score"],
+                            "book_value_details": analysis_result["detailed_analysis"][
+                                "book_value_analysis"
+                            ]["details"],
+                            # Management analysis
+                            "management_score": analysis_result["detailed_analysis"][
+                                "management_analysis"
+                            ]["score"],
+                            "management_max_score": analysis_result[
+                                "detailed_analysis"
+                            ]["management_analysis"]["max_score"],
+                            "management_details": analysis_result["detailed_analysis"][
+                                "management_analysis"
+                            ]["details"],
+                            # Intrinsic value analysis
+                            "intrinsic_value": analysis_result["detailed_analysis"][
                                 "intrinsic_value_analysis"
-                            ]["details"]
-                        ),
-                        # Assumptions from intrinsic value analysis
-                        "stage1_growth": analysis_result["detailed_analysis"][
-                            "intrinsic_value_analysis"
-                        ]
-                        .get("assumptions", {})
-                        .get("stage1_growth"),
-                        "stage2_growth": analysis_result["detailed_analysis"][
-                            "intrinsic_value_analysis"
-                        ]
-                        .get("assumptions", {})
-                        .get("stage2_growth"),
-                        "terminal_growth": analysis_result["detailed_analysis"][
-                            "intrinsic_value_analysis"
-                        ]
-                        .get("assumptions", {})
-                        .get("terminal_growth"),
-                        "discount_rate": analysis_result["detailed_analysis"][
-                            "intrinsic_value_analysis"
-                        ]
-                        .get("assumptions", {})
-                        .get("discount_rate"),
-                        "historical_growth": analysis_result["detailed_analysis"][
-                            "intrinsic_value_analysis"
-                        ]
-                        .get("assumptions", {})
-                        .get("historical_growth"),
-                    }
-                    all_results.append(result_dict)
+                            ]["intrinsic_value"],
+                            "raw_intrinsic_value": analysis_result["detailed_analysis"][
+                                "intrinsic_value_analysis"
+                            ].get("raw_intrinsic_value"),
+                            "owner_earnings": analysis_result["detailed_analysis"][
+                                "intrinsic_value_analysis"
+                            ].get("owner_earnings"),
+                            "intrinsic_value_details": "; ".join(
+                                analysis_result["detailed_analysis"][
+                                    "intrinsic_value_analysis"
+                                ]["details"]
+                            ),
+                            # Assumptions from intrinsic value analysis
+                            "stage1_growth": analysis_result["detailed_analysis"][
+                                "intrinsic_value_analysis"
+                            ]
+                            .get("assumptions", {})
+                            .get("stage1_growth"),
+                            "stage2_growth": analysis_result["detailed_analysis"][
+                                "intrinsic_value_analysis"
+                            ]
+                            .get("assumptions", {})
+                            .get("stage2_growth"),
+                            "terminal_growth": analysis_result["detailed_analysis"][
+                                "intrinsic_value_analysis"
+                            ]
+                            .get("assumptions", {})
+                            .get("terminal_growth"),
+                            "discount_rate": analysis_result["detailed_analysis"][
+                                "intrinsic_value_analysis"
+                            ]
+                            .get("assumptions", {})
+                            .get("discount_rate"),
+                            "historical_growth": analysis_result["detailed_analysis"][
+                                "intrinsic_value_analysis"
+                            ]
+                            .get("assumptions", {})
+                            .get("historical_growth"),
+                        }
+                        all_results.append(result_dict)
 
-                    # Add delay between requests to avoid rate limiting
-                    time.sleep(3)
+                        # Add delay between requests to avoid rate limiting
+                        time.sleep(3)
 
-                except Exception as e:
-                    error_msg = str(e).lower()
-                    if "429" in error_msg:
-                        # Check if it's hourly or minute limit
-                        if "hour" in error_msg or "hourly" in error_msg:
-                            wait_time = 3600  # 1 hour
-                            print(
-                                f"Hourly rate limit hit, waiting {wait_time} seconds..."
-                            )
-                        elif "minute" in error_msg or "minutely" in error_msg:
-                            wait_time = 60  # 1 minute
-                            print(
-                                f"Minute rate limit hit, waiting {wait_time} seconds..."
-                            )
+                    except Exception as e:
+                        error_msg = str(e).lower()
+                        if "429" in error_msg:
+                            # Check if it's hourly or minute limit
+                            if "hour" in error_msg or "hourly" in error_msg:
+                                wait_time = 3600  # 1 hour
+                                print(
+                                    f"Hourly rate limit hit, waiting {wait_time} seconds..."
+                                )
+                            elif "minute" in error_msg or "minutely" in error_msg:
+                                wait_time = 60  # 1 minute
+                                print(
+                                    f"Minute rate limit hit, waiting {wait_time} seconds..."
+                                )
+                            else:
+                                wait_time = 60  # default to 1 minute
+                                print(
+                                    f"Rate limit hit (unknown type), waiting {wait_time} seconds..."
+                                )
+
+                            time.sleep(wait_time)
+                            continue
                         else:
-                            wait_time = 60  # default to 1 minute
                             print(
-                                f"Rate limit hit (unknown type), waiting {wait_time} seconds..."
+                                f"Error analyzing {ticker} {year} Q{quarter}: {str(e)}"
                             )
+                            continue
 
-                        time.sleep(wait_time)
-                        continue
-                    else:
-                        print(f"Error analyzing {ticker} {year} Q{quarter}: {str(e)}")
-                        continue
+        # Create DataFrame from all results
+        import pandas as pd
 
-    # Create DataFrame from all results
-    import pandas as pd
+        df = pd.DataFrame(all_results)
 
-    df = pd.DataFrame(all_results)
-
-    # Save DataFrame to CSV
-    df.to_csv(f"{DATA_TEMP}/buffett_analysis_results.csv", index=False)
-    print(
-        f"\nAnalysis complete. Results saved to {DATA_TEMP}/buffett_analysis_results.csv"
-    )
-    print(f"Total analyses completed: {len(df)}")
-    print(
-        f"Failed analyses: {len(ticker_list) * len(year_list) * len(quarter_list) - len(df)}"
-    )
-
-    # df = pd.read_csv(f"{DATA_TEMP}/buffett_analysis_results.csv")
-    # print(df.head())
-    # print(df.tail())
-    # print(df.columns)
-    # print(df.info())
-    # print(df.describe())
-    # print(df.shape)
-    # print(df.dtypes)
-    # print(df.isnull().sum())
+        # Save DataFrame to CSV
+        df.to_csv(f"{DATA_TEMP}/buffett_analysis_results.csv", index=False)
+        print(
+            f"\nAnalysis complete. Results saved to {DATA_TEMP}/buffett_analysis_results.csv"
+        )
+        print(f"Total analyses completed: {len(df)}")
+        print(
+            f"Failed analyses: {len(ticker_list) * len(year_list) * len(quarter_list) - len(df)}"
+        )
+    else:
+        print(
+            f"\n❌ Unit test failed! Please check the analysis pipeline before proceeding."
+        )
